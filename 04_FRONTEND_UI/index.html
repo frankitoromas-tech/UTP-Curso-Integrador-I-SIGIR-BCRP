@@ -45,9 +45,8 @@
     <!-- Barra de Telemetría en Vivo (Semáforos NOC del Ecosistema) -->
     <section class="telemetry-bar-container">
         <div class="section-title-compact">
-            <span class="pulse-indicator"></span>
-            <h2>TELEMETRÍA DE SALUD EN VIVO (SWITCH DE PAGOS & BILLETERAS)</h2>
-            <span class="telemetry-timer" id="timerSondeo">Próximo sondeo en: 18s</span>
+            <h2>Telemetría de Salud en Vivo</h2>
+            <span class="telemetry-timer" id="timerSondeo">Sondeo: 30s</span>
         </div>
 
         <div class="telemetry-grid" id="telemetryGrid">
@@ -60,32 +59,34 @@
         
         <!-- Barra de Acciones y Métricas Resumen -->
         <section class="action-metrics-row">
-            <div class="kpi-mini-card">
-                <span class="kpi-label">TOTAL INCIDENTES</span>
-                <span class="kpi-value" id="kpiTotal">3</span>
-            </div>
-            <div class="kpi-mini-card critical">
-                <span class="kpi-label">ACTIVOS / CRÍTICOS</span>
-                <span class="kpi-value" id="kpiCriticos">2</span>
-            </div>
-            <div class="kpi-mini-card success">
-                <span class="kpi-label">RESUELTOS / CERRADOS</span>
-                <span class="kpi-value" id="kpiResueltos">1</span>
-            </div>
-            <div class="kpi-mini-card">
-                <span class="kpi-label">DISPONIBILIDAD GLOBAL</span>
-                <span class="kpi-value" style="color: var(--color-accent-cyan);">99.82%</span>
+            <div class="kpi-group">
+                <div class="kpi-mini-card">
+                    <span class="kpi-label">Total</span>
+                    <span class="kpi-value" id="kpiTotal">0</span>
+                </div>
+                <div class="kpi-mini-card critical">
+                    <span class="kpi-label">Activos</span>
+                    <span class="kpi-value" id="kpiCriticos">0</span>
+                </div>
+                <div class="kpi-mini-card success">
+                    <span class="kpi-label">Resueltos</span>
+                    <span class="kpi-value" id="kpiResueltos">0</span>
+                </div>
+                <div class="kpi-mini-card">
+                    <span class="kpi-label">Disponibilidad</span>
+                    <span class="kpi-value" style="color: #38BDF8;">99.82%</span>
+                </div>
             </div>
 
             <div class="action-buttons-group">
                 <button class="btn btn-primary" id="btnNuevoManual">
-                    <span class="btn-icon">➕</span> Registro Manual Asistido
+                    <span class="btn-icon">＋</span> Reportar Incidente
                 </button>
                 <button class="btn btn-warning" id="btnSimularCaida">
-                    <span class="btn-icon">⚡</span> Simular Caída de Servicio
+                    <span class="btn-icon">⚡</span> Simular Alerta
                 </button>
                 <button class="btn btn-bcrp" id="btnGenerarSft">
-                    <span class="btn-icon">📜</span> Compilar Archivo SFT BCRP (.TXT)
+                    <span class="btn-icon">↓</span> Exportar SFT (.txt)
                 </button>
             </div>
         </section>
@@ -94,15 +95,15 @@
         <section class="panel-card">
             <div class="panel-header">
                 <div class="panel-title-group">
-                    <h3>MATRIZ DE SEGUIMIENTO Y CICLO DE VIDA DE INCIDENTES</h3>
-                    <span class="panel-subtitle">Regulación y Formato de Supervisión BCRP</span>
+                    <h3>Matriz de Incidentes Regulatorios</h3>
+                    <span class="panel-subtitle">Supervisión continua bajo normativa del BCRP</span>
                 </div>
 
                 <div class="filters-toolbar">
-                    <input type="text" id="filtroBuscador" class="input-search" placeholder="Buscar por ticket, entidad o servicio...">
+                    <input type="text" id="filtroBuscador" class="input-search" placeholder="Buscar por ticket o entidad...">
                     
                     <select id="filtroSeveridad" class="select-filter">
-                        <option value="TODOS">Todas las Severidades</option>
+                        <option value="TODOS">Todas las severidades</option>
                         <option value="CRITICA">Crítica</option>
                         <option value="ALTA">Alta</option>
                         <option value="MEDIA">Media</option>
@@ -110,7 +111,7 @@
                     </select>
 
                     <select id="filtroEstado" class="select-filter">
-                        <option value="TODOS">Todos los Estados</option>
+                        <option value="TODOS">Todos los estados</option>
                         <option value="REGISTRADO">Registrado</option>
                         <option value="EN_EVALUACION">En Evaluación</option>
                         <option value="EN_MITIGACION">En Mitigación</option>
@@ -124,14 +125,14 @@
                 <table class="data-table">
                     <thead>
                         <tr>
-                            <th>TICKET</th>
-                            <th>ENTIDAD / CANAL</th>
-                            <th>CATEGORÍA</th>
-                            <th>SEVERIDAD</th>
-                            <th>ORIGEN</th>
-                            <th>FECHA/HORA DETECCIÓN</th>
-                            <th>ESTADO ACTUAL</th>
-                            <th>ACCIONES</th>
+                            <th>Ticket</th>
+                            <th>Entidad / Servicio</th>
+                            <th>Categoría</th>
+                            <th>Severidad</th>
+                            <th>Origen</th>
+                            <th>Detección</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
                         </tr>
                     </thead>
                     <tbody id="tablaIncidentesBody">

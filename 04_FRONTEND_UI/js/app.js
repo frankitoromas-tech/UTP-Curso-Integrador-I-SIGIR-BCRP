@@ -104,7 +104,7 @@ async function verificarConectividadBackend() {
                 pill.title = 'Conectado a Spring Boot REST API & PostgreSQL (bcrp_incident_db)';
             }
             if (dot) dot.style.background = '#10B981';
-            if (text) text.innerText = '🟢 BACKEND ONLINE (Spring Boot + Postgres)';
+            if (text) text.innerText = 'Backend Conectado (PostgreSQL)';
 
             // Sincronizar catálogo e incidentes reales desde PostgreSQL
             await sincronizarConBackend();
@@ -120,7 +120,7 @@ async function verificarConectividadBackend() {
         pill.title = 'Ejecutando en Modo Autónomo / Simulación Local. Inicie Docker Compose o RUN_APF1_LOCAL para sincronizar.';
     }
     if (dot) dot.style.background = '#F59E0B';
-    if (text) text.innerText = '🟡 MODO DEMO (Simulación Local)';
+    if (text) text.innerText = 'Modo Simulación (Local Mock)';
 }
 
 /**
@@ -165,23 +165,28 @@ function renderizarTelemetria() {
     const grid = document.getElementById('telemetryGrid');
     if (!grid) return;
 
-    grid.innerHTML = AppState.entidades.map(ent => `
-        <div class="telemetry-node">
+    grid.innerHTML = AppState.entidades.map(ent => {
+        const esCaido = ent.estado === 'CAIDO';
+        return `
+        <div class="telemetry-node ${esCaido ? 'node-caido' : ''}">
             <div class="node-header">
                 <div>
                     <h4 class="node-name">${ent.nombre}</h4>
-                    <span class="node-code">BCRP: ${ent.codigo} | ${ent.canal}</span>
+                    <span class="node-code">${ent.canal} · Cod. ${ent.codigo}</span>
                 </div>
-                <span class="node-status-pill ${ent.estado.toLowerCase()}">${ent.estado}</span>
+                <span class="node-status-pill ${esCaido ? 'caido' : 'saludable'}">
+                    ${esCaido ? 'Interrupción' : 'Operativo'}
+                </span>
             </div>
             <div class="node-metrics">
-                <span>Latencia:</span>
-                <span class="node-latency" style="color: ${ent.latencia > 150 ? '#F87171' : '#34D399'}">
+                <span>Latencia</span>
+                <span class="node-latency" style="color: ${esCaido ? '#EF4444' : '#10B981'}">
                     ${ent.latencia} ms
                 </span>
             </div>
         </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 /**
@@ -209,7 +214,7 @@ function inicializarTelemetria() {
             }
         }
         if (timerLabel) {
-            timerLabel.innerText = `Próximo sondeo en: ${AppState.segundosSondeo}s`;
+            timerLabel.innerText = `Sondeo: ${AppState.segundosSondeo}s`;
         }
     }, 1000);
 }
@@ -235,22 +240,22 @@ function renderizarMatrizIncidentes() {
     });
 
     if (filtrados.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-dim); padding: 30px;">No se encontraron incidentes con los filtros seleccionados.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" style="text-align: center; color: var(--text-tertiary); padding: 36px 20px; font-size: 0.85rem;">No se encontraron incidentes con los filtros seleccionados.</td></tr>`;
         return;
     }
 
     tbody.innerHTML = filtrados.map(inc => `
         <tr>
-            <td class="ticket-cell">${inc.ticket}</td>
+            <td class="ticket-mono">${inc.ticket}</td>
             <td>
-                <strong>${inc.entidadNombre}</strong><br>
-                <small style="color: var(--text-dim);">${inc.servicio}</small>
+                <div class="entidad-cell">${inc.entidadNombre}</div>
+                <span class="servicio-tag">${inc.servicio}</span>
             </td>
-            <td>${inc.categoriaNombre}</td>
-            <td><span class="badge badge-${inc.severidad.toLowerCase()}">${inc.severidad}</span></td>
-            <td><span style="font-size: 0.75rem; font-family: var(--font-mono);">${inc.origen}</span></td>
-            <td style="font-family: var(--font-mono); font-size: 0.78rem;">${inc.fechaDeteccion}</td>
-            <td><span class="badge badge-estado ${inc.estado.toLowerCase()}">${inc.estado.replace('_', ' ')}</span></td>
+            <td style="color: var(--text-secondary);">${inc.categoriaNombre}</td>
+            <td><span class="badge-severidad ${inc.severidad.toLowerCase()}">${inc.severidad}</span></td>
+            <td><span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-tertiary);">${inc.origen}</span></td>
+            <td style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-tertiary);">${inc.fechaDeteccion}</td>
+            <td><span class="badge-estado ${inc.estado.toLowerCase()}">${inc.estado.replace('_', ' ')}</span></td>
             <td>
                 ${renderBotonesAccion(inc)}
             </td>
@@ -263,15 +268,15 @@ function renderizarMatrizIncidentes() {
  */
 function renderBotonesAccion(inc) {
     if (inc.estado === 'REGISTRADO') {
-        return `<button class="btn btn-warning btn-action-sm" onclick="avanzarEstado(${inc.id}, 'EN_EVALUACION')">Evaluar</button>`;
+        return `<button class="btn-action-table" onclick="avanzarEstado(${inc.id}, 'EN_EVALUACION')">Evaluar</button>`;
     } else if (inc.estado === 'EN_EVALUACION') {
-        return `<button class="btn btn-primary btn-action-sm" onclick="avanzarEstado(${inc.id}, 'EN_MITIGACION')">Mitigar</button>`;
+        return `<button class="btn-action-table" onclick="avanzarEstado(${inc.id}, 'EN_MITIGACION')">Mitigar</button>`;
     } else if (inc.estado === 'EN_MITIGACION') {
-        return `<button class="btn btn-primary btn-action-sm" style="background:#10B981;" onclick="avanzarEstado(${inc.id}, 'RESUELTO')">Resolver</button>`;
+        return `<button class="btn-action-table btn-resolve" onclick="avanzarEstado(${inc.id}, 'RESUELTO')">Resolver</button>`;
     } else if (inc.estado === 'RESUELTO') {
-        return `<button class="btn btn-secondary btn-action-sm" onclick="avanzarEstado(${inc.id}, 'CERRADO')">Cerrar</button>`;
+        return `<button class="btn-action-table" onclick="avanzarEstado(${inc.id}, 'CERRADO')">Cerrar</button>`;
     } else {
-        return `<span style="font-size: 0.75rem; color: var(--text-dim);">Finalizado</span>`;
+        return `<span style="font-size: 0.72rem; color: var(--text-muted);">Cerrado</span>`;
     }
 }
 
