@@ -11,9 +11,9 @@
 
 ---
 
-### TÍTULO DEL PROYECTO:
-**SISTEMA INTEGRAL DE GESTIÓN DE INCIDENTES REGULATORIOS PARA PAGOS DIGITALES (SIGIR - BCRP)**  
-*Especificación Arquitectónica, Modelado de Negocio y Cimientos de Software para la Supervisión del Ecosistema Financiero Peruano*  
+### TÍTULO DEL PROTOTIPO:
+**SIGIR - BCRP: SISTEMA DE GESTIÓN DE INCIDENTES REGULATORIOS PARA PAGOS DIGITALES**  
+*Prototipo de Telemetría y Supervisión Continua de Pagos Interoperables (APF1)*  
 *Caso: Regulación de Pagos Digitales – Banco Central de Reserva del Perú (BCRP)*
 
 ---
