@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sigir-backend-test
+  datasource:
+    url: jdbc:h2:mem:bcrp_test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=PostgreSQL
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+sigir:
+  telemetria:
+    habilitada: false
+    intervalo-milisegundos: 60000
+    timeout-conexion-ms: 1000

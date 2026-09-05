@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" style="background:#0F172A; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <!-- Marcador de Flecha Vectorial -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="arrow-warn" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F87171"/>
+    </marker>
+    <!-- Filtro de Sombra -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Título Superior del Diagrama -->
+  <rect x="20" y="15" width="920" height="44" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="480" y="42" fill="#38BDF8" font-size="16" font-weight="bold" text-anchor="middle" letter-spacing="1">
+    PROCESO ACTUAL DE NOTIFICACIÓN DE INCIDENTES (AS-IS) — FLUJO MANUAL Y DESARTICULADO
+  </text>
+
+  <!-- 3 Columnas / Carriles Operativos -->
+  
+  <!-- CARRIL 1: ENTIDAD FINANCIERA -->
+  <rect x="20" y="70" width="290" height="450" rx="10" fill="#131D33" stroke="#2563EB" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="70" width="290" height="38" rx="8" fill="#1E3A8A"/>
+  <text x="165" y="94" fill="#DBEAFE" font-size="13" font-weight="bold" text-anchor="middle">
+    1. ENTIDAD FINANCIERA (YAPE / PLIM)
+  </text>
+
+  <!-- Evento Inicio AS-IS -->
+  <circle cx="165" cy="145" r="24" fill="#EF4444" stroke="#F87171" stroke-width="3"/>
+  <text x="165" y="150" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">FALLA</text>
+  <text x="165" y="185" fill="#FCA5A5" font-size="12" font-weight="600" text-anchor="middle">Caída del Switch de Pagos</text>
+
+  <!-- Conector 1 -->
+  <line x1="165" y1="195" x2="165" y2="215" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tarea 1: Detección Reactiva -->
+  <rect x="40" y="220" width="250" height="60" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <text x="165" y="244" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">Detección Tardía por Quejas</text>
+  <text x="165" y="263" fill="#94A3B8" font-size="11" text-anchor="middle">Usuarios reportan en RRSS y Call Center</text>
+
+  <!-- Badge de Deficiencia 1 -->
+  <rect x="55" y="290" width="220" height="26" rx="13" fill="#7F1D1D" stroke="#EF4444" stroke-width="1"/>
+  <text x="165" y="307" fill="#FECACA" font-size="11" font-weight="bold" text-anchor="middle">⚠️ Retraso Crítico: 30 a 90 min</text>
+
+  <!-- Conector 2 -->
+  <line x1="165" y1="320" x2="165" y2="345" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tarea 2: Elaboración Manual -->
+  <rect x="40" y="350" width="250" height="60" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <text x="165" y="374" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">Elaboración Manual de Informe</text>
+  <text x="165" y="393" fill="#94A3B8" font-size="11" text-anchor="middle">Llenado en plantilla Excel / Word local</text>
+
+  <!-- Conector hacia Carril 2 -->
+  <path d="M 290 380 L 335 380 L 335 150 L 360 150" fill="none" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+
+  <!-- CARRIL 2: CANAL DE COMUNICACIÓN -->
+  <rect x="335" y="70" width="290" height="450" rx="10" fill="#131D33" stroke="#D97706" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="335" y="70" width="290" height="38" rx="8" fill="#78350F"/>
+  <text x="480" y="94" fill="#FEF3C7" font-size="13" font-weight="bold" text-anchor="middle">
+    2. CANAL INFORMAL (CORREO / TELÉFONO)
+  </text>
+
+  <!-- Tarea 3: Envío por Email -->
+  <rect x="355" y="125" width="250" height="60" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="149" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">Envío de Correo No Estructurado</text>
+  <text x="480" y="168" fill="#94A3B8" font-size="11" text-anchor="middle">Email a mesa de partes institucional</text>
+
+  <!-- Conector 4 -->
+  <line x1="480" y1="185" x2="480" y2="215" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tarea 4: Espera Asíncrona -->
+  <rect x="355" y="220" width="250" height="60" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="244" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">Espera Asíncrona sin Confirmación</text>
+  <text x="480" y="263" fill="#94A3B8" font-size="11" text-anchor="middle">Sin semáforo en tiempo real ni acuse</text>
+
+  <!-- Badge de Deficiencia 2 -->
+  <rect x="370" y="290" width="220" height="26" rx="13" fill="#7F1D1D" stroke="#EF4444" stroke-width="1"/>
+  <text x="480" y="307" fill="#FECACA" font-size="11" font-weight="bold" text-anchor="middle">⚠️ Sin Trazabilidad Inmutable</text>
+
+  <!-- Conector hacia Carril 3 -->
+  <path d="M 605 250 L 640 250 L 640 150 L 670 150" fill="none" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+
+  <!-- CARRIL 3: BANCO CENTRAL DE RESERVA (BCRP) -->
+  <rect x="650" y="70" width="290" height="450" rx="10" fill="#131D33" stroke="#059669" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="650" y="70" width="290" height="38" rx="8" fill="#064E3B"/>
+  <text x="795" y="94" fill="#D1FAE5" font-size="13" font-weight="bold" text-anchor="middle">
+    3. MESA DE SUPERVISIÓN (BCRP)
+  </text>
+
+  <!-- Tarea 5: Descarga y Revisión Manual -->
+  <rect x="670" y="125" width="250" height="60" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+  <text x="795" y="149" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle">Descarga Manual y Validación</text>
+  <text x="795" y="168" fill="#94A3B8" font-size="11" text-anchor="middle">Analista abre archivo y coteja datos</text>
+
+  <!-- Conector 5 -->
+  <line x1="795" y1="185" x2="795" y2="215" stroke="#38BDF8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Decisión: ¿Formato Válido? -->
+  <polygon points="795,215 865,255 795,295 725,255" fill="#B45309" stroke="#F59E0B" stroke-width="2"/>
+  <text x="795" y="252" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">¿Formato Válido</text>
+  <text x="795" y="266" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">y Completo?</text>
+
+  <!-- Rama NO: Subsanación (vuelve a Carril 1) -->
+  <path d="M 725 255 L 635 255 L 635 380 L 670 380" fill="none" stroke="#F87171" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-warn)"/>
+  <text x="660" y="248" fill="#F87171" font-size="11" font-weight="bold">NO</text>
+  <rect x="670" y="355" width="250" height="50" rx="8" fill="#450A0A" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="795" y="376" fill="#FECACA" font-size="11" font-weight="bold" text-anchor="middle">Rechazo y Solicitud de Subsanación</text>
+  <text x="795" y="392" fill="#FCA5A5" font-size="10" text-anchor="middle">(Demoras adicionales de 2 a 24 horas)</text>
+
+  <!-- Rama SÍ: Archivado Local -->
+  <line x1="795" y1="295" x2="795" y2="435" stroke="#34D399" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="805" y="325" fill="#34D399" font-size="11" font-weight="bold">SÍ</text>
+
+  <!-- Evento Fin AS-IS -->
+  <rect x="700" y="440" width="190" height="55" rx="8" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+  <circle cx="725" cy="467" r="14" fill="#475569" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="720" y="462" width="10" height="10" fill="#FFFFFF"/>
+  <text x="805" y="462" fill="#F1F5F9" font-size="11" font-weight="bold" text-anchor="middle">Archivado Manual</text>
+  <text x="805" y="478" fill="#94A3B8" font-size="10" text-anchor="middle">En carpetas de red sin BD</text>
+</svg>

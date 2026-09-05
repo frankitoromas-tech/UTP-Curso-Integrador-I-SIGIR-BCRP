@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: sigir-bcrp-backend
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/bcrp_incident_db}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  ldap:
+    urls: ${LDAP_URL:ldap://localhost:389}
+    base: ${LDAP_BASE:dc=bcrp,dc=gob,dc=pe}
+    username: ${LDAP_USER:cn=admin,dc=bcrp,dc=gob,dc=pe}
+    password: ${LDAP_PASS:admin_bcrp_secret}
+
+# Configuración del Worker de Telemetría
+sigir:
+  telemetria:
+    habilitada: true
+    intervalo-milisegundos: 30000
+    timeout-conexion-ms: 3000
+  notificaciones:
+    email-remitente: alertas-normativas@bcrp.gob.pe
+
+# Configuración de OpenAPI / Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method

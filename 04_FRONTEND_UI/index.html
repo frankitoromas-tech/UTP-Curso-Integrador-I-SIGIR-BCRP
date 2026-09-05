@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGIR - BCRP | Sistema de Gestión de Incidentes Regulatorios</title>
+    <!-- Fuentes Google: Plus Jakarta Sans y JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header Corporativo BCRP -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="brand-badge">
+                <span class="badge-icon">🏛️</span>
+                <span class="badge-text">BCRP REGULATORIO</span>
+            </div>
+            <div class="brand-title">
+                <h1>SIGIR - BCRP</h1>
+                <p>Sistema Integral de Gestión de Incidentes Regulatorios | Pagos Digitales</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="backend-status-pill offline" id="backendStatusPill" title="Estado de conexión con Spring Boot API (http://localhost:8080)">
+                <span class="status-dot" id="backendStatusDot" style="background: #F59E0B;"></span>
+                <span id="backendStatusText">MODO DEMO (Local Mock)</span>
+            </div>
+            <div class="ad-session-card">
+                <div class="user-avatar">FV</div>
+                <div class="user-meta">
+                    <span class="user-name">Frank Vargas Huamán</span>
+                    <span class="user-ad-domain">
+                        <span class="status-dot online"></span> AD\frank.vargas@bcrp.local (Rol: NOC_LEAD)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Telemetría en Vivo (Semáforos NOC del Ecosistema) -->
+    <section class="telemetry-bar-container">
+        <div class="section-title-compact">
+            <span class="pulse-indicator"></span>
+            <h2>TELEMETRÍA DE SALUD EN VIVO (SWITCH DE PAGOS & BILLETERAS)</h2>
+            <span class="telemetry-timer" id="timerSondeo">Próximo sondeo en: 18s</span>
+        </div>
+
+        <div class="telemetry-grid" id="telemetryGrid">
+            <!-- Renderizado dinámico vía JS -->
+        </div>
+    </section>
+
+    <!-- Contenedor Principal de Gestión -->
+    <main class="main-layout">
+        
+        <!-- Barra de Acciones y Métricas Resumen -->
+        <section class="action-metrics-row">
+            <div class="kpi-mini-card">
+                <span class="kpi-label">TOTAL INCIDENTES</span>
+                <span class="kpi-value" id="kpiTotal">3</span>
+            </div>
+            <div class="kpi-mini-card critical">
+                <span class="kpi-label">ACTIVOS / CRÍTICOS</span>
+                <span class="kpi-value" id="kpiCriticos">2</span>
+            </div>
+            <div class="kpi-mini-card success">
+                <span class="kpi-label">RESUELTOS / CERRADOS</span>
+                <span class="kpi-value" id="kpiResueltos">1</span>
+            </div>
+            <div class="kpi-mini-card">
+                <span class="kpi-label">DISPONIBILIDAD GLOBAL</span>
+                <span class="kpi-value" style="color: var(--color-accent-cyan);">99.82%</span>
+            </div>
+
+            <div class="action-buttons-group">
+                <button class="btn btn-primary" id="btnNuevoManual">
+                    <span class="btn-icon">➕</span> Registro Manual Asistido
+                </button>
+                <button class="btn btn-warning" id="btnSimularCaida">
+                    <span class="btn-icon">⚡</span> Simular Caída de Servicio
+                </button>
+                <button class="btn btn-bcrp" id="btnGenerarSft">
+                    <span class="btn-icon">📜</span> Compilar Archivo SFT BCRP (.TXT)
+                </button>
+            </div>
+        </section>
+
+        <!-- Panel de Filtros y Matriz de Incidentes -->
+        <section class="panel-card">
+            <div class="panel-header">
+                <div class="panel-title-group">
+                    <h3>MATRIZ DE SEGUIMIENTO Y CICLO DE VIDA DE INCIDENTES</h3>
+                    <span class="panel-subtitle">Regulación y Formato de Supervisión BCRP</span>
+                </div>
+
+                <div class="filters-toolbar">
+                    <input type="text" id="filtroBuscador" class="input-search" placeholder="Buscar por ticket, entidad o servicio...">
+                    
+                    <select id="filtroSeveridad" class="select-filter">
+                        <option value="TODOS">Todas las Severidades</option>
+                        <option value="CRITICA">Crítica</option>
+                        <option value="ALTA">Alta</option>
+                        <option value="MEDIA">Media</option>
+                        <option value="BAJA">Baja</option>
+                    </select>
+
+                    <select id="filtroEstado" class="select-filter">
+                        <option value="TODOS">Todos los Estados</option>
+                        <option value="REGISTRADO">Registrado</option>
+                        <option value="EN_EVALUACION">En Evaluación</option>
+                        <option value="EN_MITIGACION">En Mitigación</option>
+                        <option value="RESUELTO">Resuelto</option>
+                        <option value="CERRADO">Cerrado</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>TICKET</th>
+                            <th>ENTIDAD / CANAL</th>
+                            <th>CATEGORÍA</th>
+                            <th>SEVERIDAD</th>
+                            <th>ORIGEN</th>
+                            <th>FECHA/HORA DETECCIÓN</th>
+                            <th>ESTADO ACTUAL</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaIncidentesBody">
+                        <!-- Renderizado dinámico vía JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal: Registro Manual Asistido -->
+    <div class="modal-overlay" id="modalManual">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Registro Manual Asistido de Incidente</h3>
+                <button class="modal-close" id="btnCerrarModalManual">&times;</button>
+            </div>
+            <form id="formRegistroManual" class="modal-body">
+                <div class="form-group">
+                    <label>Entidad Financiera Afectada *</label>
+                    <select id="manualEntidad" class="form-control" required>
+                        <option value="1">Banco de Crédito del Perú - BCP (Yape)</option>
+                        <option value="2">Interbank - Plim</option>
+                        <option value="3">Caja Municipal Cusco - Tunki</option>
+                        <option value="4">Caja Rural de los Andes</option>
+                        <option value="5">Cámara de Compensación Electrónica - CCE</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Categoría Normativa *</label>
+                        <select id="manualCategoria" class="form-control" required>
+                            <option value="FRAUDE_FIN">Fraude Financiero (Phishing, Suplantación)</option>
+                            <option value="BRECHA_DATOS">Manipulación de Información / Brecha de Seguridad</option>
+                            <option value="DISP_SERV">Disponibilidad de Servicios (Manual)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Severidad Operativa *</label>
+                        <select id="manualSeveridad" class="form-control" required>
+                            <option value="CRITICA">Crítica (Interrupción o Daño Severo)</option>
+                            <option value="ALTA" selected>Alta (Afectación Transaccional Notoria)</option>
+                            <option value="MEDIA">Media (Degradación Parcial)</option>
+                            <option value="BAJA">Baja (Sin impacto en saldos)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Servicio o Componente Específico *</label>
+                    <input type="text" id="manualServicio" class="form-control" placeholder="Ej: PASARELA_QR_INTEROPERABLE, API_CONSULTAS" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Descripción Técnica y Hallazgos Forenses *</label>
+                    <textarea id="manualDescripcion" class="form-control textarea" rows="3" placeholder="Detalle la causa raíz, números de cuenta involucrados o IP sospechosa..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Impacto Estimado de Clientes / Transacciones</label>
+                    <input type="number" id="manualImpacto" class="form-control" value="50" min="0">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btnCancelarManual">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Registrar en Bitácora</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Visor y Exportador SFT BCRP -->
+    <div class="modal-overlay" id="modalSft">
+        <div class="modal-card modal-lg">
+            <div class="modal-header">
+                <h3>Reporte Estructurado Oficial SFT - BCRP</h3>
+                <button class="modal-close" id="btnCerrarModalSft">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    El siguiente archivo de texto plano cumple con las directivas de la circular de incidentes del Banco Central de Reserva del Perú e incorpora firma de integridad SHA-256:
+                </p>
+                
+                <div class="sft-code-box">
+                    <pre id="sftContenidoTxt"></pre>
+                </div>
+
+                <div class="hash-box">
+                    <span class="hash-label">HASH SHA-256:</span>
+                    <span class="hash-value" id="sftHashSha256"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCerrarSft">Cerrar</button>
+                <button type="button" class="btn btn-bcrp" id="btnDescargarTxtFile">Descargar Archivo .TXT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

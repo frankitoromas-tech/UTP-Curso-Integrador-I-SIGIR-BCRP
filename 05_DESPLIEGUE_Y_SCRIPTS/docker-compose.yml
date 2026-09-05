@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  postgres-bcrp:
+    image: postgres:15-alpine
+    container_name: sigir-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: bcrp_incident_db
+      POSTGRES_USER: bcrp_admin
+      POSTGRES_PASSWORD: SecretBcrpPassword2026!
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_incident:/var/lib/postgresql/data
+      - ../02_BASE_DE_DATOS/01_SCHEMA_DDL_POSTGRESQL.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ../02_BASE_DE_DATOS/02_SEED_DATA_INICIAL.sql:/docker-entrypoint-initdb.d/02_seed.sql
+    networks:
+      - bcrp-network
+
+  sigir-backend:
+    build:
+      context: ../03_BACKEND_SPRINGBOOT
+      dockerfile: ../05_DESPLIEGUE_Y_SCRIPTS/Dockerfile_Backend
+    container_name: sigir-api
+    restart: always
+    depends_on:
+      - postgres-bcrp
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-bcrp:5432/bcrp_incident_db
+      SPRING_DATASOURCE_USERNAME: bcrp_admin
+      SPRING_DATASOURCE_PASSWORD: SecretBcrpPassword2026!
+      LDAP_URL: ldap://ad.bcrp.local:389
+      LDAP_BASE: dc=bcrp,dc=gob,dc=pe
+      SIGIR_TELEMETRIA_HABILITADA: "true"
+    ports:
+      - "8080:8080"
+    networks:
+      - bcrp-network
+
+  sigir-frontend:
+    build:
+      context: ../04_FRONTEND_UI
+      dockerfile: ../05_DESPLIEGUE_Y_SCRIPTS/Dockerfile_Frontend
+    container_name: sigir-ui
+    restart: always
+    depends_on:
+      - sigir-backend
+    ports:
+      - "80:80"
+    networks:
+      - bcrp-network
+
+volumes:
+  pgdata_incident:
+
+networks:
+  bcrp-network:
+    driver: bridge

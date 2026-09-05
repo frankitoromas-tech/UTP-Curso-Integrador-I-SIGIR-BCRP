@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" style="background:#0F172A; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <marker id="s-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8"/>
+    </marker>
+    <marker id="s-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F87171"/>
+    </marker>
+    <marker id="s-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34D399"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="12" width="1060" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <text x="550" y="38" fill="#38BDF8" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="1">
+    DIAGRAMA DE SECUENCIA: DETECCIÓN AUTOMATIZADA POR WORKER DE TELEMETRÍA
+  </text>
+
+  <!-- Participantes -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="160" height="45" rx="8" fill="#1E3A8A" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="80" y="27" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">Worker Telemetría</text>
+    <line x1="80" y1="45" x2="80" y2="420" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <g transform="translate(250, 70)">
+    <rect x="0" y="0" width="160" height="45" rx="8" fill="#1E293B" stroke="#64748B" stroke-width="1.5"/>
+    <text x="80" y="27" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">API Switch (Yape)</text>
+    <line x1="80" y1="45" x2="80" y2="420" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <g transform="translate(460, 70)">
+    <rect x="0" y="0" width="160" height="45" rx="8" fill="#581C87" stroke="#A855F7" stroke-width="1.5"/>
+    <text x="80" y="27" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">IncidenteService</text>
+    <line x1="80" y1="45" x2="80" y2="420" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <g transform="translate(670, 70)">
+    <rect x="0" y="0" width="160" height="45" rx="8" fill="#065F46" stroke="#10B981" stroke-width="1.5"/>
+    <text x="80" y="27" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">PostgreSQL 15</text>
+    <line x1="80" y1="45" x2="80" y2="420" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <g transform="translate(880, 70)">
+    <rect x="0" y="0" width="160" height="45" rx="8" fill="#78350F" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="80" y="27" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">Tablero NOC (WS)</text>
+    <line x1="80" y1="45" x2="80" y2="420" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Mensaje 1: Polling GET -->
+  <line x1="120" y1="150" x2="325" y2="150" stroke="#38BDF8" stroke-width="2" marker-end="url(#s-blue)"/>
+  <text x="222" y="142" fill="#E2E8F0" font-size="11" text-anchor="middle">1. GET /health (timeout 3000ms)</text>
+
+  <!-- Mensaje 2: HTTP 503 -->
+  <line x1="330" y1="190" x2="125" y2="190" stroke="#F87171" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#s-red)"/>
+  <text x="222" y="182" fill="#FCA5A5" font-size="11" text-anchor="middle">2. HTTP 503 Service Unavailable</text>
+
+  <!-- Mensaje 3: Auto-Crear Ticket -->
+  <line x1="120" y1="230" x2="535" y2="230" stroke="#C084FC" stroke-width="2" marker-end="url(#s-blue)"/>
+  <text x="325" y="222" fill="#E2E8F0" font-size="11" text-anchor="middle">3. autoCrearIncidente(entidadId, 'DISPONIBILIDAD', 'ALTA')</text>
+
+  <!-- Mensaje 4: Generar Ticket + Insert DB -->
+  <line x1="540" y1="270" x2="745" y2="270" stroke="#34D399" stroke-width="2" marker-end="url(#s-green)"/>
+  <text x="642" y="262" fill="#E2E8F0" font-size="11" text-anchor="middle">4. INSERT INTO incidentes (ticket 'INC-20260904-001')</text>
+
+  <!-- Mensaje 5: Trigger Append-Only -->
+  <line x1="540" y1="310" x2="745" y2="310" stroke="#34D399" stroke-width="2" marker-end="url(#s-green)"/>
+  <text x="642" y="302" fill="#E2E8F0" font-size="11" text-anchor="middle">5. INSERT INTO historial_estados (estado 'ABIERTO')</text>
+
+  <!-- Mensaje 6: Broadcast WebSocket -->
+  <line x1="540" y1="350" x2="955" y2="350" stroke="#FBBF24" stroke-width="2" marker-end="url(#s-blue)"/>
+  <text x="750" y="342" fill="#FEF3C7" font-size="11" text-anchor="middle">6. WebSocket STOMP: broadcastSemaforo('ROJO')</text>
+
+  <!-- Mensaje 7: UI Update -->
+  <rect x="890" y="380" width="140" height="40" rx="6" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="960" y="405" fill="#FECACA" font-size="11" font-weight="bold" text-anchor="middle">Semáforo Yape: ROJO</text>
+</svg>
