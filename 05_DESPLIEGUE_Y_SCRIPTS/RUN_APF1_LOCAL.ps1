@@ -51,10 +51,11 @@ Write-Host " [2] Ejecutar Suite de Pruebas Unitarias Automatizadas (Maven Test)"
 Write-Host " [3] Iniciar Backend Spring Boot 3 Localmente (mvn spring-boot:run)" -ForegroundColor Cyan
 Write-Host " [4] Despliegue Empresarial Docker Compose (PostgreSQL 15 + API + Nginx)" -ForegroundColor Cyan
 Write-Host " [5] Ver Informe Academico Oficial en PDF (Entregable Canvas UTP)" -ForegroundColor Green
-Write-Host " [6] Salir" -ForegroundColor Gray
+Write-Host " [6] Abrir Diapositivas de Presentacion PowerPoint (.pptx)" -ForegroundColor Yellow
+Write-Host " [7] Salir" -ForegroundColor Gray
 Write-Host "------------------------------------------------------------------------------" -ForegroundColor Gray
 
-$opcion = Read-Host "Ingrese opcion [1-6]"
+$opcion = Read-Host "Ingrese opcion [1-7]"
 
 switch ($opcion) {
     "1" {
@@ -85,6 +86,11 @@ switch ($opcion) {
         Write-Host "`nAbriendo Informe Academico Oficial en PDF (Canvas UTP)..." -ForegroundColor Green
         $informePath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf"
         Start-Process $informePath
+    }
+    "6" {
+        Write-Host "`nAbriendo Diapositivas Oficiales PowerPoint..." -ForegroundColor Yellow
+        $pptxPath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF1.pptx"
+        Start-Process $pptxPath
     }
     Default {
         Write-Host "`nSaliendo..." -ForegroundColor Gray

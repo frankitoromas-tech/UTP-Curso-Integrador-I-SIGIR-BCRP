@@ -38,6 +38,7 @@ Este repositorio contiene la cimentación completa del **Avance de Proyecto Fina
 ├── 📁 01_DOCUMENTACION_TECNICA/
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.pdf    <-- Documento PDF oficial compilado con carátula UTP, índice dinámico y diagramas BPMN/UML (Listo para Canvas)
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.docx   <-- Documento Word oficial en formato APA 7 con índice dinámico y figuras vectoriales (Editable)
+│   ├── PRESENTACION_EJECUTIVA_APF1.pptx       <-- Diapositivas oficiales de la presentación (PowerPoint 16:9 Widescreen)
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.md     <-- Documento maestro con carátula UTP, marco institucional, RF/RNF, BPMN, UML y arquitectura
 │   ├── 📁 imagenes/                           <-- Diagramas exportados en alta resolución (BPMN 2.0, UML Casos de Uso, Clases, Secuencias, Arquitectura Hexagonal y Consola NOC)
 │   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      <-- WBS/EDT, Product Backlog, Sprints, Matriz RACI y Cronograma Gantt
