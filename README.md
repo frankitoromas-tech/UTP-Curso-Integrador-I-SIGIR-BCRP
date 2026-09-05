@@ -9,6 +9,12 @@
 
 ---
 
+> ### 🎤 ACCESO DIRECTO: [GUÍA MAESTRA PARA LA SUSTENTACIÓN ORAL APF1 (MÁXIMA NOTA 20/20)](SUSTENTACION_ORAL_APF1.md)
+> **¡Documento clave para la exposición!** Ubicado en la raíz del repositorio: [SUSTENTACION_ORAL_APF1.md](SUSTENTACION_ORAL_APF1.md).  
+> Contiene la **cronometría exacta (12-14 min)**, el **guion verbal literal palabra por palabra para Frank Vargas**, el **desglose de diapositivas acorde a la rúbrica oficial**, la **guía de clics para el Live Demo** y el **banco de 10 preguntas técnicas difíciles del jurado con respuestas blindadas**.
+
+---
+
 ## 📌 1. Visión General del Proyecto
 
 El proyecto **SIGIR - BCRP** (*Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales*) es una solución empresarial de alta disponibilidad concebida para monitorear, categorizar y reportar de forma automatizada las contingencias e interrupciones en el sistema de transferencias inmediatas del Perú. Integra a participantes clave como **BCP (Yape)**, **Interbank (Plim)**, **Caja Municipal Cusco (Tunki)**, **Caja Rural de los Andes** y la **Cámara de Compensación Electrónica (CCE)**.
@@ -21,6 +27,8 @@ Este repositorio contiene la cimentación completa del **Avance de Proyecto Fina
 
 ```
 🔴 (AC-S04-APF1) Avance de Proyecto Final 1 - Curso Integrador I - Sistemas Software - Sección 57524/
+│
+├── 🎤 SUSTENTACION_ORAL_APF1.md             <-- GUÍA MAESTRA DE PONENCIA ORAL (Speech verbal, diapositivas, Live Demo y FAQ)
 │
 ├── 📁 01_DOCUMENTACION_TECNICA/
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.pdf    <-- Documento PDF oficial compilado con carátula UTP, índice dinámico y diagramas BPMN/UML (Listo para Canvas)
