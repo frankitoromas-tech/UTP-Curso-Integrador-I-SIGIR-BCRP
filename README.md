@@ -30,7 +30,8 @@ Este repositorio contiene la cimentación completa del **Avance de Proyecto Fina
 │   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      <-- WBS/EDT, Product Backlog, Sprints, Matriz RACI y Cronograma Gantt
 │   ├── MODELO_PROCESOS_BPMN_2_0.md            <-- Diagramación y análisis comparativo AS-IS vs TO-BE en BPMN 2.0
 │   ├── ESPECIFICACION_REQUISITOS_IEEE830.md   <-- Fichas técnicas de Requisitos Funcionales (RF-01 a 12) y No Funcionales (RNF-01 a 08)
-│   └── ARQUITECTURA_Y_DISENO_SISTEMA.md       <-- Arquitectura Hexagonal, diagramas UML (Clases, Secuencia, Componentes) y diseño UI/UX
+│   ├── ARQUITECTURA_Y_DISENO_SISTEMA.md       <-- Arquitectura Hexagonal, diagramas UML (Clases, Secuencia, Componentes) y diseño UI/UX
+│   └── GUIA_MAESTRA_SUSTENTACION_ORAL_APF1.md <-- Guía maestra de ponencia oral, guión verbal, demo y FAQ (Máxima nota 20/20)
 │
 ├── 📁 02_BASE_DE_DATOS/
 │   ├── 01_SCHEMA_DDL_POSTGRESQL.sql            <-- Script DDL completo (tablas, constraints, claves foráneas, índices y comentarios)

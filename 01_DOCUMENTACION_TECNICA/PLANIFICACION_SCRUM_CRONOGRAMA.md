@@ -19,6 +19,22 @@ Para la ejecución del proyecto SIGIR-BCRP se ha adoptado el marco de trabajo **
 
 ---
 
+### 1.2. Acta de Constitución del Proyecto (Project Charter Básico)
+
+| **Campo** | **Definición Formal del Proyecto** |
+| :--- | :--- |
+| **Nombre del Proyecto** | Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales (SIGIR - BCRP) |
+| **Código del Proyecto** | PRJ-2026-SIGIR-BCRP-57524 |
+| **Patrocinador / PO** | Ing. Yony Zamata Condori (Docente UTP) |
+| **Líder Técnico** | Frank Emiliano Vargas Huamán (Estudiante UTP) |
+| **Justificación** | Erradicar la detección tardía de caídas en el switch de pagos peruano (Yape, Plim, Tunki, CCE), reduciendo el MTTD de 180 min a <30s con auditoría inmutable y reporte oficial BCRP SFT con hash SHA-256. |
+| **Objetivos SMART** | • **Alcance:** 100% de módulos core (Mantenimiento, Telemetría, Incidentes, Seguridad AD, Compilador SFT).<br>• **Tiempo:** 6 Sprints en 14 semanas (Hito APF1 en Semana 4).<br>• **Rendimiento:** Sondeo cada 30s y respuesta REST < 500ms.<br>• **Calidad:** Cobertura de pruebas unitarias > 80% con JUnit 5. |
+| **Alcance Entregable APF1** | Modelos UML, DDL PostgreSQL 15 con triggers inmutables, backend Spring Boot 3 con Arquitectura Hexagonal, Worker asíncrono multihilo, consola NOC reactiva y suite de tests. |
+| **Riesgos Principales** | R-01 Sobrecarga de sondeo (mitigado con timeout de 3000ms); R-02 Alteración de historial (mitigado con trigger append-only SQL); R-03 Falla de Active Directory (mitigado con fallback seguro). |
+| **Criterio de Aceptación** | Aprobación del Product Owner y cumplimiento estricto de la circular de incidentes del BCRP. |
+
+---
+
 ## 2. ESTRUCTURA DE DESGLOSE DEL TRABAJO (EDT / WBS)
 
 A continuación se detalla la descomposición jerárquica de paquetes de trabajo del proyecto:

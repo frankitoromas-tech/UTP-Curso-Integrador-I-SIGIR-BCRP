@@ -47,16 +47,19 @@ En esta Etapa 01 se establece la planificación ágil bajo Scrum, la diagramaci�
    - 1.2. [Misión y Visión Institucional](#12-misión-y-visión-institucional)
    - 1.3. [Propósito Institucional y Articulación Académica](#13-propósito-institucional-y-articulación-académica)
    - 1.4. [Objetivos Estratégicos Institucionales Vinculados al Proyecto](#14-objetivos-estratégicos-institucionales-vinculados-al-proyecto)
+   - 1.5. [Análisis del Entorno, Estrategias, Planes y Herramienta Canvas de Modelo de Negocio (BMC)](#15-análisis-del-entorno-estrategias-planes-y-herramienta-canvas-de-modelo-de-negocio-bmc)
 2. [PLANTEAMIENTO Y DESCRIPCIÓN DEL PROBLEMA](#2-planteamiento-y-descripción-del-problema)
    - 2.1. [Realidad Problemática del Ecosistema de Transferencias Inmediatas](#21-realidad-problemática-del-ecosistema-de-transferencias-inmediatas)
    - 2.2. [Actores Supervisados del Ecosistema Financiero Peruano](#22-actores-supervisados-del-ecosistema-financiero-peruano)
    - 2.3. [Justificación Técnica, Regulatoria y Económica](#23-justificación-técnica-regulatoria-y-económica)
    - 2.4. [Alcance del Proyecto: Etapa 01 (APF1) y Proyección a Etapa 02](#24-alcance-del-proyecto-etapa-01-apf1-y-proyección-a-etapa-02)
+   - 2.5. [Planteamiento y Evaluación de Alternativas de Solución (TIC & Java)](#25-planteamiento-y-evaluación-de-alternativas-de-solución-tic--java)
 3. [PLANIFICACIÓN Y GESTIÓN ÁGIL DEL PROYECTO (SCRUM)](#3-planificación-y-gestión-ágil-del-proyecto-scrum)
-   - 3.1. [Marco Metodológico Ágil Adaptado a Entornos Regulados](#31-marco-metodológico-ágil-adaptado-a-entornos-regulados)
-   - 3.2. [Estructura de Desglose del Trabajo (EDT / WBS)](#32-estructura-de-desglose-del-trabajo-edt--wbs)
-   - 3.3. [Planificación de Sprints y Cronograma de Entregables](#33-planificación-de-sprints-y-cronograma-de-entregables)
-   - 3.4. [Matriz de Asignación de Responsabilidades (RACI)](#34-matriz-de-asignación-de-responsabilidades-raci)
+   - 3.1. [Project Charter Básico (Acta de Constitución del Proyecto)](#31-project-charter-básico-acta-de-constitución-del-proyecto)
+   - 3.2. [Marco Metodológico Ágil Adaptado a Entornos Regulados](#32-marco-metodológico-ágil-adaptado-a-entornos-regulados)
+   - 3.3. [Estructura de Desglose del Trabajo (EDT / WBS)](#33-estructura-de-desglose-del-trabajo-edt--wbs)
+   - 3.4. [Planificación de Sprints y Cronograma de Entregables](#34-planificación-de-sprints-y-cronograma-de-entregables)
+   - 3.5. [Matriz de Asignación de Responsabilidades (RACI)](#35-matriz-de-asignación-de-responsabilidades-raci)
 4. [MODELADO DE PROCESOS DE NEGOCIO (BPMN 2.0)](#4-modelado-de-procesos-de-negocio-bpmn-20)
    - 4.1. [Análisis del Proceso Actual (AS-IS)](#41-análisis-del-proceso-actual-as-is)
    - 4.2. [Especificación del Proceso Automatizado Propuesto (TO-BE)](#42-especificación-del-proceso-automatizado-propuesto-to-be)
@@ -138,6 +141,30 @@ Dentro del Plan Estratégico Institucional del BCRP, el proyecto **SIGIR-BCRP** 
 3. **Objetivo Estratégico 12:** *Impulsar la eficiencia y la mejora continua en los procesos operativos de supervisión del mercado de pagos inmediatos.*
 4. **Objetivo Estratégico 14:** *Desplegar la gestión de riesgos tecnológicos y operacionales a todos los actores supervisados del sistema financiero.*
 
+## 1.5. Análisis del Entorno, Estrategias, Planes y Herramienta Canvas de Modelo de Negocio (BMC)
+
+Para garantizar que el sistema **SIGIR-BCRP** responda a la naturaleza corporativa y regulatoria del Banco Central, la definición del alcance del proyecto se estructura rigurosamente a partir de cinco aspectos estratégicos fundamentales:
+
+### 1.5.1. Articulación de los Cinco Aspectos Estratégicos Institucionales
+1. **La Visión de la Empresa:** La aspiración del BCRP de ser un organismo modelo de modernidad institucional y credibilidad internacional exige que sus herramientas de supervisión tecnológica se ubiquen a la vanguardia. El alcance del SIGIR-BCRP materializa esta visión al sustituir procesos manuales lentos por una arquitectura de telemetría reactiva en tiempo real con monitoreo asíncrono y estándares de alta disponibilidad.
+2. **La Misión de la Empresa:** La misión de preservar la estabilidad monetaria y fomentar un ecosistema eficiente de pagos mediante personal comprometido e informado se traduce en la necesidad de dotar a los analistas y operadores del NOC de visibilidad instantánea, fidedigna y libre de asimetrías de información sobre cada uno de los nodos del sistema financiero.
+3. **El Entorno Operacional y Regulatorio:** El entorno macrofinanciero del Perú está caracterizado por una adopción masiva de pagos digitales (más de 15 millones de transacciones diarias entre Yape, Plim, Tunki y transferencias diferidas e inmediatas vía CCE). El entorno legal está normado por la Ley de los Sistemas de Pagos (Ley N° 29440) y la Circular BCRP N° 0011-2023-BCRP (Reglamento de Interoperabilidad). El alcance del software cubre la interacción telemétrica directa con los endpoints de salud de los bancos, microfinancieras y cámaras de compensación.
+4. **Las Estrategias de la Empresa:** El BCRP impulsa dos grandes estrategias nacionales: la *Estrategia Nacional de Inclusión Financiera (ENIF)* y la *Estrategia de Resiliencia y Continuidad del Sistema Nacional de Pagos (SNP)*. El alcance del proyecto atiende estas estrategias garantizando que los usuarios finales no sufran bloqueos transaccionales silenciosos, asegurando que cualquier degradación de servicio sea detectada en menos de 30 segundos y categorizada sin sesgo humano.
+5. **Los Planes de la Empresa:** El alcance se alinea de forma directa con el *Plan Estratégico Institucional (PEI 2022–2026)* del BCRP (Objetivos Estratégicos OEI 04, 10, 12 y 14) y con el *Plan Operativo Institucional (POI)* de la Gerencia de Operaciones Monetarias y Estabilidad Financiera, así como con el *Plan de Contingencia y Continuidad Operativa de Sistemas de Liquidación Bruta en Tiempo Real (LBTR)*.
+
+---
+
+### 1.5.2. Herramienta Canvas de Modelo de Negocio (Business Model Canvas - BMC)
+A continuación, se grafica el análisis multidimensional de la solución **SIGIR-BCRP** mediante el lienzo del **Business Model Canvas**, adaptado a un servicio tecnológico de valor público y gobernanza regulatoria:
+
+| **1. Socios Clave (Key Partners)** | **2. Actividades Clave (Key Activities)** | **3. Propuesta de Valor (Value Proposition)** | **4. Relaciones con Clientes (Customer Relationships)** | **5. Segmentos de Clientes (Customer Segments)** |
+| :--- | :--- | :--- | :--- | :--- |
+| • **Cámara de Compensación Electrónica (CCE):** Nodo central de liquidación.<br>• **Bancos del Sistema:** BCP (Yape), Interbank (Plim).<br>• **Microfinancieras:** CMAC Cusco (Tunki), CRAC Los Andes.<br>• **Superintendencia de Banca, Seguros y AFP (SBS):** Cruce normativo.<br>• **División de Ciberseguridad BCRP:** Auditoría y gobierno TI.<br>• **Proveedores de Infraestructura:** Infraestructura física y Red Privada BCRP. | • Sondeo telemétrico periódico asíncrono (Health Polling cada 30s).<br>• Auto-clasificación determinística de caídas de disponibilidad (HTTP 5xx / timeouts).<br>• Registro manual asistido de fraudes financieros y brechas de información.<br>• Gestión estricta de la máquina de estados del incidente.<br>• Compilación automática del archivo regulatorio SFT con hash SHA-256.<br>• Auditoría inmutable en bitácora append-only. | • **Observabilidad en Tiempo Real:** Detección de fallas en menos de 30s frente a las 3 horas del modelo tradicional.<br>• **Cero Asimetría de Información:** Evidencia forense transparente entre entidades y el ente regulador.<br>• **Integridad Criptográfica Garantizada:** Archivos normativos SFT sellados con digest SHA-256 inalterable.<br>• **Seguridad Institucional Unificada:** Control de acceso exclusivo mediante Directorio Activo (AD/LDAP).<br>• **Preservación de la Confianza:** Mitigación del riesgo sistémico en transferencias inmediatas. | • **Supervisión Transparente y Automatizada:** Alertas tempranas y semáforos sin fricción humana.<br>• **Soporte y Mesa de Ayuda Regulatoria:** Canal oficial para incidentes complejos.<br>• **Auditoría Forense Confiable:** Historial cronológico inmutable sin posibilidad de repudio.<br>• **Acceso Basado en Roles (RBAC):** Privilegios claros (Operador NOC, Supervisor BCRP, Administrador TI). | • **Supervisor y Regulador Principal:** Gerencia de Operaciones Monetarias y Estabilidad Financiera del BCRP.<br>• **Operadores de Salas NOC:** Personal técnico de monitoreo del BCRP.<br>• **Oficiales de Cumplimiento y TI de Entidades:** Responsables técnicos de BCP, Interbank, Cajas y CCE.<br>• **Beneficiario Indirecto:** La ciudadanía y el sistema económico nacional. |
+| **6. Recursos Clave (Key Resources)** | | | **7. Canales (Channels)** | |
+| • **Arquitectura Backend:** Clúster Java 17 con Spring Boot 3 y arquitectura hexagonal.<br>• **Motor de Base de Datos:** PostgreSQL 15 con triggers de inmutabilidad y particionamiento.<br>• **Infraestructura de Seguridad:** Directorio Activo institucional (LDAPS puerto 636) y tokens JWT.<br>• **Personal Calificado:** Ingenieros de software y analistas de estabilidad financiera. | | | • **Consola Web NOC Operativa:** Dashboard SPA reactivo con semáforos interactivos.<br>• **APIs RESTful Corporativas:** Endpoints documentados con especificación OpenAPI 3.0 / Swagger.<br>• **Canal de Intercambio Seguro SFT:** Servidor SFTP regulatorio del BCRP con validación de hash.<br>• **Red Corporativa Cerrada:** Enlaces dedicados interbancarios. | |
+| **8. Estructura de Costos (Cost Structure)** | | | **9. Fuentes de Ingresos / Retorno de Valor Público (Revenue Streams)** | |
+| • **Costos de Desarrollo de Software:** Ingeniería, arquitectura hexagonal y ciclo Scrum.<br>• **Infraestructura Tecnológica:** Servidores dedicados, almacenamiento SSD y conectividad segura.<br>• **Ciberseguridad y Licenciamiento:** Certificados TLS/SSL, licencias AD corporativo y auditorías de código.<br>• **Operación y Mantenimiento:** Soporte 24/7 de salas NOC y actualización de reglas normativas. | | | • **Retorno de Valor Público y Estabilidad Monetaria:** Preservación de la confianza del público en el dinero electrónico.<br>• **Ahorro en Pérdidas Transaccionales:** Mitigación del colapso transaccional en horas pico de transferencias inmediatas.<br>• **Eficiencia en Sanciones y Cumplimiento:** Disminución drástica de horas-hombre en auditorías forenses y cobro de penalidades por SLAs incumplidos. | |
+
 ---
 
 # 2. PLANTEAMIENTO Y DESCRIPCIÓN DEL PROBLEMA
@@ -177,12 +204,138 @@ La construcción del SIGIR-BCRP se justifica técnicamente por la adopción de u
 
 ---
 
+## 2.5. Planteamiento y Evaluación de Alternativas de Solución (TIC & Java)
+
+Para dar respuesta rigurosa a la problemática de detección tardía, heterogeneidad y falta de trazabilidad en los incidentes del Sistema Nacional de Pagos del BCRP, se formularon y evaluaron **tres alternativas tecnológicas de solución integral**, aplicando las Tecnologías de la Información y Comunicación (TIC) y asegurando en todas un peso del ecosistema **Java superior al 50%**, tal como lo exige el estándar de ingeniería de software empresarial del curso.
+
+---
+
+### 2.5.1. Alternativa 1: Arquitectura Monolítica MVC en Java Puro (Spring Boot 3 + Thymeleaf + PostgreSQL)
+- **Enfoque Arquitectónico:** Monolito modular basado en el patrón Modelo-Vista-Controlador (MVC) clásico con renderizado en el servidor (*Server-Side Rendering - SSR*) mediante Spring Web MVC y plantillas Thymeleaf. El procesamiento de telemetría y la capa de presentación residen en la misma máquina virtual de Java (JVM).
+- **Participación del Stack Java:** **85% Java** (Spring Framework 6, Spring Boot 3, Thymeleaf Java Template Engine, Spring Security con LDAP/AD, Spring Data JPA, Hibernate ORM, driver JDBC PostgreSQL).
+- **Cobertura del Alcance:** Permite el registro de incidentes, validación normativa mediante Hibernate Validator (`@NotNull`, `@Size`), autenticación centralizada contra Active Directory y compilación en memoria del reporte regulatorio SFT.
+- **Especificación de las 5 Pantallas Diseñadas:**
+  1. **Pantalla 1 - Portal de Inicio de Sesión AD (Login MVC):** Formulario institucional de captura de credenciales corporativas BCRP contra Active Directory vía LDAP, con manejo de mensajes de error de sesión y bloqueo por fuerza bruta gestionado por `UsernamePasswordAuthenticationToken`.
+  2. **Pantalla 2 - Tablero Central de Entidades Financieras (SSR Table):** Tabla HTML dinámica generada por el servidor que lista las instituciones interconectadas (BCP, Interbank, Cajas, CCE), mostrando su código BCRP, URL de health check y último estado reportado mediante recarga periódica de página (*meta refresh*).
+  3. **Pantalla 3 - Formulario de Tipificación y Captura de Incidentes:** Formulario estructurado con binding `@ModelAttribute`, validación en servidor de unicidad de incidentes abiertos (RN-01), campos de selección de severidad, categoría normativa y captura de impacto estimado de clientes.
+  4. **Pantalla 4 - Bitácora de Transición y Auditoría de Estados:** Vista de detalle del ticket donde el operador avanza la máquina de estados (`REGISTRADO` $\rightarrow$ `EN_EVALUACION` $\rightarrow$ `EN_MITIGACION` $\rightarrow$ `RESUELTO` $\rightarrow$ `CERRADO`) adjuntando el descargo técnico obligatorio, persistido en tabla append-only.
+  5. **Pantalla 5 - Módulo de Generación y Descarga Normativa SFT:** Interfaz para seleccionar el corte mensual o diario de supervisión, visualizar el texto plano delimitado por pipes generado en memoria Java (`StringBuilder`) y descargar el archivo `.TXT` con el hash SHA-256 adjunto en el footer.
+- **Evaluación Técnica:** Presenta simplicidad de empaquetado en un único archivo ejecutable `.jar`, pero sufre de alta latencia en la actualización de semáforos al requerir recargas completas de página (SSR), limitando la ergonomía reactiva requerida en una sala de operaciones NOC 24/7.
+
+---
+
+### 2.5.2. Alternativa 2 (Alternativa Seleccionada): Arquitectura Desacoplada Hexagonal (Spring Boot 3 REST API + Consola Web Reactiva + PostgreSQL)
+- **Enfoque Arquitectónico:** Arquitectura Limpia basada en **Arquitectura Hexagonal (Puertos y Adaptadores)**. El núcleo del dominio (entidades JPA, reglas de negocio RN-01 a RN-06, motor de transiciones y compilador normativo SFT) se encuentra totalmente aislado en Java 17. Se expone una capa de adaptadores REST (Spring MVC con OpenAPI 3) y un adaptador de entrada asíncrono (*Worker de Telemetría* multihilo). La capa de presentación es una Single Page Application (SPA) reactiva con diseño corporativo oscuro optimizado para monitoreo continuo.
+- **Participación del Stack Java:** **65% Java** (Backend 100% Java 17 con Spring Boot 3.3.3, Java Concurrency con `CompletableFuture`, Spring Data JPA, Spring Security LDAP, PostgreSQL JDBC; el 35% restante corresponde a la capa cliente SPA en HTML5 semántico, CSS3 moderno y JavaScript ES6+ para la consola NOC en tiempo real).
+- **Cobertura del Alcance:** Cumple al 100% los requerimientos funcionales y no funcionales: detección en <30 segundos, semáforos interactivos de salud, registro asistido de contingencias de fraude/seguridad, control de concurrencia y generación del archivo SFT BCRP con hash SHA-256 de 64 caracteres.
+- **Especificación de las 5 Pantallas Diseñadas e Implementadas:**
+  1. **Pantalla 1 - Encabezado de Sesión Corporativa y Monitor de Backend:** Barra superior con tarjeta de identidad del usuario autenticado contra Active Directory (`AD\frank.vargas@bcrp.local`), badge de rol institucional (`NOC_LEAD`), selector de entorno y píldora de conectividad reactiva con el API de Spring Boot (auto-detección Online / Local Mock).
+  2. **Pantalla 2 - Barra de Semáforos de Telemetría en Vivo (Health Check Polling):** Grid interactivo de tarjetas de alta fidelidad que representan a cada participante del ecosistema (BCP - Yape, Interbank - Plim, Tunki, Caja de los Andes, Switch CCE), con pulsos de latencia en milisegundos, badges semafóricos (Verde: Operacional, Ámbar: Degradado, Rojo: Fuera de Servicio) y temporizador regresivo de sondeo en vivo (30s).
+  3. **Pantalla 3 - Matriz de Seguimiento y Ciclo de Vida de Incidentes:** Panel central con métricas resumen (Total, Activos/Críticos, Resueltos, Uptime Global 99.82%), barra de filtros combinados (buscador rápido por texto, selector de severidad y selector de estado) y tabla de auditoría con botones de acción directa por ticket.
+  4. **Pantalla 4 - Modal Asistido de Registro y Tipificación Forense:** Ventana modal de alta ergonomía para el ingreso de contingencias no detectables por sondas (Fraude Financiero y Manipulación de Información), con selección de entidad, severidad operativa, servicio afectado, traza forense y número de clientes impactados.
+  5. **Pantalla 5 - Modal Visor y Compilador Oficial SFT BCRP:** Interfaz flotante de previsualización del archivo plano de supervisión conforme a la circular BCRP, caja de código monoespaciada con la estructura cabecera-cuerpo-pie, bloque criptográfico con digest SHA-256 generado y botón de descarga directa del archivo `.TXT`.
+- **Evaluación Técnica:** Ofrece el mejor balance entre desacoplamiento de software, máximo rendimiento en telemetría paralela sin bloqueos de I/O, alta seguridad perimétrica con Active Directory, y una experiencia de usuario de clase mundial para salas de control crítico.
+
+---
+
+### 2.5.3. Alternativa 3: Arquitectura Distribuida Basada en Eventos (Spring Cloud + Apache Kafka + Microservicios Java)
+- **Enfoque Arquitectónico:** Ecosistema de microservicios distribuidos coreografiados a través de un bus de eventos de mensajería distribuida (*Apache Kafka*). Cada función (Ingesta de Telemetría, Motor de Incidentes, Notificaciones y Reportes BCRP) constituye un microservicio autónomo en Spring Boot comunicado por eventos de streaming.
+- **Participación del Stack Java:** **75% Java** (Spring Cloud Gateway, Eureka Service Discovery, microservicios Spring Boot, Kafka Java Producer/Consumer API, Spring Security OAuth2 / Resource Server; 25% frontend web).
+- **Cobertura del Alcance:** Diseñada para tolerar millones de eventos telemétricos por segundo con persistencia distribuida de logs y procesamiento de streams en ventanas de tiempo.
+- **Especificación de las 5 Pantallas Diseñadas:**
+  1. **Pantalla 1 - Portal API Gateway Single Sign-On:** Interfaz centralizada de autenticación institucional basada en OAuth2 / OpenID Connect delegada a los controladores de seguridad de Spring Cloud.
+  2. **Pantalla 2 - Tablero de Tópicos y Telemetría en Streaming:** Panel que visualiza el caudal de mensajes por segundo (mensajes/seg), particiones activas de Kafka y estado de salud de los consumidores de telemetría de cada entidad bancaria.
+  3. **Pantalla 3 - Consola de Gestión de Colas y Eventos de Falla:** Vista de eventos de caída detectados en los tópicos de incidentes, con opciones para reprocesar eventos en cola de mensajes muertos (*Dead Letter Queue - DLQ*).
+  4. **Pantalla 4 - Centro Forense de Trazabilidad Distribuida:** Vista de trazas distribuidas (OpenTelemetry / Zipkin) donde el operador visualiza el `TraceId` y `SpanId` del incidente propagado entre los microservicios.
+  5. **Pantalla 5 - Panel de Despacho Asíncrono SFT a Mesa de Entrada BCRP:** Módulo de orquestación batch donde el microservicio de reportes programa el envío automatizado de los lotes SFT a los servidores SFTP del BCRP.
+- **Evaluación Técnica:** Posee una capacidad de escalamiento horizontal prácticamente ilimitada; no obstante, introduce una complejidad operativa y de infraestructura desproporcionada (múltiples clústeres Kafka, ZooKeeper/KRaft, sobrecostos en servidores y latencia adicional de serialización de mensajes) para el volumen de participantes supervisados en esta etapa.
+
+---
+
+### 2.5.4. Matriz de Decisión y Selección Multicriterio de la Alternativa Óptima
+
+Se aplicó el método de ponderación multicriterio de ingeniería de software con escala de 1 a 5 (donde 5 representa la condición más favorable):
+
+| Criterio de Decisión de Ingeniería | Peso (%) | Alternativa 1 (Monolito MVC) | Alternativa 2 (Hexagonal Desacoplada - Seleccionada) | Alternativa 3 (Event-Driven Kafka) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Latencia de Detección y Reactividad (<30s)** | 20% | 3.0 (0.60) | **5.0 (1.00)** | 4.8 (0.96) |
+| **Ergonomía de Interfaz para Salas NOC** | 15% | 2.5 (0.38) | **5.0 (0.75)** | 4.0 (0.60) |
+| **Simplicidad y Eficiencia de Infraestructura** | 15% | 4.5 (0.68) | **4.8 (0.72)** | 2.0 (0.30) |
+| **Desacoplamiento y Principios SOLID / Hexagonal** | 20% | 2.8 (0.56) | **5.0 (1.00)** | 4.8 (0.96) |
+| **Alineación con el Caso BCRP y Circular 0011-2023** | 15% | 4.0 (0.60) | **5.0 (0.75)** | 4.2 (0.63) |
+| **Cumplimiento Estándar TIC (>=50% Java)** | 15% | 5.0 (0.75) | **5.0 (0.75)** | 5.0 (0.75) |
+| **PUNTAJE PONDERADO TOTAL** | **100%** | **3.57 / 5.00** | **4.97 / 5.00** | **4.20 / 5.00** |
+
+**Conclusión de Selección:** La **Alternativa 2 (Arquitectura Desacoplada Hexagonal con Spring Boot 3 y Consola NOC Reactiva)** fue seleccionada con **4.97 puntos**, al ofrecer el balance perfecto de rendimiento telemétrico asíncrono, modularidad limpia en Java 17, robustez criptográfica e interfaz operativa en tiempo real.
+
+---
+
 # 3. PLANIFICACIÓN Y GESTIÓN ÁGIL DEL PROYECTO (SCRUM)
 
-## 3.1. Marco Metodológico Ágil Adaptado a Entornos Regulados
+## 3.1. Project Charter Básico (Acta de Constitución del Proyecto)
+
+A continuación, se formaliza el instrumento fundamental de gestión del proyecto según los lineamientos del Project Management Institute (PMI) articulados al marco ágil:
+
+### ACTA DE CONSTITUCIÓN DEL PROYECTO (PROJECT CHARTER)
+
+| **1. DATOS GENERALES DEL PROYECTO** | |
+| :--- | :--- |
+| **Nombre del Proyecto:** | Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales (SIGIR - BCRP) |
+| **Código del Proyecto:** | PRJ-2026-SIGIR-BCRP-57524 |
+| **Patrocinador Principal (Sponsor / PO):** | Ing. Yony Zamata Condori (Docente Evaluador / Representante Normativo BCRP) |
+| **Líder Técnico del Proyecto (Lead Developer):** | Frank Emiliano Vargas Huamán (Estudiante de Ingeniería de Sistemas e Informática - UTP) |
+| **Fecha de Inicio:** | 01 de Marzo de 2026 |
+| **Fecha Estimada de Término:** | 15 de Junio de 2026 (Semana 14) |
+| **Cliente / Entidad Beneficiaria:** | Banco Central de Reserva del Perú (BCRP) – Gerencia de Operaciones Monetarias |
+
+---
+
+| **2. JUSTIFICACIÓN Y PROPÓSITO DEL PROYECTO** |
+| :--- |
+| El proyecto responde a la vulnerabilidad del Sistema Nacional de Pagos del Perú ante fallas de interoperabilidad no reportadas oportunamente por las entidades participantes (BCP, Interbank, Cajas Municipales, CCE). Busca erradicar la asimetría de información y el riesgo sistémico mediante una plataforma automatizada que reduzca el tiempo medio de detección de 180 minutos a menos de 30 segundos, garantizando auditoría forense inmutable y generación del reporte normativo SFT con firma SHA-256. |
+
+---
+
+| **3. OBJETIVOS SMART DEL PROYECTO** |
+| :--- |
+| • **Objetivo de Alcance:** Desarrollar e implementar el 100% de los módulos de Mantenimiento, Telemetría Asíncrona, Motor de Incidentes, Autenticación AD y Compilador SFT BCRP para la supervisión de 5 entidades clave en la Etapa 01 (APF1).<br>• **Objetivo de Tiempo:** Completar los 6 Sprints planificados en un plazo de 14 semanas sin desviaciones críticas en el cronograma.<br>• **Objetivo de Disponibilidad y Rendimiento:** Garantizar un sondeo de telemetría asíncrona cada 30 segundos con tiempos de respuesta en APIs REST inferiores a 500 ms.<br>• **Objetivo de Calidad y Confiabilidad:** Lograr una cobertura de pruebas unitarias superior al 80% con JUnit 5 y cero violaciones de inmutabilidad en la base de datos PostgreSQL. |
+
+---
+
+| **4. ALCANCE DEL PRODUCTO Y ENTREGABLES CLAVE** |
+| :--- |
+| • **Entregables Etapa 01 (APF1 - Sprints 1 a 3):**<br>  - Documentación técnica formal (Marco institucional, BPMN 2.0 AS-IS/TO-BE, Requisitos IEEE 830, UML 2.5).<br>  - Base de datos relacional PostgreSQL 15 con esquema DDL, triggers append-only e índices parciales.<br>  - Backend en Java 17 con Spring Boot 3 implementando Arquitectura Hexagonal y seguridad Active Directory.<br>  - Worker de Telemetría paralelo asíncrono con detección automática de códigos 5xx y timeouts.<br>  - Consola Web SPA en tiempo real con semáforos de salud interactivos.<br>  - Compilador de archivos planos SFT con digest SHA-256.<br>• **Entregables Etapa 02 (Proyecto Final - Sprints 4 a 6):**<br>  - Dashboard gerencial de KPIs (MTTR, MTTD, disponibilidad global).<br>  - Motor de reportes avanzados en PDF y Microsoft Excel.<br>  - Sistema automatizado de notificaciones por correo electrónico SMTP. |
+
+---
+
+| **5. SUPUESTOS Y RESTRICCIONES** |
+| :--- |
+| • **Supuestos:** Las entidades financieras participantes exponen endpoints de health check accesibles por la red corporativa; el servidor Active Directory corporativo se encuentra operativo bajo protocolo seguro LDAPS.<br>• **Restricciones:** Uso obligatorio de Java 17 y Spring Boot 3 en el backend (mínimo 50% de peso tecnológico); cumplimiento estricto de la circular de incidentes del BCRP; prohibición absoluta de mutación o eliminación en el historial de estados de incidentes. |
+
+---
+
+| **6. CRONOGRAMA DE HITOS PRINCIPALES** |
+| :--- |
+| 1. Aprobación del Project Charter y Marco Metodológico: Semana 02.<br>2. Modelado de Procesos BPMN 2.0 y Requisitos IEEE 830: Semana 03.<br>3. **Hito APF1 (Avance de Proyecto Final 1 - Entrega Completa):** Semana 04.<br>4. Integración del Worker de Telemetría y Máquina de Estados: Semana 06.<br>5. Dashboard Gerencial y Analítica de KPIs: Semana 10.<br>6. Cierre de Pruebas de Carga, Despliegue y Sustentación Final: Semana 14. |
+
+---
+
+| **7. MATRIZ INICIAL DE RIESGOS Y MITIGACIÓN** |
+| :--- |
+| • **R-01: Sobrecarga en APIs de bancos por sondeos concurrentes.** *Mitigación:* Polling asíncrono no invasivo con timeout estricto de 3000 ms y sondeos ligeros HTTP GET / HEAD.<br>• **R-02: Adulteración retroactiva de tiempos de falla.** *Mitigación:* Trigger nativo a nivel de base de datos (`trg_prohibir_mutacion_historial`) que aborta cualquier operación de UPDATE o DELETE.<br>• **R-03: Indisponibilidad del Directorio Activo.** *Mitigación:* Caché local de credenciales de emergencia con algoritmo bcrypt para contingencias operativas. |
+
+---
+
+| **8. ESTRUCTURA DE GOBERNANZA Y FIRMAS** |
+| :--- |
+| • **Patrocinador del Proyecto / Product Owner:** Ing. Yony Zamata Condori (Docente UTP)<br>• **Líder Técnico / Responsable del Proyecto:** Frank Emiliano Vargas Huamán (Estudiante UTP) |
+
+---
+
+## 3.2. Marco Metodológico Ágil Adaptado a Entornos Regulados
 Para la materialización del proyecto se seleccionó el marco ágil Scrum, articulado mediante ciclos iterativos e incrementales (Sprints) de dos semanas. La ingeniería de software incorpora principios de Desarrollo Guiado por Pruebas (TDD) y Arquitectura Limpia, permitiendo validar cada incremento de software con feedback continuo de la cátedra.
 
-## 3.2. Estructura de Desglose del Trabajo (EDT / WBS)
+## 3.3. Estructura de Desglose del Trabajo (EDT / WBS)
 ```
 1.0 SISTEMA INTEGRAL DE GESTIÓN DE INCIDENTES REGULATORIOS (SIGIR - BCRP)
   ├── 1.1 INICIACIÓN Y ANÁLISIS NORMATIVO
