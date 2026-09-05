@@ -39,7 +39,7 @@ echo   [1] Consola Web NOC Inmediata (Cliente Hibrido con Auto-Deteccion)
 echo   [2] Ejecutar Suite Completa de Pruebas Unitarias Backend (Maven Test)
 echo   [3] Iniciar Backend Spring Boot Localmente (mvn spring-boot:run)
 echo   [4] Despliegue Empresarial con Docker Compose (PostgreSQL 15 + API + Nginx)
-echo   [5] Ver Guia Maestra de Sustentacion Oral (Diapositivas, Speech y FAQ)
+echo   [5] Ver Informe Academico Oficial en PDF (Entregable Canvas UTP)
 echo   [6] Salir
 echo ------------------------------------------------------------------------------
 set /p OPCION="Ingrese su opcion [1-6]: "
@@ -48,13 +48,13 @@ if "%OPCION%"=="1" goto MODO_FRONTEND
 if "%OPCION%"=="2" goto MODO_TESTS
 if "%OPCION%"=="3" goto MODO_SPRING
 if "%OPCION%"=="4" goto MODO_DOCKER
-if "%OPCION%"=="5" goto MODO_SUSTENTACION
+if "%OPCION%"=="5" goto MODO_INFORME
 if "%OPCION%"=="6" goto SALIR
 
-:MODO_SUSTENTACION
+:MODO_INFORME
 echo.
-echo Abriendo Guia Maestra de Sustentacion Oral...
-start "" "%BASE_DIR%\SUSTENTACION_ORAL_APF1.md"
+echo Abriendo Informe Academico Oficial en PDF (Canvas UTP)...
+start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf"
 goto FIN
 
 :MODO_FRONTEND

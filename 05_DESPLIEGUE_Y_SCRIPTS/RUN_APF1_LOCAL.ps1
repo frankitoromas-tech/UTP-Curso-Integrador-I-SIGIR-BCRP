@@ -50,7 +50,7 @@ Write-Host " [1] Abrir Consola Web NOC (Cliente Hibrido Reactivo)" -ForegroundCo
 Write-Host " [2] Ejecutar Suite de Pruebas Unitarias Automatizadas (Maven Test)" -ForegroundColor Cyan
 Write-Host " [3] Iniciar Backend Spring Boot 3 Localmente (mvn spring-boot:run)" -ForegroundColor Cyan
 Write-Host " [4] Despliegue Empresarial Docker Compose (PostgreSQL 15 + API + Nginx)" -ForegroundColor Cyan
-Write-Host " [5] Ver Guia Maestra de Sustentacion Oral (Diapositivas, Speech y FAQ)" -ForegroundColor Magenta
+Write-Host " [5] Ver Informe Academico Oficial en PDF (Entregable Canvas UTP)" -ForegroundColor Green
 Write-Host " [6] Salir" -ForegroundColor Gray
 Write-Host "------------------------------------------------------------------------------" -ForegroundColor Gray
 
@@ -82,9 +82,9 @@ switch ($opcion) {
         Start-Process "http://localhost:8080/swagger-ui.html"
     }
     "5" {
-        Write-Host "`nAbriendo Guia Maestra de Sustentacion Oral..." -ForegroundColor Magenta
-        $guiaPath = Join-Path $BaseDir "SUSTENTACION_ORAL_APF1.md"
-        Start-Process $guiaPath
+        Write-Host "`nAbriendo Informe Academico Oficial en PDF (Canvas UTP)..." -ForegroundColor Green
+        $informePath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf"
+        Start-Process $informePath
     }
     Default {
         Write-Host "`nSaliendo..." -ForegroundColor Gray

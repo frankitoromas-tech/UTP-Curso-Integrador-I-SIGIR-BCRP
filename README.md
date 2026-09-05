@@ -9,9 +9,9 @@
 
 ---
 
-> ### 🎤 ACCESO DIRECTO: [GUÍA MAESTRA PARA LA SUSTENTACIÓN ORAL APF1 (MÁXIMA NOTA 20/20)](SUSTENTACION_ORAL_APF1.md)
-> **¡Documento clave para la exposición!** Ubicado en la raíz del repositorio: [SUSTENTACION_ORAL_APF1.md](SUSTENTACION_ORAL_APF1.md).  
-> Contiene la **cronometría exacta (12-14 min)**, el **guion verbal literal palabra por palabra para Frank Vargas**, el **desglose de diapositivas acorde a la rúbrica oficial**, la **guía de clics para el Live Demo** y el **banco de 10 preguntas técnicas difíciles del jurado con respuestas blindadas**.
+> ### 📄 ENTREGABLE ACADÉMICO OFICIAL: [INFORME ACADÉMICO APF1 EN PDF](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF1_COMPLETO.pdf) | [FORMATO WORD APA 7](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF1_COMPLETO.docx)
+> **¡Entregable principal para la evaluación Canvas UTP!** Ubicado en `01_DOCUMENTACION_TECNICA/`.  
+> Contiene el informe académico exhaustivo con carátula UTP, índice dinámico, alineación institucional con los 5 aspectos y BMC, evaluación de 3 alternativas (>=50% Java y 5 pantallas), Project Charter, WBS a 3 niveles, Gantt, especificación SRS IEEE 830, modelos BPMN 2.0 y Arquitectura Hexagonal.
 
 ---
 
@@ -28,8 +28,6 @@ Este repositorio contiene la cimentación completa del **Avance de Proyecto Fina
 ```
 🔴 (AC-S04-APF1) Avance de Proyecto Final 1 - Curso Integrador I - Sistemas Software - Sección 57524/
 │
-├── 🎤 SUSTENTACION_ORAL_APF1.md             <-- GUÍA MAESTRA DE PONENCIA ORAL (Speech verbal, diapositivas, Live Demo y FAQ)
-│
 ├── 📁 01_DOCUMENTACION_TECNICA/
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.pdf    <-- Documento PDF oficial compilado con carátula UTP, índice dinámico y diagramas BPMN/UML (Listo para Canvas)
 │   ├── INFORME_ACADEMICO_APF1_COMPLETO.docx   <-- Documento Word oficial en formato APA 7 con índice dinámico y figuras vectoriales (Editable)
@@ -38,8 +36,7 @@ Este repositorio contiene la cimentación completa del **Avance de Proyecto Fina
 │   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      <-- WBS/EDT, Product Backlog, Sprints, Matriz RACI y Cronograma Gantt
 │   ├── MODELO_PROCESOS_BPMN_2_0.md            <-- Diagramación y análisis comparativo AS-IS vs TO-BE en BPMN 2.0
 │   ├── ESPECIFICACION_REQUISITOS_IEEE830.md   <-- Fichas técnicas de Requisitos Funcionales (RF-01 a 12) y No Funcionales (RNF-01 a 08)
-│   ├── ARQUITECTURA_Y_DISENO_SISTEMA.md       <-- Arquitectura Hexagonal, diagramas UML (Clases, Secuencia, Componentes) y diseño UI/UX
-│   └── GUIA_MAESTRA_SUSTENTACION_ORAL_APF1.md <-- Guía maestra de ponencia oral, guión verbal, demo y FAQ (Máxima nota 20/20)
+│   └── ARQUITECTURA_Y_DISENO_SISTEMA.md       <-- Arquitectura Hexagonal, diagramas UML (Clases, Secuencia, Componentes) y diseño UI/UX
 │
 ├── 📁 02_BASE_DE_DATOS/
 │   ├── 01_SCHEMA_DDL_POSTGRESQL.sql            <-- Script DDL completo (tablas, constraints, claves foráneas, índices y comentarios)
