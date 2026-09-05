@@ -19,7 +19,7 @@
 
   <!-- Banner Superior -->
   <rect x="20" y="12" width="1120" height="42" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
-  <text x="580" y="38" fill="#38BDF8" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="1">
+  <text x="580" y="38" fill="#38BDF8" font-size="19" font-weight="bold" text-anchor="middle" letter-spacing="1">
     ARQUITECTURA DE PROCESOS BPMN 2.0 (MODELO PROPUESTO TO-BE) — AUTOMATIZADO, INMUTABLE Y REACTIVO
   </text>
 
@@ -27,19 +27,19 @@
   <g id="lane1">
     <rect x="20" y="65" width="1120" height="135" rx="8" fill="#111C33" stroke="#2563EB" stroke-width="1.5"/>
     <rect x="20" y="65" width="220" height="28" rx="6" fill="#1E3A8A"/>
-    <text x="130" y="84" fill="#DBEAFE" font-size="11" font-weight="bold" text-anchor="middle">1. ENTIDADES (Yape / Plim / CCE)</text>
+    <text x="130" y="84" fill="#DBEAFE" font-size="14.5" font-weight="bold" text-anchor="middle">1. ENTIDADES (Yape / Plim / CCE)</text>
 
     <!-- Start Event -->
     <circle cx="65" cy="140" r="20" fill="#059669" stroke="#34D399" stroke-width="2.5"/>
     <polygon points="61,133 73,140 61,147" fill="#FFFFFF"/>
-    <text x="65" y="172" fill="#94A3B8" font-size="10" text-anchor="middle">Transacciones</text>
+    <text x="65" y="172" fill="#94A3B8" font-size="12" font-weight="bold" text-anchor="middle">Transacciones</text>
 
     <line x1="85" y1="140" x2="115" y2="140" stroke="#38BDF8" stroke-width="2" marker-end="url(#arr-blue)"/>
 
     <!-- Tarea: Procesar Pagos -->
     <rect x="120" y="115" width="150" height="50" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="195" y="136" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">Procesar Pagos</text>
-    <text x="195" y="152" fill="#94A3B8" font-size="10" text-anchor="middle">Interoperables 24/7</text>
+    <text x="195" y="136" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">Procesar Pagos</text>
+    <text x="195" y="152" fill="#94A3B8" font-size="12" font-weight="bold" text-anchor="middle">Interoperables 24/7</text>
 
     <line x1="270" y1="140" x2="305" y2="140" stroke="#38BDF8" stroke-width="2" marker-end="url(#arr-blue)"/>
 
@@ -50,15 +50,15 @@
 
     <!-- Ruta Caída API -> Conexión hacia Worker -->
     <path d="M 340 165 L 340 225" fill="none" stroke="#F87171" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr-blue)"/>
-    <text x="348" y="185" fill="#FCA5A5" font-size="9" font-weight="bold">Falla API / 5xx</text>
+    <text x="348" y="185" fill="#FCA5A5" font-size="12" font-weight="bold">Falla API / 5xx</text>
 
     <!-- Ruta Fraude Manual -> Conexión hacia Operador -->
     <line x1="375" y1="140" x2="435" y2="140" stroke="#FBBF24" stroke-width="2" marker-end="url(#arr-amber)"/>
-    <text x="405" y="133" fill="#FDE68A" font-size="9" font-weight="bold">Fraude</text>
+    <text x="405" y="133" fill="#FDE68A" font-size="12" font-weight="bold">Fraude</text>
 
     <rect x="440" y="115" width="160" height="50" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="520" y="136" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">Oficial de Seguridad</text>
-    <text x="520" y="152" fill="#94A3B8" font-size="10" text-anchor="middle">Detecta Brecha / Fraude</text>
+    <text x="520" y="136" fill="#F8FAFC" font-size="14" font-weight="bold" text-anchor="middle">Oficial de Seguridad</text>
+    <text x="520" y="152" fill="#94A3B8" font-size="12" font-weight="bold" text-anchor="middle">Detecta Brecha / Fraude</text>
 
     <path d="M 520 165 L 520 380 L 555 380" fill="none" stroke="#FBBF24" stroke-width="2" marker-end="url(#arr-amber)"/>
   </g>
@@ -67,19 +67,19 @@
   <g id="lane2">
     <rect x="20" y="210" width="1120" height="135" rx="8" fill="#17112E" stroke="#7C3AED" stroke-width="1.5"/>
     <rect x="20" y="210" width="240" height="28" rx="6" fill="#581C87"/>
-    <text x="140" y="229" fill="#F3E8FF" font-size="11" font-weight="bold" text-anchor="middle">2. WORKER TELEMETRÍA (DAEMON)</text>
+    <text x="140" y="229" fill="#F3E8FF" font-size="14.5" font-weight="bold" text-anchor="middle">2. WORKER TELEMETRÍA (DAEMON)</text>
 
     <!-- Tarea: Polling -->
     <rect x="50" y="255" width="150" height="50" rx="8" fill="#1E293B" stroke="#6D28D9" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="125" y="276" fill="#EDE9FE" font-size="11" font-weight="bold" text-anchor="middle">⏱️ Polling Cada 30s</text>
-    <text x="125" y="292" fill="#C4B5FD" font-size="10" text-anchor="middle">Schedule asíncrono</text>
+    <text x="125" y="276" fill="#EDE9FE" font-size="14" font-weight="bold" text-anchor="middle">⏱️ Polling Cada 30s</text>
+    <text x="125" y="292" fill="#C4B5FD" font-size="12" font-weight="bold" text-anchor="middle">Schedule asíncrono</text>
 
     <line x1="200" y1="280" x2="235" y2="280" stroke="#C084FC" stroke-width="2" marker-end="url(#arr-purple)"/>
 
     <!-- Tarea: GET Health -->
     <rect x="240" y="255" width="165" height="50" rx="8" fill="#1E293B" stroke="#6D28D9" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="322" y="276" fill="#EDE9FE" font-size="11" font-weight="bold" text-anchor="middle">GET /healthcheck</text>
-    <text x="322" y="292" fill="#C4B5FD" font-size="10" text-anchor="middle">Sondeo a switches de pago</text>
+    <text x="322" y="276" fill="#EDE9FE" font-size="14" font-weight="bold" text-anchor="middle">GET /healthcheck</text>
+    <text x="322" y="292" fill="#C4B5FD" font-size="12" font-weight="bold" text-anchor="middle">Sondeo a switches de pago</text>
 
     <line x1="405" y1="280" x2="445" y2="280" stroke="#C084FC" stroke-width="2" marker-end="url(#arr-purple)"/>
 
@@ -90,16 +90,16 @@
 
     <!-- Ruta Uptime OK -->
     <path d="M 480 255 L 480 242 L 125 242 L 125 255" fill="none" stroke="#34D399" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="300" y="238" fill="#34D399" font-size="9" font-weight="bold">Sí: Uptime &lt; 3000ms</text>
+    <text x="300" y="238" fill="#34D399" font-size="12" font-weight="bold">Sí: Uptime &lt; 3000ms</text>
 
     <!-- Ruta Error 5xx -->
     <line x1="515" y1="280" x2="565" y2="280" stroke="#F87171" stroke-width="2" marker-end="url(#arr-blue)"/>
-    <text x="535" y="273" fill="#F87171" font-size="9" font-weight="bold">No</text>
+    <text x="535" y="273" fill="#F87171" font-size="12" font-weight="bold">No</text>
 
     <!-- Tarea: Auto Disparo -->
     <rect x="570" y="255" width="180" height="50" rx="8" fill="#311042" stroke="#A855F7" stroke-width="2" filter="url(#card-shadow)"/>
-    <text x="660" y="276" fill="#F3E8FF" font-size="11" font-weight="bold" text-anchor="middle">Auto-Disparo de Incidente</text>
-    <text x="660" y="292" fill="#E9D5FF" font-size="10" text-anchor="middle">Categoría DISPONIBILIDAD</text>
+    <text x="660" y="276" fill="#F3E8FF" font-size="14" font-weight="bold" text-anchor="middle">Auto-Disparo de Incidente</text>
+    <text x="660" y="292" fill="#E9D5FF" font-size="12" font-weight="bold" text-anchor="middle">Categoría DISPONIBILIDAD</text>
 
     <!-- Flecha hacia Motor Central -->
     <path d="M 750 280 L 800 280 L 800 525" fill="none" stroke="#A855F7" stroke-width="2.5" marker-end="url(#arr-purple)"/>
@@ -109,67 +109,67 @@
   <g id="lane3">
     <rect x="20" y="355" width="1120" height="135" rx="8" fill="#101C2B" stroke="#0284C7" stroke-width="1.5"/>
     <rect x="20" y="355" width="220" height="28" rx="6" fill="#0369A1"/>
-    <text x="130" y="374" fill="#E0F2FE" font-size="11" font-weight="bold" text-anchor="middle">3. OPERADOR NOC (SUPERVISIÓN)</text>
+    <text x="130" y="374" fill="#E0F2FE" font-size="14.5" font-weight="bold" text-anchor="middle">3. OPERADOR NOC (SUPERVISIÓN)</text>
 
     <!-- Tarea: AD Auth -->
     <rect x="560" y="390" width="165" height="50" rx="8" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="642" y="411" fill="#F0F9FF" font-size="11" font-weight="bold" text-anchor="middle">Login AD / LDAPS (636)</text>
-    <text x="642" y="427" fill="#BAE6FD" font-size="10" text-anchor="middle">Emisión de JWT con Rol</text>
+    <text x="642" y="411" fill="#F0F9FF" font-size="14" font-weight="bold" text-anchor="middle">Login AD / LDAPS (636)</text>
+    <text x="642" y="427" fill="#BAE6FD" font-size="12" font-weight="bold" text-anchor="middle">Emisión de JWT con Rol</text>
 
     <line x1="725" y1="415" x2="765" y2="415" stroke="#38BDF8" stroke-width="2" marker-end="url(#arr-blue)"/>
 
     <!-- Tarea: Form Asistido -->
     <rect x="770" y="390" width="170" height="50" rx="8" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="855" y="411" fill="#F0F9FF" font-size="11" font-weight="bold" text-anchor="middle">Formulario Asistido</text>
-    <text x="855" y="427" fill="#BAE6FD" font-size="10" text-anchor="middle">Validación RN-01 en Vivo</text>
+    <text x="855" y="411" fill="#F0F9FF" font-size="14" font-weight="bold" text-anchor="middle">Formulario Asistido</text>
+    <text x="855" y="427" fill="#BAE6FD" font-size="12" font-weight="bold" text-anchor="middle">Validación RN-01 en Vivo</text>
 
     <!-- Flecha hacia Motor Central -->
     <path d="M 855 440 L 855 525" fill="none" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#arr-blue)"/>
 
     <!-- Tarea: Operador Gestiona Estados -->
     <rect x="220" y="390" width="170" height="50" rx="8" fill="#1E293B" stroke="#0284C7" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="305" y="411" fill="#F0F9FF" font-size="11" font-weight="bold" text-anchor="middle">Mesa NOC Coordina</text>
-    <text x="305" y="427" fill="#BAE6FD" font-size="10" text-anchor="middle">EVALUACION / MITIGACION</text>
+    <text x="305" y="411" fill="#F0F9FF" font-size="14" font-weight="bold" text-anchor="middle">Mesa NOC Coordina</text>
+    <text x="305" y="427" fill="#BAE6FD" font-size="12" font-weight="bold" text-anchor="middle">EVALUACION / MITIGACION</text>
 
     <!-- Conector de vuelta hacia Motor para Cierre -->
     <path d="M 220 415 L 140 415 L 140 525" fill="none" stroke="#34D399" stroke-width="2" marker-end="url(#arr-green)"/>
-    <text x="145" y="470" fill="#34D399" font-size="9" font-weight="bold">Marca RESUELTO</text>
+    <text x="145" y="470" fill="#34D399" font-size="12" font-weight="bold">Marca RESUELTO</text>
   </g>
 
   <!-- ==================== SWINLANE 4: MOTOR CENTRAL SIGIR ==================== -->
   <g id="lane4">
     <rect x="20" y="500" width="1120" height="155" rx="8" fill="#0B231A" stroke="#059669" stroke-width="1.5"/>
     <rect x="20" y="500" width="240" height="28" rx="6" fill="#065F46"/>
-    <text x="140" y="519" fill="#D1FAE5" font-size="11" font-weight="bold" text-anchor="middle">4. MOTOR CENTRAL &amp; POSTGRESQL</text>
+    <text x="140" y="519" fill="#D1FAE5" font-size="14.5" font-weight="bold" text-anchor="middle">4. MOTOR CENTRAL &amp; POSTGRESQL</text>
 
     <!-- Tarea: Ingesta Ticket -->
     <rect x="730" y="540" width="180" height="50" rx="8" fill="#064E3B" stroke="#34D399" stroke-width="2" filter="url(#card-shadow)"/>
-    <text x="820" y="561" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">Ticket INC-YYYYMMDD</text>
-    <text x="820" y="577" fill="#A7F3D0" font-size="10" text-anchor="middle">Insert historial_estados</text>
+    <text x="820" y="561" fill="#FFFFFF" font-size="14" font-weight="bold" text-anchor="middle">Ticket INC-YYYYMMDD</text>
+    <text x="820" y="577" fill="#A7F3D0" font-size="12" font-weight="bold" text-anchor="middle">Insert historial_estados</text>
 
     <line x1="730" y1="565" x2="685" y2="565" stroke="#34D399" stroke-width="2" marker-end="url(#arr-green)"/>
 
     <!-- Tarea: Semáforo y Alerta -->
     <rect x="500" y="540" width="180" height="50" rx="8" fill="#1E293B" stroke="#059669" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="590" y="561" fill="#F0FDF4" font-size="11" font-weight="bold" text-anchor="middle">Semáforo ROJO / Alerta</text>
-    <text x="590" y="577" fill="#86EFAC" font-size="10" text-anchor="middle">SMTP a Delegados BCRP</text>
+    <text x="590" y="561" fill="#F0FDF4" font-size="14" font-weight="bold" text-anchor="middle">Semáforo ROJO / Alerta</text>
+    <text x="590" y="577" fill="#86EFAC" font-size="12" font-weight="bold" text-anchor="middle">SMTP a Delegados BCRP</text>
 
     <!-- Flecha hacia Mesa NOC -->
     <path d="M 500 565 L 305 565 L 305 445" fill="none" stroke="#38BDF8" stroke-width="2" marker-end="url(#arr-blue)"/>
-    <text x="315" y="485" fill="#38BDF8" font-size="9" font-weight="bold">WebSocket NOC</text>
+    <text x="315" y="485" fill="#38BDF8" font-size="12" font-weight="bold">WebSocket NOC</text>
 
     <!-- Tarea: Cierre y Compilación SFT -->
     <rect x="60" y="540" width="165" height="50" rx="8" fill="#1E293B" stroke="#059669" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="142" y="561" fill="#F0FDF4" font-size="11" font-weight="bold" text-anchor="middle">Cierre y Compilar SFT</text>
-    <text x="142" y="577" fill="#86EFAC" font-size="10" text-anchor="middle">Genera plano BCRP .TXT</text>
+    <text x="142" y="561" fill="#F0FDF4" font-size="14" font-weight="bold" text-anchor="middle">Cierre y Compilar SFT</text>
+    <text x="142" y="577" fill="#86EFAC" font-size="12" font-weight="bold" text-anchor="middle">Genera plano BCRP .TXT</text>
 
     <line x1="142" y1="595" x2="142" y2="615" stroke="#34D399" stroke-width="2"/>
     <line x1="142" y1="615" x2="260" y2="615" stroke="#34D399" stroke-width="2" marker-end="url(#arr-green)"/>
 
     <!-- Tarea: SHA-256 -->
     <rect x="265" y="590" width="180" height="50" rx="8" fill="#064E3B" stroke="#34D399" stroke-width="2" filter="url(#card-shadow)"/>
-    <text x="355" y="611" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">Hash SHA-256 Inmutable</text>
-    <text x="355" y="627" fill="#A7F3D0" font-size="10" text-anchor="middle">Registro en PostgreSQL 15</text>
+    <text x="355" y="611" fill="#FFFFFF" font-size="14" font-weight="bold" text-anchor="middle">Hash SHA-256 Inmutable</text>
+    <text x="355" y="627" fill="#A7F3D0" font-size="12" font-weight="bold" text-anchor="middle">Registro en PostgreSQL 15</text>
 
     <!-- Flecha hacia Mesa BCRP -->
     <path d="M 445 615 L 530 615 L 530 715" fill="none" stroke="#FBBF24" stroke-width="2.5" marker-end="url(#arr-amber)"/>
@@ -179,19 +179,19 @@
   <g id="lane5">
     <rect x="20" y="670" width="1120" height="150" rx="8" fill="#24170A" stroke="#D97706" stroke-width="1.5"/>
     <rect x="20" y="670" width="240" height="28" rx="6" fill="#78350F"/>
-    <text x="140" y="689" fill="#FEF3C7" font-size="11" font-weight="bold" text-anchor="middle">5. MESA REGULATORIA (BCRP CENTRAL)</text>
+    <text x="140" y="689" fill="#FEF3C7" font-size="14.5" font-weight="bold" text-anchor="middle">5. MESA REGULATORIA (BCRP CENTRAL)</text>
 
     <!-- Tarea: Transmisión SFTP / API -->
     <rect x="440" y="720" width="180" height="50" rx="8" fill="#1E293B" stroke="#D97706" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="530" y="741" fill="#FFFBEB" font-size="11" font-weight="bold" text-anchor="middle">Transmisión Segura SFTP</text>
-    <text x="530" y="757" fill="#FDE68A" font-size="10" text-anchor="middle">API REST Segura / TLS 1.3</text>
+    <text x="530" y="741" fill="#FFFBEB" font-size="14" font-weight="bold" text-anchor="middle">Transmisión Segura SFTP</text>
+    <text x="530" y="757" fill="#FDE68A" font-size="12" font-weight="bold" text-anchor="middle">API REST Segura / TLS 1.3</text>
 
     <line x1="620" y1="745" x2="665" y2="745" stroke="#FBBF24" stroke-width="2" marker-end="url(#arr-amber)"/>
 
     <!-- Tarea: Verificación Hash -->
     <rect x="670" y="720" width="190" height="50" rx="8" fill="#1E293B" stroke="#D97706" stroke-width="1.5" filter="url(#card-shadow)"/>
-    <text x="765" y="741" fill="#FFFBEB" font-size="11" font-weight="bold" text-anchor="middle">Validación de Hash SHA-256</text>
-    <text x="765" y="757" fill="#FDE68A" font-size="10" text-anchor="middle">Cotejo contra reporte digital</text>
+    <text x="765" y="741" fill="#FFFBEB" font-size="14" font-weight="bold" text-anchor="middle">Validación de Hash SHA-256</text>
+    <text x="765" y="757" fill="#FDE68A" font-size="12" font-weight="bold" text-anchor="middle">Cotejo contra reporte digital</text>
 
     <line x1="860" y1="745" x2="905" y2="745" stroke="#FBBF24" stroke-width="2" marker-end="url(#arr-amber)"/>
 
@@ -199,7 +199,7 @@
     <rect x="910" y="715" width="210" height="60" rx="10" fill="#064E3B" stroke="#10B981" stroke-width="2.5" filter="url(#card-shadow)"/>
     <circle cx="935" cy="745" r="16" fill="#047857" stroke="#34D399" stroke-width="3"/>
     <rect x="929" y="739" width="12" height="12" fill="#FFFFFF"/>
-    <text x="1030" y="741" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">Fin: Cumplimiento</text>
-    <text x="1030" y="757" fill="#A7F3D0" font-size="10" text-anchor="middle">Certificación Normativa BCRP</text>
+    <text x="1030" y="741" fill="#FFFFFF" font-size="14" font-weight="bold" text-anchor="middle">Fin: Cumplimiento</text>
+    <text x="1030" y="757" fill="#A7F3D0" font-size="12" font-weight="bold" text-anchor="middle">Certificación Normativa BCRP</text>
   </g>
 </svg>

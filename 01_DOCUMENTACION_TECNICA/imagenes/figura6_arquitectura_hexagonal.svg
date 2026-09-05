@@ -6,7 +6,7 @@
   </defs>
 
   <rect x="20" y="12" width="1060" height="40" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
-  <text x="550" y="38" fill="#38BDF8" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="1">
+  <text x="550" y="38" fill="#38BDF8" font-size="19" font-weight="bold" text-anchor="middle" letter-spacing="1">
     ARQUITECTURA HEXAGONAL (PORTS &amp; ADAPTERS) — NÚCLEO DESACOPLADO SIGIR-BCRP
   </text>
 
@@ -14,49 +14,49 @@
   <g transform="translate(30, 75)" filter="url(#hex-shadow)">
     <rect x="0" y="0" width="230" height="360" rx="10" fill="#131D33" stroke="#2563EB" stroke-width="2"/>
     <rect x="0" y="0" width="230" height="35" rx="8" fill="#1E3A8A"/>
-    <text x="115" y="23" fill="#DBEAFE" font-size="12" font-weight="bold" text-anchor="middle">ADAPTADORES DE ENTRADA</text>
+    <text x="115" y="23" fill="#DBEAFE" font-size="15" font-weight="bold" text-anchor="middle">ADAPTADORES DE ENTRADA</text>
 
     <rect x="15" y="55" width="200" height="55" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
-    <text x="115" y="78" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">REST API Controllers</text>
-    <text x="115" y="95" fill="#93C5FD" font-size="10" text-anchor="middle">Spring Web (JSON)</text>
+    <text x="115" y="78" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">REST API Controllers</text>
+    <text x="115" y="95" fill="#BAE6FD" font-size="12.5" font-weight="bold" text-anchor="middle">Spring Web (JSON)</text>
 
     <rect x="15" y="130" width="200" height="55" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
-    <text x="115" y="153" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">Telemetría Daemon</text>
-    <text x="115" y="170" fill="#93C5FD" font-size="10" text-anchor="middle">@Scheduled (Fixed 30s)</text>
+    <text x="115" y="153" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">Telemetría Daemon</text>
+    <text x="115" y="170" fill="#BAE6FD" font-size="12.5" font-weight="bold" text-anchor="middle">@Scheduled (Fixed 30s)</text>
 
     <rect x="15" y="205" width="200" height="55" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
-    <text x="115" y="228" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">WebSocket Handler</text>
-    <text x="115" y="245" fill="#93C5FD" font-size="10" text-anchor="middle">STOMP Tablero NOC</text>
+    <text x="115" y="228" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">WebSocket Handler</text>
+    <text x="115" y="245" fill="#BAE6FD" font-size="12.5" font-weight="bold" text-anchor="middle">STOMP Tablero NOC</text>
 
     <rect x="15" y="280" width="200" height="55" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1.5"/>
-    <text x="115" y="303" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">Auth Controller</text>
-    <text x="115" y="320" fill="#93C5FD" font-size="10" text-anchor="middle">Spring Security + JWT</text>
+    <text x="115" y="303" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">Auth Controller</text>
+    <text x="115" y="320" fill="#BAE6FD" font-size="12.5" font-weight="bold" text-anchor="middle">Spring Security + JWT</text>
   </g>
 
   <!-- COLUMNA 2: PUERTOS DE ENTRADA -->
   <g transform="translate(280, 110)">
     <rect x="0" y="0" width="130" height="290" rx="8" fill="#1E293B" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="65" y="25" fill="#93C5FD" font-size="11" font-weight="bold" text-anchor="middle">INBOUND</text>
-    <text x="65" y="40" fill="#93C5FD" font-size="11" font-weight="bold" text-anchor="middle">PORTS</text>
+    <text x="65" y="25" fill="#93C5FD" font-size="13.5" font-weight="bold" text-anchor="middle">INBOUND</text>
+    <text x="65" y="40" fill="#93C5FD" font-size="13.5" font-weight="bold" text-anchor="middle">PORTS</text>
 
     <rect x="10" y="60" width="110" height="40" rx="6" fill="#172554"/>
-    <text x="65" y="84" fill="#DBEAFE" font-size="10" text-anchor="middle">IncidentePort</text>
+    <text x="65" y="84" fill="#FFFFFF" font-size="12.5" font-weight="bold" text-anchor="middle">IncidentePort</text>
 
     <rect x="10" y="120" width="110" height="40" rx="6" fill="#172554"/>
-    <text x="65" y="144" fill="#DBEAFE" font-size="10" text-anchor="middle">TelemetriaPort</text>
+    <text x="65" y="144" fill="#FFFFFF" font-size="12.5" font-weight="bold" text-anchor="middle">TelemetriaPort</text>
 
     <rect x="10" y="180" width="110" height="40" rx="6" fill="#172554"/>
-    <text x="65" y="204" fill="#DBEAFE" font-size="10" text-anchor="middle">SftReportPort</text>
+    <text x="65" y="204" fill="#FFFFFF" font-size="12.5" font-weight="bold" text-anchor="middle">SftReportPort</text>
 
     <rect x="10" y="240" width="110" height="40" rx="6" fill="#172554"/>
-    <text x="65" y="264" fill="#DBEAFE" font-size="10" text-anchor="middle">AuthPort</text>
+    <text x="65" y="264" fill="#FFFFFF" font-size="12.5" font-weight="bold" text-anchor="middle">AuthPort</text>
   </g>
 
   <!-- COLUMNA 3: NÚCLEO DEL DOMINIO (CORE HEXAGON) -->
   <g transform="translate(430, 75)" filter="url(#hex-shadow)">
     <polygon points="120,0 240,70 240,290 120,360 0,290 0,70" fill="#17112E" stroke="#A855F7" stroke-width="3"/>
-    <text x="120" y="45" fill="#F3E8FF" font-size="13" font-weight="bold" text-anchor="middle">NÚCLEO DEL DOMINIO</text>
-    <text x="120" y="62" fill="#C4B5FD" font-size="10" text-anchor="middle">(Clean Architecture Core)</text>
+    <text x="120" y="45" fill="#F3E8FF" font-size="17" font-weight="bold" text-anchor="middle">NÚCLEO DEL DOMINIO</text>
+    <text x="120" y="62" fill="#C4B5FD" font-size="13" font-weight="bold" text-anchor="middle">(Clean Architecture Core)</text>
 
     <rect x="30" y="80" width="180" height="50" rx="8" fill="#311042" stroke="#C084FC" stroke-width="1.5"/>
     <text x="120" y="103" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">IncidenteService</text>
@@ -78,8 +78,8 @@
   <!-- COLUMNA 4: PUERTOS DE SALIDA -->
   <g transform="translate(690, 110)">
     <rect x="0" y="0" width="130" height="290" rx="8" fill="#1E293B" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="65" y="25" fill="#A7F3D0" font-size="11" font-weight="bold" text-anchor="middle">OUTBOUND</text>
-    <text x="65" y="40" fill="#A7F3D0" font-size="11" font-weight="bold" text-anchor="middle">PORTS</text>
+    <text x="65" y="25" fill="#A7F3D0" font-size="13.5" font-weight="bold" text-anchor="middle">OUTBOUND</text>
+    <text x="65" y="40" fill="#A7F3D0" font-size="13.5" font-weight="bold" text-anchor="middle">PORTS</text>
 
     <rect x="10" y="60" width="110" height="40" rx="6" fill="#064E3B"/>
     <text x="65" y="84" fill="#D1FAE5" font-size="10" text-anchor="middle">RepositoryPort</text>
@@ -98,22 +98,22 @@
   <g transform="translate(840, 75)" filter="url(#hex-shadow)">
     <rect x="0" y="0" width="230" height="360" rx="10" fill="#0B231A" stroke="#059669" stroke-width="2"/>
     <rect x="0" y="0" width="230" height="35" rx="8" fill="#065F46"/>
-    <text x="115" y="23" fill="#D1FAE5" font-size="12" font-weight="bold" text-anchor="middle">ADAPTADORES DE SALIDA</text>
+    <text x="115" y="23" fill="#D1FAE5" font-size="15" font-weight="bold" text-anchor="middle">ADAPTADORES DE SALIDA</text>
 
     <rect x="15" y="55" width="200" height="55" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
-    <text x="115" y="78" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">PostgreSQL 15 Adapter</text>
+    <text x="115" y="78" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">PostgreSQL 15 Adapter</text>
     <text x="115" y="95" fill="#A7F3D0" font-size="10" text-anchor="middle">Spring Data JPA / Bitácora</text>
 
     <rect x="15" y="130" width="200" height="55" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
-    <text x="115" y="153" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">Active Directory Adapter</text>
+    <text x="115" y="153" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">Active Directory Adapter</text>
     <text x="115" y="170" fill="#A7F3D0" font-size="10" text-anchor="middle">Spring Security LDAP (636)</text>
 
     <rect x="15" y="205" width="200" height="55" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
-    <text x="115" y="228" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">SMTP Mail Adapter</text>
+    <text x="115" y="228" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">SMTP Mail Adapter</text>
     <text x="115" y="245" fill="#A7F3D0" font-size="10" text-anchor="middle">JavaMailSender Alertas</text>
 
     <rect x="15" y="280" width="200" height="55" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
-    <text x="115" y="303" fill="#F8FAFC" font-size="11" font-weight="bold" text-anchor="middle">SFTP / SFT File Adapter</text>
+    <text x="115" y="303" fill="#FFFFFF" font-size="14.5" font-weight="bold" text-anchor="middle">SFTP / SFT File Adapter</text>
     <text x="115" y="320" fill="#A7F3D0" font-size="10" text-anchor="middle">Plano Normativo BCRP</text>
   </g>
 </svg>
