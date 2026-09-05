@@ -3,7 +3,11 @@
 **Universidad Tecnológica del Perú (UTP) - Sede Lima**  
 **Facultad de Ingeniería | Carrera de Ingeniería de Sistemas e Informática**  
 - **Docente:** Ing. Yony Zamata Condori  
-- **Líder Técnico / Estudiante:** Frank Emiliano Vargas Huamán  
+- **Integrantes del Equipo (Estudiantes UTP):**  
+  - **Frank Emiliano Vargas Huamán** – Código: **U23243651** (*Líder Técnico*)  
+  - **Fernando Alber Alfredo Romero Requejo** – Código: **U21216410**  
+  - **Joel Leonardo Olaya Vivas** – Código: **U21221688**  
+  - **Luis Tapia Ignacio** – Código: **U25239074**  
 - **Caso:** Regulación Pagos Digitales - BCRP (Servicios UTP)  
 - **Ciclo Académico:** 7mo Ciclo (2026)  
 

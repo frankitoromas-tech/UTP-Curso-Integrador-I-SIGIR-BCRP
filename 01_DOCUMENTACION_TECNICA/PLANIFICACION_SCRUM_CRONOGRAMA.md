@@ -2,7 +2,11 @@
 **Proyecto:** Sistema Integral de Gestión de Incidentes Regulatorios (SIGIR - BCRP)  
 **Curso:** Curso Integrador I: Sistemas Software (Sección 57524)  
 **Docente:** Ing. Yony Zamata Condori  
-**Estudiante:** Frank Emiliano Vargas Huamán  
+**Integrantes del Equipo (Estudiantes UTP):**  
+- **Frank Emiliano Vargas Huamán** (Código: **U23243651**) – *Líder Técnico / Scrum Master*  
+- **Fernando Alber Alfredo Romero Requejo** (Código: **U21216410**) – *Desarrollo / Requisitos*  
+- **Joel Leonardo Olaya Vivas** (Código: **U21221688**) – *Desarrollo / QA*  
+- **Luis Tapia Ignacio** (Código: **U25239074**) – *Desarrollo / Datos*  
 
 ---
 
@@ -14,7 +18,11 @@ Para la ejecución del proyecto SIGIR-BCRP se ha adoptado el marco de trabajo **
 
 ### 1.1. Estructura de Roles y Equipo de Trabajo
 - **Product Owner (PO):** Ing. Yony Zamata Condori (Docente evaluador / Representante de las necesidades de negocio y regulación BCRP).
-- **Scrum Master & Technical Lead:** Frank Emiliano Vargas Huamán (Arquitectura de software, diseño de datos, desarrollo backend/frontend y aseguramiento de calidad).
+- **Scrum Master & Technical Lead:** Frank Emiliano Vargas Huamán (U23243651).
+- **Equipo de Desarrollo (Development Team):**
+  - Fernando Alber Alfredo Romero Requejo (U21216410)
+  - Joel Leonardo Olaya Vivas (U21221688)
+  - Luis Tapia Ignacio (U25239074)
 - **Stakeholders Clave:** Operadores NOC del sistema de pagos, Auditores Regulatorios del BCRP, Administradores de TI de Entidades Financieras (Yape, Plim, Tunki, CCE).
 
 ---
@@ -26,7 +34,7 @@ Para la ejecución del proyecto SIGIR-BCRP se ha adoptado el marco de trabajo **
 | **Nombre del Proyecto** | Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales (SIGIR - BCRP) |
 | **Código del Proyecto** | PRJ-2026-SIGIR-BCRP-57524 |
 | **Patrocinador / PO** | Ing. Yony Zamata Condori (Docente UTP) |
-| **Líder Técnico** | Frank Emiliano Vargas Huamán (Estudiante UTP) |
+| **Equipo de Desarrollo** | • **Frank Emiliano Vargas Huamán** (Líder Técnico - U23243651)<br>• **Fernando Alber Alfredo Romero Requejo** (U21216410)<br>• **Joel Leonardo Olaya Vivas** (U21221688)<br>• **Luis Tapia Ignacio** (U25239074) |
 | **Justificación** | Erradicar la detección tardía de caídas en el switch de pagos peruano (Yape, Plim, Tunki, CCE), reduciendo el MTTD de 180 min a <30s con auditoría inmutable y reporte oficial BCRP SFT con hash SHA-256. |
 | **Objetivos SMART** | • **Alcance:** 100% de módulos core (Mantenimiento, Telemetría, Incidentes, Seguridad AD, Compilador SFT).<br>• **Tiempo:** 6 Sprints en 14 semanas (Hito APF1 en Semana 4).<br>• **Rendimiento:** Sondeo cada 30s y respuesta REST < 500ms.<br>• **Calidad:** Cobertura de pruebas unitarias > 80% con JUnit 5. |
 | **Alcance Entregable APF1** | Modelos UML, DDL PostgreSQL 15 con triggers inmutables, backend Spring Boot 3 con Arquitectura Hexagonal, Worker asíncrono multihilo, consola NOC reactiva y suite de tests. |

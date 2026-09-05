@@ -18,8 +18,11 @@
 
 ---
 
-### AUTOR / LÍDER TÉCNICO:
-- **Frank Emiliano Vargas Huamán** (Estudiante de Ingeniería de Sistemas e Informática, UTP)
+### INTEGRANTES DEL EQUIPO (ESTUDIANTES):
+- **Frank Emiliano Vargas Huamán** – Código: **U23243651** (*Líder Técnico*)
+- **Fernando Alber Alfredo Romero Requejo** – Código: **U21216410**
+- **Joel Leonardo Olaya Vivas** – Código: **U21221688**
+- **Luis Tapia Ignacio** – Código: **U25239074**
 
 ---
 
@@ -283,7 +286,7 @@ A continuación, se formaliza el instrumento fundamental de gestión del proyect
 | **Nombre del Proyecto:** | Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales (SIGIR - BCRP) |
 | **Código del Proyecto:** | PRJ-2026-SIGIR-BCRP-57524 |
 | **Patrocinador Principal (Sponsor / PO):** | Ing. Yony Zamata Condori (Docente Evaluador / Representante Normativo BCRP) |
-| **Líder Técnico del Proyecto (Lead Developer):** | Frank Emiliano Vargas Huamán (Estudiante de Ingeniería de Sistemas e Informática - UTP) |
+| **Equipo del Proyecto (Estudiantes UTP):** | • **Frank Emiliano Vargas Huamán** (Líder Técnico - U23243651)<br>• **Fernando Alber Alfredo Romero Requejo** (U21216410)<br>• **Joel Leonardo Olaya Vivas** (U21221688)<br>• **Luis Tapia Ignacio** (U25239074) |
 | **Fecha de Inicio:** | 01 de Marzo de 2026 |
 | **Fecha Estimada de Término:** | 15 de Junio de 2026 (Semana 14) |
 | **Cliente / Entidad Beneficiaria:** | Banco Central de Reserva del Perú (BCRP) – Gerencia de Operaciones Monetarias |
@@ -328,7 +331,7 @@ A continuación, se formaliza el instrumento fundamental de gestión del proyect
 
 | **8. ESTRUCTURA DE GOBERNANZA Y FIRMAS** |
 | :--- |
-| • **Patrocinador del Proyecto / Product Owner:** Ing. Yony Zamata Condori (Docente UTP)<br>• **Líder Técnico / Responsable del Proyecto:** Frank Emiliano Vargas Huamán (Estudiante UTP) |
+| • **Patrocinador del Proyecto / Product Owner:** Ing. Yony Zamata Condori (Docente UTP)<br>• **Equipo de Desarrollo (Estudiantes UTP):** Frank Emiliano Vargas Huamán (Líder Técnico - U23243651), Fernando Alber Alfredo Romero Requejo (U21216410), Joel Leonardo Olaya Vivas (U21221688), Luis Tapia Ignacio (U25239074) |
 
 ---
 
