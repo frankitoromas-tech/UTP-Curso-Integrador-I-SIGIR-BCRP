@@ -7,53 +7,55 @@
 
 ---
 
-## 🧭 1. Filosofía Pedagógica: Cómo Ganarse al Jurado en 10 Minutos
+## 🧭 1. Filosofía Pedagógica: Cómo Ganarse al Jurado en 12 Minutos (Tiempo Máximo)
 
 > [!IMPORTANT]
-> **La Regla de Oro del Equipo (Cero Lectura Robótica):**  
-> Un jurado de ingeniería no evalúa la capacidad de un estudiante para leer diapositivas en voz alta; evalúa su **criterio profesional, solvencia técnica, claridad pedagógica y capacidad de trabajo en equipo**.  
+> **La Regla de Oro del Equipo (Cero Lectura Robótica y Control del Reloj):**  
+> El tiempo máximo reglamentario de la sustentación es de **12 minutos**. Un jurado de ingeniería no evalúa la capacidad de un estudiante para leer diapositivas en voz alta; evalúa su **criterio profesional, solvencia técnica, claridad pedagógica, manejo del tiempo y capacidad de trabajo en equipo**.  
 > 
-> Durante los 10 minutos oficiales de la sustentación:
+> Durante los 12 minutos máximos de la sustentación:
 > 1. **Miren a los ojos del profesor Ing. Yony Zamata Condori.** Las diapositivas son un respaldo probatorio; ustedes son los narradores del valor ingenieril.
 > 2. **Usen analogías cotidianas.** Un concepto informático complejo se vuelve inolvidable cuando se compara con algo que el jurado vive todos los días (un enchufe universal, un libro notarial foliado, un simulador de vuelo).
 > 3. **Muestren química de equipo auténtica.** Los pases de palabra no son cortes abruptos; son "pases de gol" donde cada integrante edifica al que sigue.
+> 4. **Manejen un colchón de seguridad de 30 segundos.** La ponencia está calibrada para durar entre 11:00 y 11:30 minutos, asegurando que jamás se exceda el tope de 12 minutos.
 
 ---
 
-## ⏱️ 2. Reparto de Roles y Tiempos de Oro (10 Minutos Exactos)
+## ⏱️ 2. Reparto de Roles y Tiempos de Oro (12 Minutos Máximo)
 
 ```mermaid
 gantt
-    title Distribución de los 10 Minutos Oficiales de Sustentación (Rúbrica APF2)
+    title Distribución de los 12 Minutos Máximos de Sustentación (Rúbrica APF2)
     dateFormat  X
     axisFormat %s min
-    section 1. Fernando Romero (3 min)
-    Gancho Real, Dolor Ciudadano, BMC, Scrum, EDT y Requisitos IEEE 830 :active, 0, 3
-    section 2. Frank Vargas (4 min)
-    Alternativas >=50% Java, Hexagonal, DER Inmutable y Clases Spring Boot :crit, 3, 7
-    section 3. Joel Olaya (3 min)
-    Casos de Uso, Live Demo 503, Tests JUnit 8/8, Compilación SFT y Cierre :done, 7, 10
+    section 1. Fernando Romero (3.5 min)
+    Gancho Real, Asimetría Informativa, BMC, Scrum y Requisitos IEEE 830 :active, 0, 3.5
+    section 2. Frank Vargas (4.5 min)
+    3 Alternativas >=50% Java, Hexagonal, DER Inmutable y Clases Spring Boot :crit, 3.5, 8
+    section 3. Joel Olaya (4.0 min)
+    Casos de Uso, Live Demo 503, Tests JUnit 8/8, Compilador SFT y Cierre :done, 8, 12
 ```
 
 | Bloque / Minutos | Integrante | Rol Oficial en el Proyecto | Diapositivas Clave | Misión Pedagógica en la Exposición |
 | :---: | :--- | :--- | :---: | :--- |
-| **Bloque 1**<br>*(00:00 - 03:00)* | **Fernando Romero Barrientos**<br>`(U20247659)` | **Ingeniero de Requisitos & Procesos** | Diapositivas 1, 2, 3, 4, 6, 7, 8 | Conectar con la empatía humana del ciudadano, evidenciar la falla de mercado (asimetría informativa) y demostrar disciplina metodológica en Scrum. |
-| **Bloque 2**<br>*(03:00 - 07:00)* | **Frank Vargas Huamán**<br>`(U22204655)` | **Líder Técnico & Arquitecto de Software** | Diapositivas 5, 11, 12, 13, 14, 17 | Desplegar la artillería técnica: explicar con analogías sencillas por qué la Arquitectura Hexagonal y la persistencia inmutable en PostgreSQL blindan al BCRP. |
-| **Bloque 3**<br>*(07:00 - 10:00)* | **Joel Olaya Villegas**<br>`(U19313274)` | **Ingeniero de Software & QA** | Diapositivas 9, 10, 15, 16, 18, 19, 20 + Live Demo | Concretar con hechos: romper un switch financiero en vivo, ver nacer la alerta, demostrar las 8 pruebas JUnit passing y compilar el archivo normativo con hash SHA-256. |
+| **Bloque 1**<br>*(00:00 - 03:30)*<br>*(3.5 min)* | **Fernando Romero Barrientos**<br>`(U20247659)` | **Ingeniero de Requisitos & Procesos** | Diapositivas 1, 2, 3, 4, 6, 7, 8 | Conectar con la empatía humana del ciudadano, evidenciar la falla de mercado (asimetría informativa), el marco legal (Ley 29440) y demostrar disciplina metodológica en Scrum. |
+| **Bloque 2**<br>*(03:30 - 08:00)*<br>*(4.5 min)* | **Frank Vargas Huamán**<br>`(U22204655)` | **Líder Técnico & Arquitecto de Software** | Diapositivas 5, 11, 12, 13, 14, 17 | Desplegar la artillería técnica: explicar con analogías sencillas por qué la Arquitectura Hexagonal y la persistencia inmutable en PostgreSQL blindan al BCRP. |
+| **Bloque 3**<br>*(08:00 - 12:00)*<br>*(4.0 min)* | **Joel Olaya Villegas**<br>`(U19313274)` | **Ingeniero de Software & QA** | Diapositivas 9, 10, 15, 16, 18, 19, 20 + Live Demo | Concretar con hechos: romper un switch financiero en vivo, ver nacer la alerta, demostrar las 8 pruebas JUnit passing y compilar el archivo normativo con hash SHA-256. |
 
 ---
 
-# 🏛️ BLOQUE 1: FERNANDO ROMERO BARRIENTOS (00:00 - 03:00)
+# 🏛️ BLOQUE 1: FERNANDO ROMERO BARRIENTOS (00:00 - 03:30)
 ### *Tema: El Gancho Humano, la Problemática Nacional y la Gobernanza del Proyecto*
 **Diapositivas de Apoyo:** 1 (Portada), 2 (Aspectos Estratégicos), 3 (Canvas BMC), 4 (Realidad Problemática), 6 (Project Charter y RACI), 7 (EDT a 3 Niveles), 8 (Cronograma Gantt Semana 8) e IEEE 830.  
 **Tono sugerido:** Empático, seguro, claro, institucional y cercano.  
+**Tiempo Asignado:** 3 minutos y 30 segundos (Pase a Frank en el minuto 03:15 - 03:30).  
 **Idea Fuerza que debe grabar en el jurado:** *"El BCRP no puede supervisar el dinero de 33 millones de peruanos enterándose por redes sociales horas después de una caída; el sistema financiero exige detección en tiempo real."*
 
 ---
 
 #### 🎙️ Guion Pedagógico Paso a Paso de Fernando:
 
-##### 1. Apertura e Identificación del Equipo (00:00 - 00:30)
+##### 1. Apertura e Identificación del Equipo (00:00 - 00:35)
 > *(Apoyo visual: Diapositiva 1 — Portada Oficial)*  
 > *[Acción escénica: Postura erguida, manos abiertas, sonrisa profesional serena, mirada fija al Ing. Yony Zamata Condori]*  
 > 
@@ -68,7 +70,7 @@ gantt
 > 
 > Para comprender por qué existe este software, permítame iniciar con una situación que todos aquí hemos experimentado."*
 
-##### 2. El Gancho Humano y la Realidad Problemática (00:30 - 01:15)
+##### 2. El Gancho Humano y la Realidad Problemática (00:35 - 01:30)
 > *(Apoyo visual: Diapositiva 4 — Realidad Problemática Nacional)*  
 > *[Acción escénica: Tono reflexivo y narrativo, gesticulando suavemente con la mano]*  
 > 
@@ -83,7 +85,7 @@ gantt
 > 
 > Por mandato de la **Ley N° 29440** y la **Circular BCRP N° 0011-2023**, la continuidad operativa es un asunto de interés público nacional. Nuestro sistema nace con un objetivo medible: **reducir el tiempo de detección de fallas de 180 minutos a menos de 30 segundos**."*
 
-##### 3. Alineamiento Estratégico y Business Model Canvas (01:15 - 01:55)
+##### 3. Alineamiento Estratégico y Business Model Canvas (01:30 - 02:20)
 > *(Apoyo visual: Diapositiva 2 — Aspectos Estratégicos | Diapositiva 3 — Canvas BMC)*  
 > *[Acción escénica: Señala en la diapositiva el cuadrante de socios clave y la propuesta de valor]*  
 > 
@@ -96,7 +98,7 @@ gantt
 > 2. **Trazabilidad inmutable**, para que nadie pueda alterar las evidencias de caídas.  
 > 3. **Automatización total** en la emisión del reporte normativo oficial."*
 
-##### 4. Gestión Ágil Scrum, Cronograma y Requisitos IEEE 830 (01:55 - 02:45)
+##### 4. Gestión Ágil Scrum, Cronograma y Requisitos IEEE 830 (02:20 - 03:15)
 > *(Apoyo visual: Diapositiva 6 — Project Charter y RACI | Diapositiva 7 — EDT a 3 Niveles | Diapositiva 8 — Gantt Semana 8)*  
 > *[Acción escénica: Tono ejecutivo, firme y ordenado]*  
 > 
@@ -106,7 +108,7 @@ gantt
 > - De un Product Backlog total de 70 Story Points, **los Sprints 1, 2, 3 y 4 se encuentran completados al 100% en este hito de Semana 8**, como certifica nuestro Cronograma Gantt.  
 > - Y bajo el estándar internacional **IEEE 830**, formulamos **12 Requisitos Funcionales y 8 Requisitos No Funcionales** fundamentados en la norma **ISO/IEC 25010**, garantizando que el sistema sea seguro, altamente disponible y capaz de procesar telemetría concurrente."*
 
-##### 5. El "Pase de Gol" Didáctico a Frank Vargas (02:45 - 03:00)
+##### 5. El "Pase de Gol" Didáctico a Frank Vargas (03:15 - 03:30)
 > *[Acción escénica: Fernando sonríe, gira su postura hacia Frank, abre la mano en señal de bienvenida técnica]*  
 > 
 > *"Tener claros los requisitos y las leyes es fundamental, pero el gran desafío de la ingeniería está en cómo transformar esas necesidades en una arquitectura de software robusta, desacoplada y con código Java real de nivel bancario.  
@@ -115,17 +117,18 @@ gantt
 
 ---
 
-# 🚀 BLOQUE 2: FRANK VARGAS HUAMÁN (03:00 - 07:00)
+# 🚀 BLOQUE 2: FRANK VARGAS HUAMÁN (03:30 - 08:00)
 ### *Tema: Las 3 Alternativas TIC, Arquitectura Hexagonal y Persistencia Inmutable*
 **Diapositivas de Apoyo:** 5 (15 Mockups y Alternativas TIC), 11 (BPMN AS-IS vs TO-BE), 12 (Arquitectura Hexagonal), 13 (DER Físico/Lógico PostgreSQL 15), 14 (Clases de Diseño Spring Boot 3) y 17 (Cálculo de SLA y Compilador SFT).  
 **Tono sugerido:** Técnico, didáctico, con aplomo, seguridad de arquitecto y solvencia teórica.  
+**Tiempo Asignado:** 4 minutos y 30 segundos (Pase a Joel en el minuto 07:45 - 08:00).  
 **Idea Fuerza que debe grabar en el jurado:** *"El software bancario debe diseñarse para sobrevivir al tiempo: desacoplamos la lógica de negocio con Arquitectura Hexagonal y protegemos la verdad histórica con triggers SQL matemáticamente inmutables."*
 
 ---
 
 #### 🎙️ Guion Pedagógico Paso a Paso de Frank:
 
-##### 1. Recepción Profesional y las 3 Alternativas TIC con $\ge 50\%$ Java (03:00 - 03:55)
+##### 1. Recepción Profesional y las 3 Alternativas TIC con $\ge 50\%$ Java (03:30 - 04:35)
 > *(Apoyo visual: Diapositiva 5 — 15 Mockups y Alternativas TIC)*  
 > *[Acción escénica: Asiente con gratitud a Fernando, mira al profesor con serenidad y seguridad]*  
 > 
@@ -141,7 +144,7 @@ gantt
 >    Obtuvo el puntaje más alto en nuestra Matriz Multicriterio de Decisión: **4.97 sobre 5.00 puntos**.  
 >    Todo el procesamiento pesado, las reglas de negocio, la auditoría y los cálculos matemáticos de SLA residen en **Java 17 con Spring Boot 3**, dejando en la capa visual una interfaz ágil que no consume recursos del servidor central."*
 
-##### 2. El Proceso BPMN 2.0 y la Analogía del Smartphone para la Arquitectura Hexagonal (03:55 - 05:00)
+##### 2. El Proceso BPMN 2.0 y la Analogía del Smartphone para la Arquitectura Hexagonal (04:35 - 05:45)
 > *(Apoyo visual: Diapositiva 11 — BPMN AS-IS vs TO-BE | Diapositiva 12 — Arquitectura Hexagonal)*  
 > *[Acción escénica: Usa las manos para dibujar un círculo en el centro y conexiones hacia afuera]*  
 > 
@@ -161,7 +164,7 @@ gantt
 > 
 > ¿Qué beneficio concreto le brinda esto al BCRP? Que si el día de mañana deciden cambiar de base de datos o migrar a gRPC, la lógica regulatoria del negocio financiero permanece **100% intacta, sin tocar una sola línea de código central**."*
 
-##### 3. Persistencia Inmutable en PostgreSQL 15: La Metáfora de la Caja Negra (05:00 - 06:05)
+##### 3. Persistencia Inmutable en PostgreSQL 15: La Metáfora de la Caja Negra (05:45 - 06:55)
 > *(Apoyo visual: Diapositiva 13 — DER Físico/Lógico PostgreSQL 15 | Diapositiva 14 — Diagrama de Clases Spring Boot)*  
 > *[Acción escénica: Tono de firmeza y énfasis al pronunciar la palabra 'Inmutabilidad']*  
 > 
@@ -176,7 +179,7 @@ gantt
 > 2. Creamos un **índice parcial único (`idx_incidente_abierto_unico`)** que resuelve condiciones de carrera a nivel del motor de base de datos, garantizando que un banco jamás pueda tener dos tickets abiertos simultáneamente por la misma falla técnica (Regla de Negocio RN-01).  
 > 3. Aplicamos el principio de mínimo privilegio con el rol `app_sigir_user`, conexiones cifradas mediante TLS y consultas 100% parametrizadas con Hibernate para erradicar cualquier posibilidad de inyección SQL."*
 
-##### 4. Fórmulas Normativas de SLA y el Compilador Criptográfico SFT (06:05 - 06:45)
+##### 4. Fórmulas Normativas de SLA y el Compilador Criptográfico SFT (06:55 - 07:45)
 > *(Apoyo visual: Diapositiva 17 — Módulo de Reportes e Indisponibilidad)*  
 > *[Acción escénica: Señala la fórmula de disponibilidad mensual y el hash de 64 caracteres]*  
 > 
@@ -189,7 +192,7 @@ gantt
 > - Registro Tipo 02 con el detalle minuto a minuto de las interrupciones.  
 > - Y un **Registro Tipo 03 de Cierre Criptográfico**, sellado con un **hash SHA-256 de 64 caracteres hexadecimales**. Si alguien abre el archivo en su computadora y altera un solo minuto de penalidad, la firma digital se rompe y el servidor del BCRP rechaza el reporte automáticamente."*
 
-##### 5. El "Pase de Gol" Didáctico a Joel Olaya (06:45 - 07:00)
+##### 5. El "Pase de Gol" Didáctico a Joel Olaya (07:45 - 08:00)
 > *[Acción escénica: Frank mira a Joel, le sonríe con confianza y señala la laptop con la consola NOC y la terminal de pruebas]*  
 > 
 > *"Como bien sabemos los ingenieros de software, la mejor arquitectura y el mejor diseño en papel cobran verdadero valor cuando se demuestran en la práctica, ejecutando código y enfrentando fallas en vivo.  
@@ -198,17 +201,18 @@ gantt
 
 ---
 
-# 🧪 BLOQUE 3: JOEL OLAYA VILLEGAS (07:00 - 10:00)
+# 🧪 BLOQUE 3: JOEL OLAYA VILLEGAS (08:00 - 12:00)
 ### *Tema: Casos de Uso, Demostración en Vivo, Pruebas Unitarias JUnit 5 y Compilación SFT*
 **Diapositivas de Apoyo:** 9 (Diagrama de Actores), 10 (Casos de Uso UML), 15 (Matriz de Trazabilidad), 16 (Suite de Pruebas Unitarias), 18 (Distribución de Sustentación), 19 (Conclusiones) y 20 (Cierre y Agradecimientos) + Consola Web NOC (`index.html`), Terminal Maven (`mvn test`) y Módulo de Reportes (`reportes.html`).  
 **Tono sugerido:** Dinámico, empírico, seguro, ágil y enfocado en la evidencia probatoria.  
+**Tiempo Asignado:** 4 minutos (Cierre oficial entre el minuto 11:30 y 11:50, antes de los 12:00).  
 **Idea Fuerza que debe grabar en el jurado:** *"La calidad del software se comprueba en caliente: ante una falla real del 503, la arquitectura responde en menos de un segundo y las pruebas automatizadas certifican matemáticamente la salud del sistema."*
 
 ---
 
 #### 🎙️ Guion Pedagógico Paso a Paso de Joel:
 
-##### 1. Casos de Uso y Acceso a la Consola Web NOC (07:00 - 07:40)
+##### 1. Casos de Uso y Acceso a la Consola Web NOC (08:00 - 08:45)
 > *(Apoyo visual: Diapositiva 10 — Casos de Uso UML -> Conmutar con calma a la ventana del navegador con `04_FRONTEND_UI/index.html`)*  
 > *[Acción escénica: Mueve el cursor de manera pausada y visible por la interfaz]*  
 > 
@@ -222,7 +226,7 @@ gantt
 > En la parte superior visualizamos nuestra **Barra de Telemetría en Vivo**, que sondea de forma continua a los 5 participantes del ecosistema nacional: BCP con Yape, Interbank con Plim, Tunki de Caja Cusco, Caja Rural de los Andes y la Cámara de Compensación Electrónica (CCE).  
 > En este instante, como pueden verificar, todos los indicadores se encuentran en **VERDE (Operativo)**, con latencias de red sumamente saludables que oscilan entre 14 y 28 milisegundos."*
 
-##### 2. La Demostración en Vivo: Inyección de Contingencia HTTP 503 (07:40 - 08:30)
+##### 2. La Demostración en Vivo: Inyección de Contingencia HTTP 503 (08:45 - 09:45)
 > *(Acción en pantalla: Ubicar el botón ámbar '⚡ Simular Alerta')*  
 > *[Acción escénica: Explica lo que va a ocurrir ANTES de pulsar el botón, para mantener la expectativa del profesor]*  
 > 
@@ -239,7 +243,7 @@ gantt
 > 
 > Al resolver el ticket, la entidad retorna a su estado VERDE normal y la disponibilidad se estabiliza. Todo el ciclo de vida se procesó de manera atómica, garantizando que el BCRP tuvo conocimiento del incidente en menos de 2 segundos."*
 
-##### 3. Rigor en Calidad de Software: Demostración de Tests JUnit 5 (08:30 - 09:15)
+##### 3. Rigor en Calidad de Software: Demostración de Tests JUnit 5 (09:45 - 10:40)
 > *(Apoyo visual: Diapositiva 16 — Suite de Pruebas Unitarias -> Conmutar a la Terminal de comandos en `03_BACKEND_SPRINGBOOT`)*  
 > *[Acción escénica: Tono de orgullo técnico, mostrando el comando `mvn test`]*  
 > 
@@ -263,7 +267,7 @@ gantt
 > - La captura automática de errores HTTP 503 por el worker multihilo.  
 > - Y la exactitud matemática de las fórmulas de penalidad y disponibilidad mensual."*
 
-##### 4. Módulo de Reportes y Compilación Criptográfica SFT BCRP (09:15 - 09:45)
+##### 4. Módulo de Reportes y Compilación Criptográfica SFT BCRP (10:40 - 11:30)
 > *(Acción en pantalla: Abrir la pestaña de `reportes.html` en el navegador)*  
 > *[Acción escénica: Muestra el gráfico de barras y el botón de generación SFT]*  
 > 
@@ -279,11 +283,11 @@ gantt
 > 
 > Pulso **'Descargar .TXT'**, y el archivo normativo se descarga en el equipo, listo para ser transmitido al servidor SFTP seguro del Banco Central."*
 
-##### 5. Conclusiones y Cierre Oficial del Equipo (09:45 - 10:00)
+##### 5. Conclusiones y Cierre Oficial del Equipo (11:30 - 12:00)
 > *(Apoyo visual: Diapositiva 19 — Conclusiones | Diapositiva 20 — Cierre y Agradecimientos)*  
-> *[Acción escénica: Joel baja la voz a un tono solemne, mira al jurado, los 3 integrantes se alinean juntos erguidos]*  
+> *[Acción escénica: Joel modula el tono a solemne y concluyente, mira al jurado, los 3 integrantes se alinean juntos erguidos]*  
 > 
-> *"Para concluir nuestra sustentación de este hito de Semana 8, profesor Zamata:  
+> *"Para concluir nuestra sustentación dentro del tiempo reglamentario de 12 minutos, profesor Zamata:  
 > 1. **Erradicamos la asimetría de información** en el ecosistema nacional de transferencias digitales, demostrando que es técnicamente posible pasar de horas de incertidumbre a segundos de certeza.  
 > 2. **Cumplimos al 100% cada uno de los criterios exigidos en la rúbrica APF2**, entregando arquitectura hexagonal en Java 17, base de datos inmutable en PostgreSQL 15 y pruebas de software pasando con éxito.  
 > 3. **Dejamos las bases firmes y modulares** para culminar con éxito la entrega final en la Semana 14.  
@@ -297,26 +301,27 @@ gantt
 ## 📋 3. Tarjetas de Memoria Rápida (Cheat Sheets de 60 Segundos)
 *Para dar un repaso mental 5 minutos antes de ingresar al aula o salón virtual:*
 
-### 🟡 Tarjeta de Fernando Romero (El Problema y la Gobernanza)
+### 🟡 Tarjeta de Fernando Romero (El Problema y la Gobernanza — 3.5 min)
 - **El Dolor:** Pagas con Yape/Plim, se traba, te descuentan el saldo y el BCRP se entera 3 horas después por Twitter (Asimetría Informativa).
 - **La Ley:** Circular BCRP N° 0011-2023 y Ley N° 29440 (estabilidad del dinero nacional).
 - **El Orden:** Scrum, Project Charter, RACI (3 miembros), EDT a 3 niveles, 70 SP (Sprints 1 al 4 al 100%), IEEE 830 (12 RF + 8 RNF bajo ISO 25010).
-- **Frase de Oro para entregar a Frank:** *"Tener claros los requisitos es vital, pero hacía falta una arquitectura de software limpia en Java para llevarlo a la realidad; le cedo la palabra a Frank Vargas."*
+- **Frase de Oro para entregar a Frank (min 03:15):** *"Tener claros los requisitos es vital, pero hacía falta una arquitectura de software limpia en Java para llevarlo a la realidad; le cedo la palabra a Frank Vargas."*
 
-### 🔴 Tarjeta de Frank Vargas (La Arquitectura y la Inmutabilidad)
+### 🔴 Tarjeta de Frank Vargas (La Arquitectura y la Inmutabilidad — 4.5 min)
 - **Las 3 Alternativas ($\ge 50\%$ Java y 15 Mockups):** 
   - Alt 1: Monolito Thymeleaf (Descarte: recargas pesadas en pantalla NOC).
   - Alt 3: Kafka + Microservicios (Descarte: consume 4 GB RAM innecesaria para 5 switches).
   - Alt 2 (Ganadora 4.97/5.00): Clean API Spring Boot 3 Java 17 + NOC reactivo.
 - **La Metáfora:** Arquitectura Hexagonal = Smartphone con cargador Tipo C (Dominio puro desacoplado de bases de datos y frameworks).
 - **La Caja Negra:** Trigger `fn_prohibir_mutacion_historial` (Append-Only; aborta `UPDATE`/`DELETE`), índice parcial único anti-carreras (`idx_incidente_abierto_unico`), y hash SHA-256 de 64 caracteres.
-- **Frase de Oro para entregar a Joel:** *"Los diagramas cobran verdadero valor cuando se demuestran en la práctica; le cedo el control a nuestro Ingeniero de Software y QA, Joel Olaya."*
+- **Frase de Oro para entregar a Joel (min 07:45):** *"Los diagramas cobran verdadero valor cuando se demuestran en la práctica; le cedo el control a nuestro Ingeniero de Software y QA, Joel Olaya."*
 
-### 🟢 Tarjeta de Joel Olaya (La Evidencia y la Calidad)
+### 🟢 Tarjeta de Joel Olaya (La Evidencia y la Calidad — 4.0 min)
 - **La Consola:** 5 entidades en verde (BCP, Interbank, Tunki, Andes, CCE), latencias 14-28 ms, sesión corporativa `AD\frank.vargas`.
 - **El Live Demo:** Clic en 'Simular Alerta' -> Rojo instantáneo (9999 ms), ticket `INC-20261003-XXXXX` crítico, recálculo de SLA -> Ciclo Evaluar/Mitigar/Resolver.
 - **Los Tests:** Ejecución de `mvn test` en terminal -> 8/8 tests passing en 4.8 segundos con JUnit 5 y Mockito (metáfora del simulador de vuelo).
 - **El Cierre SFT:** Canvas con línea de referencia al 99.90% y descarga del `.txt` con hash SHA-256 criptográfico.
+- **Cierre Oficial (min 11:30 - 11:50):** 3 conclusiones concisas y agradecimiento al Ing. Yony Zamata.
 
 ---
 
@@ -373,14 +378,18 @@ Cuando el **Ing. Yony Zamata Condori** inicie la ronda de preguntas, formulará 
 
 ---
 
-## 🤝 5. Protocolo de Respaldo Mutuo y Química de Equipo
+## 🤝 5. Protocolo de Respaldo Mutuo y Control del Tiempo (Tope: 12 Minutos)
 
 1. **Si un compañero tiene un momento de duda o se le corta una frase:**  
    Cualquiera de los otros dos integrantes interviene con total naturalidad para apoyarlo, usando frases como:  
    - *"Complementando exactamente lo que explica Fernando respecto a la Circular del BCRP..."*  
    - *"Y justamente como señalaba Frank en la capa de arquitectura, en la parte de pruebas automatizadas lo garantizamos así..."*
-2. **Control Invisible del Tiempo:**  
-   Frank mantiene su reloj o teléfono con el cronómetro visible en la mesa. A los 2 minutos y medio le hace un contacto visual asintiendo a Fernando para que redondee su pase; y a los 6 minutos y medio le da una señal discreta a Joel para iniciar la demostración en vivo.
+2. **Control Invisible del Reloj (Colchón de Seguridad):**  
+   Frank mantiene su reloj o teléfono con el cronómetro visible en la mesa:
+   - **Minuto 03:15:** Contacto visual asintiendo a Fernando para redondear el bloque y dar el pase.
+   - **Minuto 07:45:** Señal discreta a Joel para iniciar la demostración práctica en vivo.
+   - **Minuto 11:30:** Joel inicia las conclusiones y el agradecimiento final.
+   - **Minuto 11:50 - 12:00:** Fin oficial de la presentación, cumpliendo con holgura el límite reglamentario.
 3. **Preparación de Pestañas y Pantallas:**  
    Joel tiene abiertas y listas desde antes de entrar:  
    - La diapositiva en pantalla completa.  
@@ -390,4 +399,4 @@ Cuando el **Ing. Yony Zamata Condori** inicie la ronda de preguntas, formulará 
 ---
 
 > [!TIP]
-> **Recomendación Final:** Practiquen este guion dos veces juntos antes de la clase. Recuerden que el **Ing. Yony Zamata Condori** valora inmensamente la sincronización, la seguridad al hablar y ver que los tres integrantes dominan la totalidad del proyecto. ¡A romperla en la sustentación! 🔥
+> **Recomendación Final:** Practiquen este guion dos veces juntos antes de la clase con un cronómetro real. El **Ing. Yony Zamata Condori** valora inmensamente la sincronización, la seguridad al hablar, la solvencia de respuestas y ver que el equipo no sobrepasa el límite reglamentario de 12 minutos. ¡A romperla en la sustentación! 🔥

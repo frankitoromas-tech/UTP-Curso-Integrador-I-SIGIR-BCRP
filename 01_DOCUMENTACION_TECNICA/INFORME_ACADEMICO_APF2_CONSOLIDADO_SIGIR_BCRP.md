@@ -138,15 +138,15 @@ El formato de salida SFT exige un archivo plano delimitado por caracteres pipe (
 
 ---
 
-## 5. Sustentación Oral APF2 (Guion de 10 Minutos por Integrante)
+## 5. Sustentación Oral APF2 (Guion de 12 Minutos Máximo • 3 Integrantes)
 
-La presentación ejecutiva se distribuye equitativamente entre los 3 integrantes del equipo, cubriendo los 3 bloques temáticos estratégicos exigidos en la rúbrica para la defensa de 10 minutos:
+La presentación ejecutiva se distribuye equitativamente entre los 3 integrantes del equipo, cubriendo los 3 bloques temáticos estratégicos exigidos en la rúbrica para la defensa de 12 minutos máximo:
 
 | Bloque / Tiempo | Integrante Responsable | Rol Oficial | Temas y Alocución Clave |
 | :--- | :--- | :--- | :--- |
-| Bloque 1<br>(00:00 - 03:00) | Fernando Alber Alfredo Romero Requejo | Ingeniero de Requisitos | Contexto del BCRP, Circular 0011-2023, problemática de asimetría de información y propuesta de valor del Business Model Canvas (BMC). |
-| Bloque 2<br>(03:00 - 07:00) | Frank Emiliano Vargas Huamán | Líder Técnico & Arquitecto | Presentación de las 3 alternativas TIC con >=50% Java, selección de la Alternativa 2 (Clean API), diseño de las 15 pantallas, arquitectura DER Físico/Lógico PostgreSQL 15, inmutabilidad append-only, seguridad RBAC/TLS y diagrama de clases de diseño en Spring Boot 3. |
-| Bloque 3<br>(07:00 - 10:00) | Joel Leonardo Olaya Vivas | Ingeniero de QA & Software | Live Demo de la Consola NOC en tiempo real, inyección de falla 503, creación atómica de ticket, suite JUnit 5 (8/8) y compilación del reporte de indisponibilidad y archivo normativo SFT con hash SHA-256. |
+| Bloque 1<br>(00:00 - 03:30) | Fernando Romero Barrientos | Ingeniero de Requisitos & Procesos | Contexto del BCRP, Circular 0011-2023, problemática de asimetría de información y propuesta de valor del Business Model Canvas (BMC). |
+| Bloque 2<br>(03:30 - 08:00) | Frank Emiliano Vargas Huamán | Líder Técnico & Arquitecto de Software | Presentación de las 3 alternativas TIC con >=50% Java, selección de la Alternativa 2 (Clean API), diseño de las 15 pantallas, arquitectura DER Físico/Lógico PostgreSQL 15, inmutabilidad append-only, seguridad RBAC/TLS y diagrama de clases de diseño en Spring Boot 3. |
+| Bloque 3<br>(08:00 - 12:00) | Joel Olaya Villegas | Ingeniero de Software & QA | Live Demo de la Consola NOC en tiempo real, inyección de falla 503, creación atómica de ticket, suite JUnit 5 (8/8) y compilación del reporte de indisponibilidad y archivo normativo SFT con hash SHA-256. |
 
 ---
 

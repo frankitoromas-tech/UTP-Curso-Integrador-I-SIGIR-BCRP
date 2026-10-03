@@ -48,7 +48,7 @@
 | 📕 | **Informe Académico APF2 (PDF Oficial)** | Documento formal consolidado APF2 con carátula UTP, 3 alternativas (>=50% Java), 15 mockups, DER PostgreSQL 15, clases de diseño y guion oral. | [Descargar PDF](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf) |
 | 📄 | **Informe Académico APF2 (Word DOCX)** | Versión editable oficial consolidada bajo formato APA 7 y estilos corporativos UTP. | [Descargar DOCX](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.docx) |
 | 📽️ | **Presentación Ejecutiva Oficial (PPTX)** | Diapositivas ejecutivas oficiales (20 láminas 4K), 3 alternativas (>=50% Java), 15 mockups, DER, clases y guion oral para 3 integrantes. | [Descargar PPTX](01_DOCUMENTACION_TECNICA/PRESENTACION_EJECUTIVA_APF2.pptx) |
-| 🎤 | **Guía de Ponencia y Sustentación Oral** | Guion pedagógico minuto a minuto (10 min), alocución de Frank (Líder Técnico) y banco de preguntas del jurado. | [Ver Guía](01_DOCUMENTACION_TECNICA/GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md) |
+| 🎤 | **Guía de Ponencia y Sustentación Oral** | Guion pedagógico minuto a minuto (12 min máx), alocución de Frank (Líder Técnico) y banco de preguntas del jurado. | [Ver Guía](01_DOCUMENTACION_TECNICA/GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md) |
 | 📝 | **Informe Académico APF2 (Markdown)** | Versión técnica completa renderizable en GitHub con diagramas vectoriales e imágenes 4K. | [Ver Markdown](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md) |
 | 📊 | **Módulo de Reportes Clave y API** | Fórmulas de indisponibilidad (MTTR/MTTD/Uptime), endpoints REST y compilación SFT. | [Ver Especificación](01_DOCUMENTACION_TECNICA/REPORTES_CLAVE_Y_API.md) |
 | 📋 | **Planificación Scrum y Cronograma** | WBS / EDT a 3 niveles, Product Backlog, Cronograma Gantt (Semana 8) y Matriz RACI. | [Ver Planificación](01_DOCUMENTACION_TECNICA/PLANIFICACION_SCRUM_CRONOGRAMA.md) |
@@ -231,15 +231,15 @@ En concordancia con la **Circular BCRP N° 0011-2023**, el sistema incorpora un 
 
 ---
 
-## 🎤 10. Sustentación Oral APF2: Guion Ejecutivo (10 Minutos • 3 Integrantes)
+## 🎤 10. Sustentación Oral APF2: Guion Ejecutivo (12 Minutos Máximo • 3 Integrantes)
 
-La defensa ejecutiva del proyecto se distribuye equitativamente entre los **3 integrantes oficiales del equipo**, cubriendo los 3 bloques estratégicos de la rúbrica UTP:
+La defensa ejecutiva del proyecto se distribuye equitativamente entre los **3 integrantes oficiales del equipo**, cubriendo los 3 bloques estratégicos de la rúbrica UTP con un tope máximo de 12 minutos:
 
 | Bloque / Tiempo | Integrante Responsable | Rol Oficial | Temas y Alocución Clave |
 | :--- | :--- | :--- | :--- |
-| **Bloque 1**<br>*(00:00 - 03:00)* | **Fernando Alber Alfredo Romero Requejo** | **Ingeniero de Requisitos & Procesos** | Marco Institucional del BCRP (Leyes N° 26123 y N° 29440), Circular BCRP N° 0011-2023, problemática de asimetría informativa (demoras de hasta 180 min ante caídas bancarias) y propuesta de valor del Business Model Canvas (BMC). |
-| **Bloque 2**<br>*(03:00 - 07:00)* | **Frank Emiliano Vargas Huamán** | **Líder Técnico & Arquitecto de Software** | Evaluación de las 3 alternativas TIC (>= 50% Java), justificación de la Alternativa 2 (Score 4.97/5.00), demostración de los 15 mockups de pantalla, Diagrama Entidad-Relación Físico/Lógico PostgreSQL 15, inmutabilidad append-only, seguridad en BD y Diagrama de Clases de Diseño en Spring Boot 3. |
-| **Bloque 3**<br>*(07:00 - 10:00)* | **Joel Leonardo Olaya Vivas** | **Ingeniero de Software & QA** | Demostración en vivo de la Consola NOC Web en tiempo real, login corporativo AD, barra telemétrica 30s, inyección de falla HTTP 503, auto-ticket correlativo, suite de 8 pruebas unitarias JUnit 5 / Mockito y compilador normativo SFT con sellado SHA-256. |
+| **Bloque 1**<br>*(00:00 - 03:30)*<br>*(3.5 min)* | **Fernando Romero Barrientos** | **Ingeniero de Requisitos & Procesos** | Marco Institucional del BCRP (Leyes N° 26123 y N° 29440), Circular BCRP N° 0011-2023, problemática de asimetría informativa (demoras de hasta 180 min ante caídas bancarias) y propuesta de valor del Business Model Canvas (BMC). |
+| **Bloque 2**<br>*(03:30 - 08:00)*<br>*(4.5 min)* | **Frank Emiliano Vargas Huamán** | **Líder Técnico & Arquitecto de Software** | Evaluación de las 3 alternativas TIC (>= 50% Java), justificación de la Alternativa 2 (Score 4.97/5.00), demostración de los 15 mockups de pantalla, Diagrama Entidad-Relación Físico/Lógico PostgreSQL 15, inmutabilidad append-only, seguridad en BD y Diagrama de Clases de Diseño en Spring Boot 3. |
+| **Bloque 3**<br>*(08:00 - 12:00)*<br>*(4.0 min)* | **Joel Olaya Villegas** | **Ingeniero de Software & QA** | Demostración en vivo de la Consola NOC Web en tiempo real, login corporativo AD, barra telemétrica 30s, inyección de falla HTTP 503, auto-ticket correlativo, suite de 8 pruebas unitarias JUnit 5 / Mockito y compilador normativo SFT con sellado SHA-256. |
 
 ---
 
@@ -252,7 +252,7 @@ La defensa ejecutiva del proyecto se distribuye equitativamente entre los **3 in
 | **Criterio 3: Herramientas de Gestión** | **3.0** | Project Charter, EDT / WBS a 3 niveles, Cronograma Gantt APF2 y Matriz RACI (3 integrantes). | Sección 4 del Informe, `PLANIFICACION_SCRUM_CRONOGRAMA.md`, `figura13` y Diapositivas 6, 7 y 8. |
 | **Criterio 4: Análisis de la Solución** | **6.0** | Estándar SRS IEEE 830, 12 Requisitos Funcionales, 8 RNF ISO/IEC 25010 y Casos de Uso UML 2.5. | Sección 5 del Informe, `ESPECIFICACION_REQUISITOS_IEEE830.md`, `figura2` y Diapositivas 9 y 10. |
 | **Criterio 5: Diseño y Modelado TIC** | **4.0** | BPMN 2.0 (AS-IS vs TO-BE), Arquitectura Hexagonal Java 17, DER Físico/Lógico PostgreSQL 15, Clases Spring Boot 3 y Seguridad en BD. | Sección 6 del Informe, `02_BASE_DE_DATOS`, `figura1`, `figura6`, `figura11`, `figura12` y Diapositivas 11, 12, 13 y 14. |
-| **Criterio 6: Demostración y Pruebas** | **2.0** | Sustentación oral (guion 10 min, 3 integrantes), Live Demo Consola Web, Suite JUnit 5 (8/8) y Módulo SFT SHA-256. | Suite Maven (`mvn test`: 8/8 pasadas), Consola NOC en `04_FRONTEND_UI`, `REPORTES_CLAVE_Y_API.md` y Diapositivas 15, 16, 17 y 18. |
+| **Criterio 6: Demostración y Pruebas** | **2.0** | Sustentación oral (guion 12 min máx, 3 integrantes), Live Demo Consola Web, Suite JUnit 5 (8/8) y Módulo SFT SHA-256. | Suite Maven (`mvn test`: 8/8 pasadas), Consola NOC en `04_FRONTEND_UI`, `REPORTES_CLAVE_Y_API.md` y Diapositivas 15, 16, 17 y 18. |
 | **TOTAL OFICIAL** | **20.0** | **Cobertura Integral 100% de la Rúbrica APF2** | **Cumplimiento exhaustivo, verificable y desplegable.** |
 
 ---
@@ -323,7 +323,7 @@ Endpoints disponibles:
 │   ├── INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md     # Informe completo en Markdown
 │   ├── PRESENTACION_EJECUTIVA_APF2.pptx       # Diapositivas oficiales APF2 (20 láminas 4K - 3 integrantes)
 │   ├── PRESENTACION_EJECUTIVA_APF1.pptx       # Diapositivas base sincronizadas (3 integrantes)
-│   ├── GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md  # Guion oral minuto a minuto (10 min) y banco de preguntas
+│   ├── GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md  # Guion oral minuto a minuto (12 min máx) y banco de preguntas
 │   ├── REPORTES_CLAVE_Y_API.md                # Especificación técnica del módulo de reportes y SFT
 │   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      # EDT/WBS, Product Backlog y Cronograma Gantt APF2
 │   ├── ESPECIFICACION_REQUISITOS_IEEE830.md   # SRS IEEE 830 (12 RFs y 8 RNFs)
