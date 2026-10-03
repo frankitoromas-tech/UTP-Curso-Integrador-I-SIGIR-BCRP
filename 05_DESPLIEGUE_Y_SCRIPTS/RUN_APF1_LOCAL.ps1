@@ -13,14 +13,14 @@ $BackendDir = Join-Path $BaseDir "03_BACKEND_SPRINGBOOT"
 
 Clear-Host
 Write-Host "==============================================================================" -ForegroundColor Cyan
-Write-Host "   SIGIR - BCRP: Lanzador de Gestion y Verificacion (APF1)" -ForegroundColor Yellow
+Write-Host "   SIGIR - BCRP: Lanzador de Gestion y Verificacion (APF2)" -ForegroundColor Yellow
 Write-Host "   Lider Tecnico: Frank Emiliano Vargas Huaman | Seccion 57524" -ForegroundColor White
 Write-Host "==============================================================================" -ForegroundColor Cyan
 Write-Host ""
 
-$docsMdOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.md")
-$docsDocxOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.docx")
-$docsPdfOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf")
+$docsMdOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md")
+$docsDocxOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.docx")
+$docsPdfOk = Test-Path (Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf")
 $dbOk = Test-Path (Join-Path $BaseDir "02_BASE_DE_DATOS\01_SCHEMA_DDL_POSTGRESQL.sql")
 $backendOk = Test-Path (Join-Path $BackendDir "pom.xml")
 $frontendOk = Test-Path $FrontendIndex
@@ -84,7 +84,7 @@ switch ($opcion) {
     }
     "5" {
         Write-Host "`nAbriendo Informe Academico Oficial en PDF (Canvas UTP)..." -ForegroundColor Green
-        $informePath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf"
+        $informePath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf"
         Start-Process $informePath
     }
     "6" {

@@ -1,5 +1,5 @@
 # 🏛️ SIGIR - BCRP: Sistema de Gestión de Incidentes Regulatorios para Pagos Digitales
-### *Prototipo de Telemetría y Supervisión Continua de Pagos Interoperables (APF1)*
+### *Prototipo de Telemetría, Supervisión Continua de Pagos Interoperables y Reportes Normativos (APF2)*
 
 <p align="center">
   <img src="https://img.shields.io/badge/Universidad-UTP%20Lima%20Centro-C8102E?style=for-the-badge&logo=target&logoColor=white" alt="UTP" />
@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Docker-Compose%20Ready-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/JUnit%205-8%2F8%20Tests%20Passing-25A162?style=flat-square&logo=junit5&logoColor=white" alt="JUnit 5" />
   <img src="https://img.shields.io/badge/Architecture-Hexagonal%20%2F%20Clean-8B5CF6?style=flat-square" alt="Hexagonal" />
-  <img src="https://img.shields.io/badge/Status-Hito%20APF1%20100%25-059669?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/Status-Hito%20APF2%20100%25-059669?style=flat-square" alt="Status" />
 </p>
 
 ---
@@ -32,26 +32,26 @@
 
 | # | Estudiante | Código UTP | Rol Oficial en el Proyecto | Responsabilidad Técnica Principal |
 | :-: | :--- | :---: | :--- | :--- |
-| **1** | **Frank Emiliano Vargas Huamán** | `U23243651` | **Líder Técnico & Arquitecto** | Arquitectura Hexagonal, DDL Inmutable, Core Java 17, Spring Boot 3 y Docker. |
-| **2** | **Fernando Alber Alfredo Romero Requejo** | `U21216410` | **Ingeniero de Requisitos** | Levantamiento SRS IEEE 830, Modelado BPMN 2.0 y Reglas Normativas BCRP. |
-| **3** | **Joel Leonardo Olaya Vivas** | `U21221688` | **Ingeniero de Software & QA** | Automatización de Pruebas Unitarias JUnit 5, Validación Mockito y Criterios de Aceptación. |
-| **4** | **Luis Tapia Ignacio** | `U25239074` | **Especialista en Datos** | Modelo Relacional PostgreSQL 15, Semilla DDL, Constraints y Diccionario de Datos. |
+| **1** | **Frank Emiliano Vargas Huamán** | `U23243651` | **Líder Técnico, Arquitecto & Especialista en Datos** | Arquitectura Hexagonal, DDL Inmutable PostgreSQL 15, Core Java 17, Spring Boot 3 y Docker. |
+| **2** | **Fernando Alber Alfredo Romero Requejo** | `U21216410` | **Ingeniero de Requisitos & Procesos** | Levantamiento SRS IEEE 830, Modelado BPMN 2.0 y Reglas Normativas BCRP. |
+| **3** | **Joel Leonardo Olaya Vivas** | `U21221688` | **Ingeniero de Software & QA** | Automatización de Pruebas Unitarias JUnit 5, Validación Mockito, Módulo de Reportes y Criterios de Aceptación. |
 
 ---
 
-## ⚡ Acceso Inmediato a Entregables Oficiales (Hito APF1)
+## ⚡ Acceso Inmediato a Entregables Oficiales (Hito APF2)
 
 > [!IMPORTANT]
-> Los documentos formales de entrega evaluativa solicitados por la cátedra se encuentran listos para revisión y descarga directa:
+> Los documentos formales de entrega evaluativa solicitados por la cátedra para el Avance de Proyecto Final 2 (Semana 8) se encuentran consolidados y listos para revisión:
 
 | Formato | Entregable Oficial | Descripción y Cobertura | Enlace Directo |
 | :---: | :--- | :--- | :---: |
-| 📕 | **Informe Académico APF1 (PDF Oficial)** | Documento formal completo con carátula oficial UTP, índice dinámico, tablas APA 7 y diagramas 4K. | [Descargar PDF](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF1_COMPLETO.pdf) |
-| 📄 | **Informe Académico APF1 (Word DOCX)** | Versión editable estructurada bajo norma APA 7 con estilos corporativos UTP. | [Descargar DOCX](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF1_COMPLETO.docx) |
-| 📊 | **Presentación Ejecutiva (PowerPoint PPTX)** | 14 diapositivas profesionales (estilo Canva Pro) con tipografía ampliada y diagramas ultra-nítidos. | [Descargar PPTX](01_DOCUMENTACION_TECNICA/PRESENTACION_EJECUTIVA_APF1.pptx) |
-| 📋 | **Planificación Scrum y Cronograma** | WBS / EDT a 3 niveles, Product Backlog (70 SP), Cronograma Gantt y Matriz RACI. | [Ver Markdown](01_DOCUMENTACION_TECNICA/PLANIFICACION_SCRUM_CRONOGRAMA.md) |
+| 📕 | **Informe Académico APF2 (PDF Oficial)** | Documento formal consolidado APF2 con carátula UTP, 3 alternativas (>=50% Java), 15 mockups, DER PostgreSQL 15, clases de diseño y guion oral. | [Descargar PDF](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf) |
+| 📄 | **Informe Académico APF2 (Word DOCX)** | Versión editable oficial consolidada bajo formato APA 7 y estilos corporativos UTP. | [Descargar DOCX](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.docx) |
+| 📝 | **Informe Académico APF2 (Markdown)** | Versión técnica completa renderizable en GitHub con diagramas vectoriales e imágenes 4K. | [Ver Markdown](01_DOCUMENTACION_TECNICA/INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md) |
+| 📊 | **Módulo de Reportes Clave y API** | Fórmulas de indisponibilidad (MTTR/MTTD/Uptime), endpoints REST y compilación SFT. | [Ver Especificación](01_DOCUMENTACION_TECNICA/REPORTES_CLAVE_Y_API.md) |
+| 📋 | **Planificación Scrum y Cronograma** | WBS / EDT a 3 niveles, Product Backlog, Cronograma Gantt (Semana 8) y Matriz RACI. | [Ver Planificación](01_DOCUMENTACION_TECNICA/PLANIFICACION_SCRUM_CRONOGRAMA.md) |
 | ⚙️ | **Especificación de Requisitos IEEE 830** | 12 Requisitos Funcionales y 8 Requisitos No Funcionales bajo ISO/IEC 25010. | [Ver SRS](01_DOCUMENTACION_TECNICA/ESPECIFICACION_REQUISITOS_IEEE830.md) |
-| 🏛️ | **Arquitectura y Diseño Técnico** | Diagramas de Clases, Secuencias, Puertos y Adaptadores y DDL SQL. | [Ver Arquitectura](01_DOCUMENTACION_TECNICA/ARQUITECTURA_Y_DISENO_SISTEMA.md) |
+| 🏛️ | **Arquitectura y Diseño Técnico** | Diagramas de Clases, Secuencias, Arquitectura Hexagonal y DDL SQL. | [Ver Arquitectura](01_DOCUMENTACION_TECNICA/ARQUITECTURA_Y_DISENO_SISTEMA.md) |
 
 ---
 
@@ -228,14 +228,15 @@ Endpoints disponibles:
 
 ```text
 ├── 📁 01_DOCUMENTACION_TECNICA/       # Entregables oficiales de cátedra
-│   ├── INFORME_ACADEMICO_APF1_COMPLETO.pdf    # Informe oficial compilado (Listo para Canvas UTP)
-│   ├── INFORME_ACADEMICO_APF1_COMPLETO.docx   # Informe oficial editable APA 7
-│   ├── PRESENTACION_EJECUTIVA_APF1.pptx       # Diapositivas oficiales de sustentación oral
-│   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      # EDT/WBS, Product Backlog (70 SP) y RACI
+│   ├── INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf    # Informe consolidado APF2 (Listo para Canvas UTP)
+│   ├── INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.docx   # Informe editable APF2 APA 7
+│   ├── INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md     # Informe completo en Markdown
+│   ├── REPORTES_CLAVE_Y_API.md                # Especificación técnica del módulo de reportes y SFT
+│   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      # EDT/WBS, Product Backlog y Cronograma Gantt
 │   ├── ESPECIFICACION_REQUISITOS_IEEE830.md   # SRS IEEE 830 (12 RFs y 8 RNFs)
 │   ├── MODELO_PROCESOS_BPMN_2_0.md            # Diagramación de procesos As-Is vs To-Be
 │   ├── ARQUITECTURA_Y_DISENO_SISTEMA.md       # Arquitectura Hexagonal y diseño UI/UX
-│   └── 📁 imagenes/                           # Diagramas vectoriales SVG y renders Ultra 4K
+│   └── 📁 imagenes/                           # Diagramas vectoriales SVG, DER, Clases y Mockups 4K
 ├── 📁 02_BASE_DE_DATOS/               # Scripts SQL y modelo relacional
 │   ├── 01_SCHEMA_DDL_POSTGRESQL.sql           # Tablas, constraints, triggers de inmutabilidad
 │   ├── 02_SEED_DATA_INICIAL.sql               # Entidades bancarias peruanas y catálogo normativo

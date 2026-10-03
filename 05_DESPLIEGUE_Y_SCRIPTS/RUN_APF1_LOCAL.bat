@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-title SIGIR-BCRP - Lanzador Inteligente de Avance de Proyecto Final 1
+title SIGIR-BCRP - Lanzador Inteligente de Avance de Proyecto Final 2 (APF2)
 cls
 
 echo ==============================================================================
@@ -15,11 +15,11 @@ set "FRONTEND_DIR=%BASE_DIR%\04_FRONTEND_UI"
 set "BACKEND_DIR=%BASE_DIR%\03_BACKEND_SPRINGBOOT"
 
 echo [VERIFICACION PREVIA DE COMPONENTES]:
-if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.docx" (
-    echo  [OK] Informe Academico Word APA 7 (Canvas UTP)
+if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.docx" (
+    echo  [OK] Informe Academico Word APF2 (Canvas UTP)
 )
-if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf" (
-    echo  [OK] Informe Academico PDF Listo con Diagramas BPMN/UML (Canvas UTP)
+if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf" (
+    echo  [OK] Informe Academico PDF APF2 Listo con 15 Mockups y DER (Canvas UTP)
 )
 if exist "%BASE_DIR%\02_BASE_DE_DATOS\01_SCHEMA_DDL_POSTGRESQL.sql" (
     echo  [OK] Scripts DDL con Inmutabilidad Append-Only e Indice Anti-Carreras
@@ -61,8 +61,8 @@ goto FIN
 
 :MODO_INFORME
 echo.
-echo Abriendo Informe Academico Oficial en PDF (Canvas UTP)...
-start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF1_COMPLETO.pdf"
+echo Abriendo Informe Academico Oficial APF2 en PDF (Canvas UTP)...
+start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf"
 goto FIN
 
 :MODO_FRONTEND

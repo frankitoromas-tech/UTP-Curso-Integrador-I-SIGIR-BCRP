@@ -29,10 +29,11 @@ out/
 .vscode/
 *.code-workspace
 
-# OS files
+# OS files & Office temp files
 .DS_Store
 Thumbs.db
 desktop.ini
+~$*
 
 # Logs
 *.log
