@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGIR - BCRP | Módulo de Reportes Clave (APF2)</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-left">
+            <div class="brand-badge"><span class="badge-icon">🏛️</span><span class="badge-text">BCRP REGULATORIO</span></div>
+            <div class="brand-title"><h1>SIGIR - Reportes Clave</h1><p>Indisponibilidad por entidad + KPIs + Archivo normativo SFT (APF2)</p></div>
+        </div>
+        <div class="header-right">
+            <a href="index.html" class="btn btn-secondary" style="text-decoration:none">← Volver a Consola NOC</a>
+            <span id="connPill" class="backend-status-pill offline">Modo Simulación</span>
+        </div>
+    </header>
+
+    <main class="main-layout">
+        <section class="panel-card">
+            <div class="panel-header">
+                <div class="panel-title-group"><h3>Filtros del período</h3><span class="panel-subtitle">Aplica a indisponibilidad, KPIs y SFT</span></div>
+                <div class="filters-toolbar">
+                    <input type="datetime-local" id="fDesde" class="select-filter">
+                    <input type="datetime-local" id="fHasta" class="select-filter">
+                    <select id="fEntidad" class="select-filter"><option value="">Todas las entidades</option></select>
+                    <button class="btn btn-primary" id="btnAplicar">Aplicar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel-card">
+            <div class="panel-header"><div class="panel-title-group"><h3>KPIs globales (RF-09)</h3><span class="panel-subtitle">MTTR / MTTD / Uptime</span></div>
+            <div class="action-buttons-group">
+                <button class="btn btn-secondary" id="btnCSV">Exportar CSV (Excel)</button>
+                <button class="btn btn-secondary" id="btnPrint">Exportar PDF (imprimir)</button>
+            </div></div>
+            <div class="kpi-group" style="padding:16px">
+                <div class="kpi-mini-card"><span class="kpi-label">Total</span><span class="kpi-value" id="kTotal">-</span></div>
+                <div class="kpi-mini-card critical"><span class="kpi-label">Activos</span><span class="kpi-value" id="kActivos">-</span></div>
+                <div class="kpi-mini-card success"><span class="kpi-label">Cerrados</span><span class="kpi-value" id="kCerrados">-</span></div>
+                <div class="kpi-mini-card"><span class="kpi-label">MTTR (min)</span><span class="kpi-value" id="kMttr">-</span></div>
+                <div class="kpi-mini-card"><span class="kpi-label">MTTD (min)</span><span class="kpi-value" id="kMttd">-</span></div>
+                <div class="kpi-mini-card"><span class="kpi-label">Uptime %</span><span class="kpi-value" id="kUptime" style="color:#38BDF8">-</span></div>
+            </div>
+            <div style="padding:0 16px 16px"><canvas id="chartUptime" width="800" height="220" style="width:100%;background:rgba(255,255,255,.03);border-radius:10px"></canvas></div>
+        </section>
+
+        <section class="panel-card">
+            <div class="panel-header"><div class="panel-title-group"><h3>Reporte de indisponibilidad por entidad</h3><span class="panel-subtitle">Base del informe normativo y del SFT</span></div></div>
+            <div class="table-responsive"><table class="data-table"><thead><tr>
+                <th>Entidad</th><th>Cod. BCRP</th><th>Incidentes</th><th>Críticos</th><th>MTTR (min)</th><th>MTTD (min)</th><th>Min. indisp.</th><th>Uptime %</th>
+            </tr></thead><tbody id="tbodyIndisp"></tbody></table></div>
+        </section>
+
+        <section class="panel-card">
+            <div class="panel-header"><div class="panel-title-group"><h3>Archivo normativo SFT (RF-08)</h3><span class="panel-subtitle">HEADER / DETALLE / FOOTER + SHA-256 — formato vigente sin cambios</span></div>
+            <div class="action-buttons-group"><button class="btn btn-bcrp" id="btnSFT">Generar SFT con filtros</button></div></div>
+            <div class="modal-body">
+                <div class="sft-code-box"><pre id="sftPreview">Sin generar.</pre></div>
+                <div class="hash-box"><span class="hash-label">HASH SHA-256:</span><span class="hash-value" id="sftHash">-</span></div>
+                <div class="modal-footer"><button class="btn btn-secondary" id="btnHist">Ver historial</button><button class="btn btn-bcrp" id="btnDL">Descargar .TXT</button></div>
+                <div class="table-responsive"><table class="data-table"><thead><tr><th>ID</th><th>N° envío</th><th>Archivo</th><th>Registros</th><th>Hash</th><th>Descarga</th></tr></thead><tbody id="tbodyHist"></tbody></table></div>
+            </div>
+        </section>
+    </main>
+    <script src="js/reportes.js"></script>
+</body>
+</html>

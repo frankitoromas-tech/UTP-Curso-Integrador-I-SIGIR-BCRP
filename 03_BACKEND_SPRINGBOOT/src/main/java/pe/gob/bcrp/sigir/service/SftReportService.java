@@ -32,6 +32,30 @@ public class SftReportService {
     @Transactional
     public ReporteBCRP generarReporteNormativoSFT(String usuarioEjecutor) {
         List<Incidente> cerrados = incidenteRepository.findIncidentesListosParaReporteNormativo();
+        return compilarLote(cerrados, usuarioEjecutor);
+    }
+
+    /** Variante APF2 con filtros opcionales por rango de fechas e idEntidad (mantiene formato HEADER/DETALLE/FOOTER). */
+    @Transactional
+    public ReporteBCRP generarReporteNormativoSFTConFiltros(String usuarioEjecutor,
+                                                           java.time.LocalDateTime desde,
+                                                           java.time.LocalDateTime hasta,
+                                                           Long idEntidad) {
+        List<Incidente> cerrados = incidenteRepository.findIncidentesListosParaReporteNormativo();
+        if (desde != null && hasta != null) {
+            cerrados = cerrados.stream()
+                    .filter(i -> !i.getFechaHoraInicio().isBefore(desde) && !i.getFechaHoraInicio().isAfter(hasta))
+                    .toList();
+        }
+        if (idEntidad != null) {
+            cerrados = cerrados.stream()
+                    .filter(i -> i.getEntidad().getIdEntidad().equals(idEntidad))
+                    .toList();
+        }
+        return compilarLote(cerrados, usuarioEjecutor);
+    }
+
+    private ReporteBCRP compilarLote(List<Incidente> cerrados, String usuarioEjecutor) {
         String timestamp = LocalDateTime.now().format(FORMATO_NORM);
         String numeroEnvio = "SFT-BCRP-" + timestamp;
 
