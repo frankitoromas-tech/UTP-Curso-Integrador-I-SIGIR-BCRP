@@ -21,6 +21,9 @@ if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO
 if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.pdf" (
     echo  [OK] Informe Academico PDF APF2 Listo con 15 Mockups y DER (Canvas UTP)
 )
+if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF2.pptx" (
+    echo  [OK] Presentacion Ejecutiva Oficial APF2 (20 Diapositivas 4K - 3 Integrantes)
+)
 if exist "%BASE_DIR%\02_BASE_DE_DATOS\01_SCHEMA_DDL_POSTGRESQL.sql" (
     echo  [OK] Scripts DDL con Inmutabilidad Append-Only e Indice Anti-Carreras
 )
@@ -56,7 +59,11 @@ if "%OPCION%"=="7" goto SALIR
 :MODO_PPTX
 echo.
 echo Abriendo Diapositivas Oficiales PowerPoint...
-start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF1.pptx"
+if exist "%BASE_DIR%\01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF2.pptx" (
+    start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF2.pptx"
+) else (
+    start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF1.pptx"
+)
 goto FIN
 
 :MODO_INFORME

@@ -88,8 +88,11 @@ switch ($opcion) {
         Start-Process $informePath
     }
     "6" {
-        Write-Host "`nAbriendo Diapositivas Oficiales PowerPoint..." -ForegroundColor Yellow
-        $pptxPath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF1.pptx"
+        Write-Host "`nAbriendo Diapositivas Oficiales PowerPoint (APF2)..." -ForegroundColor Yellow
+        $pptxPath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF2.pptx"
+        if (-not (Test-Path $pptxPath)) {
+            $pptxPath = Join-Path $BaseDir "01_DOCUMENTACION_TECNICA\PRESENTACION_EJECUTIVA_APF1.pptx"
+        }
         Start-Process $pptxPath
     }
     Default {

@@ -142,14 +142,18 @@ gantt
 
 ## 5. MATRIZ DE ASIGNACIÓN DE RESPONSABILIDADES (RACI)
 
-| Paquete de Trabajo / Entregable | Frank Vargas (Lead / Dev) | Ing. Yony Zamata (Docente / PO) | Operador NOC / Entidades | Auditor Regulatorio BCRP |
-| :--- | :---: | :---: | :---: | :---: |
-| **Acta de Constitución y Alcance** | **R / A** | **A** | C | I |
-| **Modelado de Procesos BPMN 2.0** | **R / A** | **A** | C | I |
-| **Especificación de Requisitos IEEE 830** | **R / A** | **A** | C | I |
-| **Diseño del Modelo Relacional DDL** | **R / A** | C | I | I |
-| **Implementación Backend Java/Spring** | **R / A** | I | I | I |
-| **Construcción Worker de Telemetría** | **R / A** | I | C | I |
-| **Desarrollo Frontend NOC Dashboard** | **R / A** | I | C | I |
-| **Validación de Formato SFT BCRP** | **R / A** | **A** | I | **A** |
-| **Aprobación de Entregable APF1** | R | **A** | I | I |
+| Paquete de Trabajo / Entregable | Frank Vargas<br>(Líder Técnico & Arquitecto) | Fernando Romero<br>(Ing. Requisitos & Procesos) | Joel Olaya<br>(Ing. Software & QA) | Ing. Yony Zamata<br>(Docente / PO) | Stakeholders BCRP<br>(NOC / Auditoría) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Acta de Constitución y Alcance** | **A** | **R** | C | **A** | I |
+| **Modelado de Procesos BPMN 2.0** | C | **R / A** | C | **A** | C |
+| **Especificación de Requisitos IEEE 830** | C | **R / A** | C | **A** | C |
+| **Evaluación 3 Alternativas TIC (>=50% Java)** | **R / A** | **R** | C | **A** | I |
+| **Diseño 15 Mockups de Pantallas** | **R / A** | **R** | C | C | I |
+| **Modelo Relacional DER PostgreSQL 15 Inmutable** | **R / A** | C | C | C | I |
+| **Diagrama de Clases de Diseño Spring Boot 3** | **R / A** | C | **R** | C | I |
+| **Implementación Backend Java 17 / Spring Boot** | **R / A** | C | **R** | I | I |
+| **Construcción Worker de Telemetría (30s)** | **R / A** | I | C | I | C |
+| **Desarrollo Consola Web NOC en Tiempo Real** | **R / A** | C | **R** | I | C |
+| **Suite de Pruebas Unitarias JUnit 5 / Mockito** | C | C | **R / A** | I | I |
+| **Módulo de Reportes de Indisponibilidad y SFT** | **R** | C | **R / A** | **A** | **A** |
+| **Aprobación de Entregables APF1 y APF2** | **R** | **R** | **R** | **A** | I |
