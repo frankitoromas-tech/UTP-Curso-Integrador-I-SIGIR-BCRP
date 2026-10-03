@@ -292,14 +292,15 @@ mvn test
 
 ### Opción 1: Lanzador Inteligente Local para Windows (Recomendada)
 1. Navegue a la carpeta `05_DESPLIEGUE_Y_SCRIPTS/`.
-2. Ejecute con doble clic **`RUN_APF1_LOCAL.bat`** (o ejecute `RUN_APF1_LOCAL.ps1` en PowerShell).
-3. Seleccione la opción deseada del menú:
+2. Ejecute con doble clic **`RUN_APF2_LOCAL.bat`** (o `RUN_APF1_LOCAL.bat` / PowerShell).
+3. Seleccione la opción deseada del menú interactivo:
    - `[1]` Abrir Consola Web NOC en vivo en el navegador.
    - `[2]` Ejecutar la suite de pruebas unitarias Maven (`mvn test`).
    - `[3]` Compilar y levantar la API Backend Spring Boot en el puerto `8080`.
    - `[4]` Despliegue completo con contenedores Docker Compose.
    - `[5]` Abrir Informe Académico Oficial en PDF (Canvas UTP).
    - `[6]` Abrir Diapositivas Oficiales PowerPoint APF2 (`PRESENTACION_EJECUTIVA_APF2.pptx`).
+   - `[7]` Abrir Guía Maestra de Ponencia y Sustentación Oral (`GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md`).
 
 ### Opción 2: Despliegue Empresarial con Docker Compose
 ```bash
@@ -322,6 +323,7 @@ Endpoints disponibles:
 │   ├── INFORME_ACADEMICO_APF2_CONSOLIDADO_SIGIR_BCRP.md     # Informe completo en Markdown
 │   ├── PRESENTACION_EJECUTIVA_APF2.pptx       # Diapositivas oficiales APF2 (20 láminas 4K - 3 integrantes)
 │   ├── PRESENTACION_EJECUTIVA_APF1.pptx       # Diapositivas base sincronizadas (3 integrantes)
+│   ├── GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md  # Guion oral minuto a minuto (10 min) y banco de preguntas
 │   ├── REPORTES_CLAVE_Y_API.md                # Especificación técnica del módulo de reportes y SFT
 │   ├── PLANIFICACION_SCRUM_CRONOGRAMA.md      # EDT/WBS, Product Backlog y Cronograma Gantt APF2
 │   ├── ESPECIFICACION_REQUISITOS_IEEE830.md   # SRS IEEE 830 (12 RFs y 8 RNFs)
@@ -344,8 +346,10 @@ Endpoints disponibles:
 │   ├── docker-compose.yml                     # Multi-contenedor (Postgres 15 + API + Nginx)
 │   ├── Dockerfile_Backend                     # Construcción multi-stage JDK 17
 │   ├── Dockerfile_Frontend                    # Servidor web ligero Nginx Alpine
-│   ├── RUN_APF1_LOCAL.bat                     # Lanzador en 1 clic para Windows
-│   └── RUN_APF1_LOCAL.ps1                     # Script interactivo en PowerShell
+│   ├── RUN_APF2_LOCAL.bat                     # Lanzador en 1 clic para Windows (APF2)
+│   ├── RUN_APF2_LOCAL.ps1                     # Script interactivo en PowerShell (APF2)
+│   ├── RUN_APF1_LOCAL.bat                     # Lanzador compatible Windows (APF1)
+│   └── RUN_APF1_LOCAL.ps1                     # Script compatible PowerShell (APF1)
 └── README.md                          # Guía ejecutiva maestra del repositorio
 ```
 
