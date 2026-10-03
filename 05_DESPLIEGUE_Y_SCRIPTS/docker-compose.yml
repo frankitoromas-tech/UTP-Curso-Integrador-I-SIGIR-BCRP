@@ -9,6 +9,11 @@ services:
       POSTGRES_DB: bcrp_incident_db
       POSTGRES_USER: bcrp_admin
       POSTGRES_PASSWORD: SecretBcrpPassword2026!
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bcrp_admin -d bcrp_incident_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     ports:
       - "5432:5432"
     volumes:
@@ -25,7 +30,8 @@ services:
     container_name: sigir-api
     restart: always
     depends_on:
-      - postgres-bcrp
+      postgres-bcrp:
+        condition: service_healthy
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-bcrp:5432/bcrp_incident_db
       SPRING_DATASOURCE_USERNAME: bcrp_admin

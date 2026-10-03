@@ -1,0 +1,57 @@
+name: CI & Security Quality Gate
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    name: Backend Build & Unit Tests (JUnit 5)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (Eclipse Temurin)
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Compile and Run Tests
+        working-directory: 03_BACKEND_SPRINGBOOT
+        run: mvn clean test -B
+
+  security-sast-and-audit:
+    name: SAST Security Scan & Dependency Audit
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Validate No Plaintext Credentials in Git
+        run: |
+          echo "Verificando ausencia de secretos o credenciales comprometidas en código fuente..."
+          ! grep -rn "PRIVATE KEY" 03_BACKEND_SPRINGBOOT/src/ || exit 1
+
+      - name: Strix Pentest & Security Scan (Conditional Gate)
+        if: env.STRIX_LLM != '' && env.LLM_API_KEY != ''
+        env:
+          STRIX_LLM: ${{ secrets.STRIX_LLM }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          curl -sSL https://strix.ai/install | bash
+          export PATH="$HOME/.local/bin:$PATH"
+          strix -n -t ./ --scan-mode quick --max-budget 10
