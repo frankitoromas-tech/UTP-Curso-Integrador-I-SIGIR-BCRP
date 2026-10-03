@@ -1,273 +1,393 @@
-# 🎤 GUÍA MAESTRA DE PONENCIA Y SUSTENTACIÓN ORAL — APF2 (HITO SEMANA 8)
+# 🎤 GUÍA MAESTRA DE SUSTENTACIÓN ORAL — APF2 (HITO SEMANA 8)
+### *Ponencia Didáctica, Pedagógica y Fluidamente Humana para 3 Integrantes*
 **Proyecto:** SIGIR - BCRP (Sistema de Gestión de Incidentes Regulatorios para Pagos Digitales)  
-**Asignatura:** Curso Integrador I: Sistemas Software (Sección 57524)  
+**Curso:** Curso Integrador I: Sistemas Software (Sección 57524, 7mo Ciclo)  
 **Docente Evaluador:** Ing. Yony Zamata Condori  
 **Institución:** Universidad Tecnológica del Perú (UTP) — Facultad de Ingeniería  
 
 ---
 
-## 👥 Equipo Oficial de Exposición (3 Integrantes)
+## 🧭 1. Filosofía Pedagógica: Cómo Ganarse al Jurado en 10 Minutos
 
-| # | Integrante | Rol Oficial en el Proyecto | Bloque Asignado | Tiempo | Diapositivas |
-| :-: | :--- | :--- | :---: | :---: | :---: |
-| **1** | **Fernando Alber Alfredo Romero Requejo** | **Ingeniero de Requisitos & Procesos** | **Bloque 1:** Contexto Institucional, Problema Real, BMC, EDT y Requisitos IEEE 830 | 00:00 – 03:00 (3 min) | Diapositivas 1, 2, 3, 4, 6, 7, 8 |
-| **2** | **Frank Emiliano Vargas Huamán** | **Líder Técnico & Arquitecto de Software** | **Bloque 2:** 3 Alternativas TIC (>=50% Java), 15 Mockups, Arquitectura Hexagonal, DER PostgreSQL 15 Inmutable y Clases Spring Boot 3 | 03:00 – 07:00 (4 min) | Diapositivas 5, 11, 12, 13, 14, 17 |
-| **3** | **Joel Leonardo Olaya Vivas** | **Ingeniero de Software & QA** | **Bloque 3:** Casos de Uso UML, Live Demo Consola NOC, Inyección 503, Tests JUnit 5 (8/8), Compilador SFT SHA-256 y Cierre | 07:00 – 10:00 (3 min) | Diapositivas 9, 10, 15, 16, 18, 19, 20 + Web & Terminal |
+> [!IMPORTANT]
+> **La Regla de Oro del Equipo (Cero Lectura Robótica):**  
+> Un jurado de ingeniería no evalúa la capacidad de un estudiante para leer diapositivas en voz alta; evalúa su **criterio profesional, solvencia técnica, claridad pedagógica y capacidad de trabajo en equipo**.  
+> 
+> Durante los 10 minutos oficiales de la sustentación:
+> 1. **Miren a los ojos del profesor Ing. Yony Zamata Condori.** Las diapositivas son un respaldo probatorio; ustedes son los narradores del valor ingenieril.
+> 2. **Usen analogías cotidianas.** Un concepto informático complejo se vuelve inolvidable cuando se compara con algo que el jurado vive todos los días (un enchufe universal, un libro notarial foliado, un simulador de vuelo).
+> 3. **Muestren química de equipo auténtica.** Los pases de palabra no son cortes abruptos; son "pases de gol" donde cada integrante edifica al que sigue.
 
 ---
 
-## ⏱️ CRONOMETRÍA VISUAL DE LOS 10 MINUTOS (RÚBRICA OFICIAL UTP)
+## ⏱️ 2. Reparto de Roles y Tiempos de Oro (10 Minutos Exactos)
 
 ```mermaid
 gantt
-    title Distribución Estratégica de los 10 Minutos de Sustentación APF2
+    title Distribución de los 10 Minutos Oficiales de Sustentación (Rúbrica APF2)
     dateFormat  X
     axisFormat %s min
-    section Bloque 1 (3 min)
-    Fernando Romero (Contexto, Problema, BMC, EDT & SRS) :active, 0, 3
-    section Bloque 2 (4 min)
-    Frank Vargas (Alternativas >=50% Java, DER Inmutable, Hexagonal & Clases) :crit, 3, 7
-    section Bloque 3 (3 min)
-    Joel Olaya (Casos Uso, Live Demo 503, JUnit 8/8, SFT & Cierre) :done, 7, 10
+    section 1. Fernando Romero (3 min)
+    Gancho Real, Dolor Ciudadano, BMC, Scrum, EDT y Requisitos IEEE 830 :active, 0, 3
+    section 2. Frank Vargas (4 min)
+    Alternativas >=50% Java, Hexagonal, DER Inmutable y Clases Spring Boot :crit, 3, 7
+    section 3. Joel Olaya (3 min)
+    Casos de Uso, Live Demo 503, Tests JUnit 8/8, Compilación SFT y Cierre :done, 7, 10
 ```
 
----
-
-# 🏛️ BLOQUE 1: CONTEXTO, PROBLEMÁTICA, BMC Y REQUISITOS (00:00 - 03:00)
-**Expositor:** Fernando Alber Alfredo Romero Requejo  
-**Tiempo Límite:** 3 Minutos exactos  
-**Diapositivas:** 1, 2, 3, 4, 6, 7, 8  
-
----
-
-### 🎙️ Guion Palabra por Palabra para Fernando Romero
-
-#### 1. Apertura Formal y Presentación del Equipo (00:00 - 00:30)
-> *(Diapositiva 1: Portada Oficial)*  
-> *"Buenos días, profesor evaluador Ing. Yony Zamata Condori y compañeros.  
-> Hoy tenemos el honor de presentar el Avance de Proyecto Final 2 (APF2) de nuestra solución de ingeniería: **SIGIR - BCRP**, el *Sistema Integral de Gestión de Incidentes Regulatorios para Pagos Digitales*.  
-> 
-> Nuestro equipo de desarrollo está conformado por 3 integrantes:  
-> - **Frank Vargas Huamán**, Líder Técnico y Arquitecto de Software.  
-> - **Joel Olaya Vivas**, Ingeniero de Software y QA.  
-> - Y quien les habla, **Fernando Romero Requejo**, Ingeniero de Requisitos y Procesos.  
-> 
-> El objetivo de esta entrega es demostrar el diseño detallado de una plataforma tecnológica con estándar bancario, cumplimiento riguroso de la rúbrica y desarrollo central en el ecosistema Java."*
+| Bloque / Minutos | Integrante | Rol Oficial en el Proyecto | Diapositivas Clave | Misión Pedagógica en la Exposición |
+| :---: | :--- | :--- | :---: | :--- |
+| **Bloque 1**<br>*(00:00 - 03:00)* | **Fernando Romero Barrientos**<br>`(U20247659)` | **Ingeniero de Requisitos & Procesos** | Diapositivas 1, 2, 3, 4, 6, 7, 8 | Conectar con la empatía humana del ciudadano, evidenciar la falla de mercado (asimetría informativa) y demostrar disciplina metodológica en Scrum. |
+| **Bloque 2**<br>*(03:00 - 07:00)* | **Frank Vargas Huamán**<br>`(U22204655)` | **Líder Técnico & Arquitecto de Software** | Diapositivas 5, 11, 12, 13, 14, 17 | Desplegar la artillería técnica: explicar con analogías sencillas por qué la Arquitectura Hexagonal y la persistencia inmutable en PostgreSQL blindan al BCRP. |
+| **Bloque 3**<br>*(07:00 - 10:00)* | **Joel Olaya Villegas**<br>`(U19313274)` | **Ingeniero de Software & QA** | Diapositivas 9, 10, 15, 16, 18, 19, 20 + Live Demo | Concretar con hechos: romper un switch financiero en vivo, ver nacer la alerta, demostrar las 8 pruebas JUnit passing y compilar el archivo normativo con hash SHA-256. |
 
 ---
 
-#### 2. Contexto Institucional BCRP y los 5 Aspectos Estratégicos (00:30 - 01:15)
-> *(Diapositiva 2: Criterio 1 - Contexto BCRP | Diapositiva 3: Business Model Canvas)*  
-> *"Iniciamos con el **Criterio 1 de la rúbrica**. Nuestro caso de estudio se fundamenta en el marco legal del **Banco Central de Reserva del Perú (BCRP)** bajo la **Ley N° 26123** (Ley Orgánica) y la **Ley N° 29440** sobre los Sistemas de Pagos y Liquidación de Valores.  
-> 
-> Analizamos los 5 aspectos estratégicos del BCRP:  
-> 1. **Visión:** Ser un banco central moderno con credibilidad internacional.  
-> 2. **Misión:** Preservar la estabilidad monetaria y regular la eficiencia y seguridad de los pagos.  
-> 3. **Entorno Operativo:** El ecosistema de pagos móviles (Yape, Plim, Tunki, Caja de los Andes y la Cámara de Compensación CCE).  
-> 4. **Estrategia Tecnológica:** Supervisión telemétrica continua, erradicando hojas de cálculo tardías.  
-> 5. **Plan Estratégico (PEI):** Digitalización de procesos de fiscalización regulatoria.  
-> 
-> En nuestro modelo **Business Model Canvas (BMC)**, la propuesta de valor para la mesa de supervisión del BCRP es garantizar **observabilidad total, cero asimetría informativa y reportes normativos no repudiables con firma digital**."*
+# 🏛️ BLOQUE 1: FERNANDO ROMERO BARRIENTOS (00:00 - 03:00)
+### *Tema: El Gancho Humano, la Problemática Nacional y la Gobernanza del Proyecto*
+**Diapositivas de Apoyo:** 1 (Portada), 2 (Aspectos Estratégicos), 3 (Canvas BMC), 4 (Realidad Problemática), 6 (Project Charter y RACI), 7 (EDT a 3 Niveles), 8 (Cronograma Gantt Semana 8) e IEEE 830.  
+**Tono sugerido:** Empático, seguro, claro, institucional y cercano.  
+**Idea Fuerza que debe grabar en el jurado:** *"El BCRP no puede supervisar el dinero de 33 millones de peruanos enterándose por redes sociales horas después de una caída; el sistema financiero exige detección en tiempo real."*
 
 ---
 
-#### 3. Realidad Problemática Nacional: La Asimetría Informativa (01:15 - 02:00)
-> *(Diapositiva 4: Realidad Problemática y Circular 0011-2023)*  
-> *"Actualmente en el Perú se realizan más de 15 millones de transacciones digitales al día. Sin embargo, cuando un switch de transferencias colapsa (por ejemplo, una caída masiva de Yape o Plim), **el BCRP tarda entre 45 y 180 minutos en enterarse**, dependiendo de correos informales o quejas de ciudadanos en redes sociales.  
+#### 🎙️ Guion Pedagógico Paso a Paso de Fernando:
+
+##### 1. Apertura e Identificación del Equipo (00:00 - 00:30)
+> *(Apoyo visual: Diapositiva 1 — Portada Oficial)*  
+> *[Acción escénica: Postura erguida, manos abiertas, sonrisa profesional serena, mirada fija al Ing. Yony Zamata Condori]*  
 > 
-> Esta asimetría de información vulnera la **Circular BCRP N° 0011-2023**, la cual exige que toda contingencia que interrumpa la interoperabilidad sea reportada de forma inmediata con cálculo de tiempos de caída (MTTR y MTTD).  
-> **SIGIR-BCRP reduce ese tiempo de detección de 180 minutos a menos de 30 segundos** mediante sondeo asíncrono no invasivo."*
+> *"Buenos días, profesor Ing. Yony Zamata Condori y compañeros.  
+> 
+> Hoy tenemos el enorme agrado de presentar ante usted la culminación de nuestra segunda entrega de ingeniería: el avance **APF2 de Semana 8** de nuestro proyecto **SIGIR - BCRP**, el Sistema de Gestión de Incidentes Regulatorios para Pagos Digitales del Banco Central de Reserva del Perú.  
+> 
+> Nuestro equipo de trabajo está conformado por tres futuros ingenieros de sistemas:  
+> - **Frank Vargas**, quien se ha desempeñado como nuestro Líder Técnico y Arquitecto de Software.  
+> - **Joel Olaya**, a cargo del Desarrollo de Software y la Garantía de Calidad (QA).  
+> - Y quien tiene el honor de iniciar esta presentación, **Fernando Romero**, responsable de la Ingeniería de Requisitos y Gestión de Procesos.  
+> 
+> Para comprender por qué existe este software, permítame iniciar con una situación que todos aquí hemos experimentado."*
+
+##### 2. El Gancho Humano y la Realidad Problemática (00:30 - 01:15)
+> *(Apoyo visual: Diapositiva 4 — Realidad Problemática Nacional)*  
+> *[Acción escénica: Tono reflexivo y narrativo, gesticulando suavemente con la mano]*  
+> 
+> *"Imaginemos esto por un momento: es viernes por la noche, acabamos de cenar con nuestra familia o estamos tomando un taxi, sacamos el teléfono celular, abrimos la aplicación de Yape o Plim para escanear el código QR... y la pantalla se queda girando en blanco. Pasan diez segundos, se cancela la transacción, pero cuando revisamos nuestra cuenta bancaria, descubrimos que el dinero sí fue descontado de nuestro saldo.  
+> 
+> La gente se frustra, los pequeños negocios pierden clientes y las redes sociales se inundan de quejas.  
+> 
+> Pero desde la óptica de la ingeniería y la regulación económica, la verdadera pregunta crítica es:  
+> **¿En qué momento se entera el Banco Central de Reserva de que el sistema nacional de pagos digitales ha colapsado?**  
+> 
+> En el modelo tradicional, el BCRP tardaba **entre 45 minutos y hasta 3 horas** en enterarse, dependiendo de reportes tardíos que los bancos enviaban por correo electrónico o monitoreando publicaciones en Twitter. A esta grave deficiencia la denominamos **asimetría de información**.  
+> 
+> Por mandato de la **Ley N° 29440** y la **Circular BCRP N° 0011-2023**, la continuidad operativa es un asunto de interés público nacional. Nuestro sistema nace con un objetivo medible: **reducir el tiempo de detección de fallas de 180 minutos a menos de 30 segundos**."*
+
+##### 3. Alineamiento Estratégico y Business Model Canvas (01:15 - 01:55)
+> *(Apoyo visual: Diapositiva 2 — Aspectos Estratégicos | Diapositiva 3 — Canvas BMC)*  
+> *[Acción escénica: Señala en la diapositiva el cuadrante de socios clave y la propuesta de valor]*  
+> 
+> *"Para que una solución de software sea adoptada por el Estado, debe alinearse perfectamente con la institución. Integramos los **5 aspectos estratégicos del BCRP**: su Visión de credibilidad y modernidad, su Misión de estabilidad en los sistemas de pago, su entorno regulatorio continuo, sus políticas de digitalización y su Plan Estratégico Institucional (PEI).  
+> 
+> En nuestro **Business Model Canvas**, identificamos con exactitud a los actores del ecosistema: los bancos emisores como BCP e Interbank, las billeteras interoperables Yape, Plim y Tunki, entidades financieras de inclusión como Caja Rural de los Andes, y el conmutador central que es la Cámara de Compensación Electrónica (CCE).  
+> 
+> Nuestra propuesta de valor para el Banco Central se resume en tres pilares:  
+> 1. **Observabilidad en tiempo real** del estado de salud de cada switch.  
+> 2. **Trazabilidad inmutable**, para que nadie pueda alterar las evidencias de caídas.  
+> 3. **Automatización total** en la emisión del reporte normativo oficial."*
+
+##### 4. Gestión Ágil Scrum, Cronograma y Requisitos IEEE 830 (01:55 - 02:45)
+> *(Apoyo visual: Diapositiva 6 — Project Charter y RACI | Diapositiva 7 — EDT a 3 Niveles | Diapositiva 8 — Gantt Semana 8)*  
+> *[Acción escénica: Tono ejecutivo, firme y ordenado]*  
+> 
+> *"Para materializar este proyecto con excelencia, aplicamos el marco de trabajo **Scrum**:  
+> - Formalizamos el **Project Charter** con objetivos SMART y una **Matriz RACI** que delimita con claridad las funciones y responsabilidades de los tres integrantes.  
+> - Diseñamos la **EDT (Estructura de Desglose del Trabajo)** en 3 niveles jerárquicos: Análisis Normativo, Arquitectura Técnica, y Construcción de Software.  
+> - De un Product Backlog total de 70 Story Points, **los Sprints 1, 2, 3 y 4 se encuentran completados al 100% en este hito de Semana 8**, como certifica nuestro Cronograma Gantt.  
+> - Y bajo el estándar internacional **IEEE 830**, formulamos **12 Requisitos Funcionales y 8 Requisitos No Funcionales** fundamentados en la norma **ISO/IEC 25010**, garantizando que el sistema sea seguro, altamente disponible y capaz de procesar telemetría concurrente."*
+
+##### 5. El "Pase de Gol" Didáctico a Frank Vargas (02:45 - 03:00)
+> *[Acción escénica: Fernando sonríe, gira su postura hacia Frank, abre la mano en señal de bienvenida técnica]*  
+> 
+> *"Tener claros los requisitos y las leyes es fundamental, pero el gran desafío de la ingeniería está en cómo transformar esas necesidades en una arquitectura de software robusta, desacoplada y con código Java real de nivel bancario.  
+> 
+> Para explicar las tres alternativas evaluadas, el diseño hexagonal y el blindaje inmutable de nuestra base de datos, **le cedo la palabra a nuestro Líder Técnico y Arquitecto de Software, Frank Vargas**."*
 
 ---
 
-#### 4. Gestión Ágil Scrum, EDT y Requisitos IEEE 830 (02:00 - 02:45)
-> *(Diapositiva 6: Project Charter y RACI | Diapositiva 7: EDT a 3 niveles | Diapositiva 8: Cronograma Gantt APF2)*  
-> *"Para gobernar el proyecto aplicamos **Scrum** adaptado a ingeniería de software:  
-> - Formalizamos el **Project Charter** con patrocinio académico y una **Matriz RACI** que delimita responsabilidades exactas para los 3 integrantes.  
-> - Diseñamos la **Estructura de Desglose del Trabajo (EDT / WBS)** a 3 niveles jerárquicos (Normativa, Análisis, Diseño y Construcción).  
-> - El **Product Backlog** abarca 70 Story Points, de los cuales los **Sprints 1 al 4 están 100% culminados al Hito APF2 (Semana 8)**, según el Cronograma Gantt que ven en pantalla.  
-> - En la especificación **IEEE 830**, delimitamos **12 Requisitos Funcionales (RF-01 al RF-12)** y **8 Requisitos No Funcionales** bajo la norma **ISO/IEC 25010** en seguridad, rendimiento y disponibilidad."*
+# 🚀 BLOQUE 2: FRANK VARGAS HUAMÁN (03:00 - 07:00)
+### *Tema: Las 3 Alternativas TIC, Arquitectura Hexagonal y Persistencia Inmutable*
+**Diapositivas de Apoyo:** 5 (15 Mockups y Alternativas TIC), 11 (BPMN AS-IS vs TO-BE), 12 (Arquitectura Hexagonal), 13 (DER Físico/Lógico PostgreSQL 15), 14 (Clases de Diseño Spring Boot 3) y 17 (Cálculo de SLA y Compilador SFT).  
+**Tono sugerido:** Técnico, didáctico, con aplomo, seguridad de arquitecto y solvencia teórica.  
+**Idea Fuerza que debe grabar en el jurado:** *"El software bancario debe diseñarse para sobrevivir al tiempo: desacoplamos la lógica de negocio con Arquitectura Hexagonal y protegemos la verdad histórica con triggers SQL matemáticamente inmutables."*
 
 ---
 
-#### 5. El Pase de Gol a Frank Vargas (02:45 - 03:00)
-> *"Para sustentar cómo transformamos estos requisitos en una arquitectura desacoplada, con alternativas tecnológicas evaluadas, persistencia inmutable en PostgreSQL y diseño de clases en Spring Boot 3, **le cedo la palabra a nuestro Líder Técnico y Arquitecto de Software, Frank Vargas**."*
+#### 🎙️ Guion Pedagógico Paso a Paso de Frank:
+
+##### 1. Recepción Profesional y las 3 Alternativas TIC con $\ge 50\%$ Java (03:00 - 03:55)
+> *(Apoyo visual: Diapositiva 5 — 15 Mockups y Alternativas TIC)*  
+> *[Acción escénica: Asiente con gratitud a Fernando, mira al profesor con serenidad y seguridad]*  
+> 
+> *"Muchas gracias, Fernando. Buenos días nuevamente, profesor Ing. Yony Zamata.  
+> 
+> Al asumir la responsabilidad técnica de este proyecto, establecimos como principio rector satisfacer con el máximo rigor la rúbrica del curso: diseñar **tres alternativas de solución viables**, garantizando que cada una cuente con **más del 50% de desarrollo en el ecosistema Java** y que contemple el diseño integral de **5 pantallas de interfaz representativas** —lo que suma 15 mockups detallados en nuestro expediente técnico:  
+> 
+> 1. **La Alternativa 1 fue un Monolito Modular con Spring Boot y Thymeleaf (75% Java).**  
+>    *¿Por qué la descartamos?* Porque en una Sala de Operaciones NOC donde ingresan alertas cada 30 segundos, recargar toda la página web por cada evento satura la conexión del operador e introduce un parpadeo visual que retrasa la toma de decisiones críticas.  
+> 2. **La Alternativa 3 fue una arquitectura orientada a Microservicios con Apache Kafka y Spring Cloud (80% Java).**  
+>    *¿Por qué la descartamos?* Por madurez de ingeniería. Implementar brokers de Kafka y 4 microservicios independientes para supervisar a 5 conmutadores financieros nacionales generaba un consumo ocioso superior a 4 GB de memoria RAM y una complejidad de despliegue innecesaria para este alcance.  
+> 3. **Seleccionamos la Alternativa 2: Clean API REST en Java 17 + Consola Reactiva de Monitoreo NOC.**  
+>    Obtuvo el puntaje más alto en nuestra Matriz Multicriterio de Decisión: **4.97 sobre 5.00 puntos**.  
+>    Todo el procesamiento pesado, las reglas de negocio, la auditoría y los cálculos matemáticos de SLA residen en **Java 17 con Spring Boot 3**, dejando en la capa visual una interfaz ágil que no consume recursos del servidor central."*
+
+##### 2. El Proceso BPMN 2.0 y la Analogía del Smartphone para la Arquitectura Hexagonal (03:55 - 05:00)
+> *(Apoyo visual: Diapositiva 11 — BPMN AS-IS vs TO-BE | Diapositiva 12 — Arquitectura Hexagonal)*  
+> *[Acción escénica: Usa las manos para dibujar un círculo en el centro y conexiones hacia afuera]*  
+> 
+> *"En el modelado de procesos **BPMN 2.0**, eliminamos los cuellos de botella del flujo manual anterior (AS-IS), logrando un flujo optimizado (TO-BE) que evalúa y notifica cualquier caída en menos de 30 segundos.  
+> 
+> Ahora bien, ¿cómo organizamos el código fuente para que sea inmune a la obsolescencia tecnológica?  
+> Aplicamos **Arquitectura Hexagonal (Puertos y Adaptadores)** bajo principios SOLID.  
+> 
+> *Permítame explicárselo con una analogía muy didáctica:*  
+> Piensen en el núcleo del negocio bancario como si fuera un smartphone. El teléfono tiene su procesador y su sistema operativo propio; y funciona con total normalidad ya sea que le conectemos un cargador con cable Tipo C, un audífono inalámbrico Bluetooth o una base de carga por inducción magnética. Los puertos del teléfono son independientes de los accesorios que le enchufemos.  
+> 
+> En nuestro backend en Java 17 hicimos exactamente eso:  
+> - En el centro está el **Dominio puro** (`Incidente`, `EntidadFinanciera`, `HistorialEstado`): clases Java estándar sin una sola anotación de bases de datos ni librerías de terceros.  
+> - En los **Puertos de Entrada**, definimos interfaces limpias como `IIncidenteService` y `ITelemetriaPort`.  
+> - En los **Adaptadores Primarios**, conectamos los controladores REST y nuestro **Worker de Telemetría**, un proceso en segundo plano que sondea concurrentemente los switches cada 30 segundos.  
+> - Y en los **Puertos de Salida**, ubicamos los repositorios Spring Data JPA para comunicarnos con la base de datos.  
+> 
+> ¿Qué beneficio concreto le brinda esto al BCRP? Que si el día de mañana deciden cambiar de base de datos o migrar a gRPC, la lógica regulatoria del negocio financiero permanece **100% intacta, sin tocar una sola línea de código central**."*
+
+##### 3. Persistencia Inmutable en PostgreSQL 15: La Metáfora de la Caja Negra (05:00 - 06:05)
+> *(Apoyo visual: Diapositiva 13 — DER Físico/Lógico PostgreSQL 15 | Diapositiva 14 — Diagrama de Clases Spring Boot)*  
+> *[Acción escénica: Tono de firmeza y énfasis al pronunciar la palabra 'Inmutabilidad']*  
+> 
+> *"En la capa de persistencia, implementamos una base de datos relacional en **PostgreSQL 15** normalizada rigurosamente en **Tercera Forma Normal (3FN)** con 6 tablas bien acopladas.  
+> 
+> Sin embargo, un sistema que gestiona penalidades financieras para el Estado enfrenta un riesgo mayúsculo: **la manipulación o borrado de pruebas.**  
+> Si una entidad financiera sufre una caída de 40 minutos a medianoche y se expone a una multa millonaria, un operador deshonesto podría verse tentado a acceder a la base de datos y ejecutar un `UPDATE` o un `DELETE` para borrar el incidente y fingir que nunca ocurrió nada.  
+> 
+> En SIGIR-BCRP cerramos esa vulnerabilidad desde los fundamentos de la ingeniería:  
+> 1. Programamos un **Trigger SQL estricto (`fn_prohibir_mutacion_historial`)** que convierte la tabla de auditoría en una estructura **Append-Only** (estrictamente de solo inserción y lectura). Si alguien intenta alterar un registro histórico, el motor PostgreSQL aborta la transacción al instante.  
+>    *Es exactamente igual a la caja negra de un avión o un libro notarial foliado:* los eventos se escriben para siempre; está prohibido usar borrador o corrector líquido.  
+> 2. Creamos un **índice parcial único (`idx_incidente_abierto_unico`)** que resuelve condiciones de carrera a nivel del motor de base de datos, garantizando que un banco jamás pueda tener dos tickets abiertos simultáneamente por la misma falla técnica (Regla de Negocio RN-01).  
+> 3. Aplicamos el principio de mínimo privilegio con el rol `app_sigir_user`, conexiones cifradas mediante TLS y consultas 100% parametrizadas con Hibernate para erradicar cualquier posibilidad de inyección SQL."*
+
+##### 4. Fórmulas Normativas de SLA y el Compilador Criptográfico SFT (06:05 - 06:45)
+> *(Apoyo visual: Diapositiva 17 — Módulo de Reportes e Indisponibilidad)*  
+> *[Acción escénica: Señala la fórmula de disponibilidad mensual y el hash de 64 caracteres]*  
+> 
+> *"Toda esa telemetría capturada se procesa bajo las fórmulas matemáticas de la **Circular BCRP N° 0011-2023**:  
+> - Calculamos la **Disponibilidad Mensual (%)** sobre una base fija de 43,200 minutos al mes (30 días de operación 24 horas continuas). Si el indicador cae por debajo del umbral regulatorio del **99.90%**, el sistema enciende alarmas automáticas de no conformidad.  
+> - Medimos el **MTTD** (tiempo medio de detección en segundos) y el **MTTR** (tiempo medio de recuperación).  
+> 
+> Y para cumplir con el protocolo de remisión de información al Banco Central, desarrollamos el **Compilador SFT BCRP**, que ensambla el archivo plano oficial:  
+> - Registro Tipo 01 de Cabecera con datos del supervisor y periodo.  
+> - Registro Tipo 02 con el detalle minuto a minuto de las interrupciones.  
+> - Y un **Registro Tipo 03 de Cierre Criptográfico**, sellado con un **hash SHA-256 de 64 caracteres hexadecimales**. Si alguien abre el archivo en su computadora y altera un solo minuto de penalidad, la firma digital se rompe y el servidor del BCRP rechaza el reporte automáticamente."*
+
+##### 5. El "Pase de Gol" Didáctico a Joel Olaya (06:45 - 07:00)
+> *[Acción escénica: Frank mira a Joel, le sonríe con confianza y señala la laptop con la consola NOC y la terminal de pruebas]*  
+> 
+> *"Como bien sabemos los ingenieros de software, la mejor arquitectura y el mejor diseño en papel cobran verdadero valor cuando se demuestran en la práctica, ejecutando código y enfrentando fallas en vivo.  
+> 
+> Para apreciar nuestra Consola de Operaciones en tiempo real, presenciar la inyección de una caída simulada, verificar nuestras pruebas unitarias automatizadas y generar el archivo normativo oficial, **le cedo el control de la sustentación a nuestro Ingeniero de Software y QA, Joel Olaya**."*
 
 ---
 
-# 🚀 BLOQUE 2: ARQUITECTURA, ALTERNATIVAS TIC Y PERSISTENCIA (03:00 - 07:00)
-**Expositor:** Frank Emiliano Vargas Huamán  
-**Tiempo Límite:** 4 Minutos exactos  
-**Diapositivas:** 5, 11, 12, 13, 14, 17  
+# 🧪 BLOQUE 3: JOEL OLAYA VILLEGAS (07:00 - 10:00)
+### *Tema: Casos de Uso, Demostración en Vivo, Pruebas Unitarias JUnit 5 y Compilación SFT*
+**Diapositivas de Apoyo:** 9 (Diagrama de Actores), 10 (Casos de Uso UML), 15 (Matriz de Trazabilidad), 16 (Suite de Pruebas Unitarias), 18 (Distribución de Sustentación), 19 (Conclusiones) y 20 (Cierre y Agradecimientos) + Consola Web NOC (`index.html`), Terminal Maven (`mvn test`) y Módulo de Reportes (`reportes.html`).  
+**Tono sugerido:** Dinámico, empírico, seguro, ágil y enfocado en la evidencia probatoria.  
+**Idea Fuerza que debe grabar en el jurado:** *"La calidad del software se comprueba en caliente: ante una falla real del 503, la arquitectura responde en menos de un segundo y las pruebas automatizadas certifican matemáticamente la salud del sistema."*
 
 ---
 
-### 🎙️ Guion Palabra por Palabra para Frank Vargas
+#### 🎙️ Guion Pedagógico Paso a Paso de Joel:
 
-#### 1. Recepción y Selección de las 3 Alternativas TIC (03:00 - 03:50)
-> *(Diapositiva 5: Galería de 15 Mockups y Alternativas TIC)*  
-> *"Muchas gracias, Fernando. Buenos días, profesor Ing. Yony Zamata.  
+##### 1. Casos de Uso y Acceso a la Consola Web NOC (07:00 - 07:40)
+> *(Apoyo visual: Diapositiva 10 — Casos de Uso UML -> Conmutar con calma a la ventana del navegador con `04_FRONTEND_UI/index.html`)*  
+> *[Acción escénica: Mueve el cursor de manera pausada y visible por la interfaz]*  
 > 
-> En estricto cumplimiento del **Criterio 2 de la rúbrica**, diseñamos **tres alternativas de solución tecnológica viables**, garantizando cuantitativa y cualitativamente que cada una tenga **al menos el 50% de desarrollo en el ecosistema Java** y cuente con el diseño completo de **5 pantallas de usuario representativas** (15 mockups en total):  
+> *"Muchas gracias, Frank. Buenos días, profesor Ing. Yony Zamata.  
 > 
-> 1. **Alternativa 1 (Monolito Hexagonal Modular):** Java 17, Spring Boot y Thymeleaf Server-Side Rendering (75% Java). Se descartó porque el refresco completo de página genera una latencia visual inadecuada para una sala NOC de alta demanda.  
-> 2. **Alternativa 3 (Microservicios Event-Driven):** Java 17, Spring Cloud y Apache Kafka (80% Java). Se descartó por sobredimensionamiento: mantener clústeres distribuidos para supervisar 5 entidades financieras generaba un costo de infraestructura y consumo de RAM injustificado.  
-> 3. **Alternativa 2 (GANADORA - Score 4.97 / 5.00): Clean API & SPA NOC.**  
-> Combina un backend empresarial en Java 17 con Spring Boot 3 REST API y una consola reactiva de baja latencia. El backend Java representa el 70% del esfuerzo y código del sistema, cumpliendo ampliamente la directiva del curso."*
+> En nuestro Diagrama de Casos de Uso estructuramos a cuatro actores esenciales: el Operador NOC, el Supervisor Regulatorio del BCRP, el Administrador del Sistema y el Daemon Automático de Telemetría.  
+> 
+> Ahora los invito a presenciar la ingeniería en acción. En pantalla tenemos la **Consola Web NOC de SIGIR-BCRP**.  
+> En el extremo superior derecho apreciamos la sesión corporativa autenticada bajo Directorio Activo con el usuario institucional `AD\frank.vargas` en rol de Líder NOC.  
+> 
+> En la parte superior visualizamos nuestra **Barra de Telemetría en Vivo**, que sondea de forma continua a los 5 participantes del ecosistema nacional: BCP con Yape, Interbank con Plim, Tunki de Caja Cusco, Caja Rural de los Andes y la Cámara de Compensación Electrónica (CCE).  
+> En este instante, como pueden verificar, todos los indicadores se encuentran en **VERDE (Operativo)**, con latencias de red sumamente saludables que oscilan entre 14 y 28 milisegundos."*
+
+##### 2. La Demostración en Vivo: Inyección de Contingencia HTTP 503 (07:40 - 08:30)
+> *(Acción en pantalla: Ubicar el botón ámbar '⚡ Simular Alerta')*  
+> *[Acción escénica: Explica lo que va a ocurrir ANTES de pulsar el botón, para mantener la expectativa del profesor]*  
+> 
+> *"Ahora vamos a poner a prueba la reactividad de la arquitectura. Imaginemos que en este preciso segundo colapsa el switch de procesamiento transaccional de un banco participante por saturación de servidores.  
+> 
+> Voy a inyectar la contingencia haciendo clic en el botón **'⚡ Simular Alerta'**.  
+> *[Clic firme en el botón]*  
+> 
+> Les pido que observen lo que ocurre en tiempo real y sin recargar la página:  
+> 1. El semáforo de la entidad afectada pasa de inmediato a **ROJO (Interrupción)** con una latencia de falla de 9999 milisegundos.  
+> 2. Se dispara una notificación emergente del BCRP y se registra en la tabla de incidentes el ticket normativo correlativo `INC-20261003-XXXXX` con severidad **CRÍTICA**.  
+> 3. En el panel superior de métricas, el contador de incidentes activos se incrementa y **la Disponibilidad Mensual se recalcula automáticamente**, reflejando la degradación del servicio.  
+> 4. El operador NOC gestiona el incidente con absoluta agilidad: hago clic en **'Evaluar'** para clasificar la causa raíz, luego en **'Mitigar'** para activar el enlace de contingencia, y finalmente en **'Resolver'**.  
+> 
+> Al resolver el ticket, la entidad retorna a su estado VERDE normal y la disponibilidad se estabiliza. Todo el ciclo de vida se procesó de manera atómica, garantizando que el BCRP tuvo conocimiento del incidente en menos de 2 segundos."*
+
+##### 3. Rigor en Calidad de Software: Demostración de Tests JUnit 5 (08:30 - 09:15)
+> *(Apoyo visual: Diapositiva 16 — Suite de Pruebas Unitarias -> Conmutar a la Terminal de comandos en `03_BACKEND_SPRINGBOOT`)*  
+> *[Acción escénica: Tono de orgullo técnico, mostrando el comando `mvn test`]*  
+> 
+> *"Para nosotros como ingenieros de software, una interfaz visual amigable no tiene valor si no está respaldada por una lógica interna matemáticamente verificable.  
+> 
+> Para comprobarlo de forma irrefutable, voy a ejecutar en vivo nuestra suite completa de pruebas unitarias mediante el comando oficial de compilación:  
+> `mvn test`  
+> *[Presiona Enter en la terminal]*  
+> 
+> *[Pausa dramática de 4 segundos mientras se observan las líneas verdes de ejecución de Maven]*  
+> 
+> Como puede verificar directamente en la consola, profesor Zamata:  
+> **`Tests run: 8, Failures: 0, Errors: 0, Skipped: 0` -> `BUILD SUCCESS` ejecutado en solo 4.8 segundos.**  
+> 
+> *Permítame explicar esto con una analogía clara:*  
+> Ejecutar pruebas con **JUnit 5 y Mockito** es como usar un **simulador de vuelo para pilotos comerciales**. Antes de poner un avión en el aire con pasajeros reales, el piloto practica aterrizajes con tormentas y fallas simuladas en una cabina virtual.  
+> 
+> En nuestro código testeamos:  
+> - Que la regla RN-01 rechace cualquier intento de abrir tickets duplicados sobre un mismo banco.  
+> - Las transiciones válidas de la máquina de estados.  
+> - La captura automática de errores HTTP 503 por el worker multihilo.  
+> - Y la exactitud matemática de las fórmulas de penalidad y disponibilidad mensual."*
+
+##### 4. Módulo de Reportes y Compilación Criptográfica SFT BCRP (09:15 - 09:45)
+> *(Acción en pantalla: Abrir la pestaña de `reportes.html` en el navegador)*  
+> *[Acción escénica: Muestra el gráfico de barras y el botón de generación SFT]*  
+> 
+> *"En el módulo de Reportes Regulatorios, el supervisor del BCRP cuenta con una gráfica visual desarrollada en Canvas que traza una **línea guía de referencia al 99.90%**, permitiendo identificar visualmente en segundos qué entidades bancarias cumplen el estándar normativo y cuáles incurren en penalidades.  
+> 
+> Y en la sección inferior tenemos el motor oficial de cumplimiento del BCRP.  
+> Hago clic en el botón **'Generar SFT con filtros'**.  
+> 
+> El sistema compila en memoria la estructura del archivo plano:  
+> - Registro 01: Identificador institucional y periodo auditado.  
+> - Registro 02: Detalle de minutos de indisponibilidad y tickets asociados.  
+> - Y en el Registro 03, calcula mediante el API nativo de criptografía del navegador un **hash SHA-256 auténtico de 64 caracteres**.  
+> 
+> Pulso **'Descargar .TXT'**, y el archivo normativo se descarga en el equipo, listo para ser transmitido al servidor SFTP seguro del Banco Central."*
+
+##### 5. Conclusiones y Cierre Oficial del Equipo (09:45 - 10:00)
+> *(Apoyo visual: Diapositiva 19 — Conclusiones | Diapositiva 20 — Cierre y Agradecimientos)*  
+> *[Acción escénica: Joel baja la voz a un tono solemne, mira al jurado, los 3 integrantes se alinean juntos erguidos]*  
+> 
+> *"Para concluir nuestra sustentación de este hito de Semana 8, profesor Zamata:  
+> 1. **Erradicamos la asimetría de información** en el ecosistema nacional de transferencias digitales, demostrando que es técnicamente posible pasar de horas de incertidumbre a segundos de certeza.  
+> 2. **Cumplimos al 100% cada uno de los criterios exigidos en la rúbrica APF2**, entregando arquitectura hexagonal en Java 17, base de datos inmutable en PostgreSQL 15 y pruebas de software pasando con éxito.  
+> 3. **Dejamos las bases firmes y modulares** para culminar con éxito la entrega final en la Semana 14.  
+> 
+> Agradecemos de corazón su exigencia y orientación profesional durante este ciclo académico, profesor Ing. Yony Zamata Condori, y quedamos con mucho gusto a su entera disposición para absolver cualquier pregunta técnica del jurado.  
+> 
+> **¡Muchísimas gracias!**"*
 
 ---
 
-#### 2. Optimización de Procesos BPMN 2.0 y Arquitectura Hexagonal (03:50 - 04:50)
-> *(Diapositiva 11: BPMN AS-IS vs TO-BE | Diapositiva 12: Arquitectura Hexagonal)*  
-> *"En el modelado **BPMN 2.0**, contrastamos el flujo AS-IS (manual, fragmentado, demoras de 180 min) con el flujo TO-BE de SIGIR-BCRP: sondeo continuo cada 30 segundos, clasificación automática y emisión de alertas en tiempo real.  
-> 
-> A nivel de software, implementamos **Arquitectura Hexagonal (o Puertos y Adaptadores)** bajo principios SOLID:  
-> 
-> *Para explicarlo con una analogía didáctica:* imaginen el núcleo bancario como un smartphone; el teléfono opera exactamente igual sin importar qué marca de cargador o audífono le conectemos.  
-> En SIGIR-BCRP, nuestro **Dominio en Java 17 puro** (`Incidente`, `EntidadFinanciera`) está aislado al centro, libre de anotaciones de base de datos o frameworks.  
-> - **Puertos de Entrada:** interfaces como `IIncidenteService` y `ITelemetriaPort`.  
-> - **Adaptadores Primarios:** controladores REST y nuestro daemon multihilo `TelemetriaWorker` que sondea cada switch asíncronamente.  
-> - **Puertos de Salida:** `IIncidenteRepository` y `ISftStoragePort`, conectados a PostgreSQL vía Spring Data JPA.  
-> 
-> Esto nos da independencia absoluta de la infraestructura y nos permite realizar pruebas unitarias con mocks sin requerir una base de datos levantada."*
+## 📋 3. Tarjetas de Memoria Rápida (Cheat Sheets de 60 Segundos)
+*Para dar un repaso mental 5 minutos antes de ingresar al aula o salón virtual:*
+
+### 🟡 Tarjeta de Fernando Romero (El Problema y la Gobernanza)
+- **El Dolor:** Pagas con Yape/Plim, se traba, te descuentan el saldo y el BCRP se entera 3 horas después por Twitter (Asimetría Informativa).
+- **La Ley:** Circular BCRP N° 0011-2023 y Ley N° 29440 (estabilidad del dinero nacional).
+- **El Orden:** Scrum, Project Charter, RACI (3 miembros), EDT a 3 niveles, 70 SP (Sprints 1 al 4 al 100%), IEEE 830 (12 RF + 8 RNF bajo ISO 25010).
+- **Frase de Oro para entregar a Frank:** *"Tener claros los requisitos es vital, pero hacía falta una arquitectura de software limpia en Java para llevarlo a la realidad; le cedo la palabra a Frank Vargas."*
+
+### 🔴 Tarjeta de Frank Vargas (La Arquitectura y la Inmutabilidad)
+- **Las 3 Alternativas ($\ge 50\%$ Java y 15 Mockups):** 
+  - Alt 1: Monolito Thymeleaf (Descarte: recargas pesadas en pantalla NOC).
+  - Alt 3: Kafka + Microservicios (Descarte: consume 4 GB RAM innecesaria para 5 switches).
+  - Alt 2 (Ganadora 4.97/5.00): Clean API Spring Boot 3 Java 17 + NOC reactivo.
+- **La Metáfora:** Arquitectura Hexagonal = Smartphone con cargador Tipo C (Dominio puro desacoplado de bases de datos y frameworks).
+- **La Caja Negra:** Trigger `fn_prohibir_mutacion_historial` (Append-Only; aborta `UPDATE`/`DELETE`), índice parcial único anti-carreras (`idx_incidente_abierto_unico`), y hash SHA-256 de 64 caracteres.
+- **Frase de Oro para entregar a Joel:** *"Los diagramas cobran verdadero valor cuando se demuestran en la práctica; le cedo el control a nuestro Ingeniero de Software y QA, Joel Olaya."*
+
+### 🟢 Tarjeta de Joel Olaya (La Evidencia y la Calidad)
+- **La Consola:** 5 entidades en verde (BCP, Interbank, Tunki, Andes, CCE), latencias 14-28 ms, sesión corporativa `AD\frank.vargas`.
+- **El Live Demo:** Clic en 'Simular Alerta' -> Rojo instantáneo (9999 ms), ticket `INC-20261003-XXXXX` crítico, recálculo de SLA -> Ciclo Evaluar/Mitigar/Resolver.
+- **Los Tests:** Ejecución de `mvn test` en terminal -> 8/8 tests passing en 4.8 segundos con JUnit 5 y Mockito (metáfora del simulador de vuelo).
+- **El Cierre SFT:** Canvas con línea de referencia al 99.90% y descarga del `.txt` con hash SHA-256 criptográfico.
 
 ---
 
-#### 3. Base de Datos Relacional DER Físico/Lógico e Inmutabilidad (04:50 - 05:45)
-> *(Diapositiva 13: DER Físico/Lógico PostgreSQL 15 | Diapositiva 14: Clases de Diseño Spring Boot 3)*  
-> *"En la persistencia, diseñamos un modelo relacional en **PostgreSQL 15** normalizado en **Tercera Forma Normal (3FN)** con 6 tablas principales: `entidades_financieras`, `incidentes`, `telemetria_pings`, `historial_estados`, `reportes_sft` y `usuarios_ad`.  
-> 
-> Pero una sala regulatoria del BCRP exige un principio crítico: **la inmutabilidad legal probatoria.**  
-> Si una entidad financiera sufre una caída, ningún operador ni administrador de base de datos puede alterar o borrar el registro histórico para evadir penalidades.  
-> 
-> ¿Cómo lo blindamos matemáticamente?  
-> 1. Creamos un **Trigger SQL estricto (`fn_prohibir_mutacion_historial`)** que convierte la bitácora en **Append-Only** (solo inserciones). Si se ejecuta un `UPDATE` o `DELETE`, PostgreSQL dispara una excepción de inmediato y aborta la transacción.  
-> 2. Implementamos un **índice parcial único (`idx_incidente_abierto_unico`)** que impide condiciones de carrera a nivel de motor SQL, asegurando que ninguna entidad tenga más de un ticket abierto a la vez (Regla RN-01).  
-> 3. En seguridad, aplicamos el principio de mínimo privilegio con el rol `app_sigir_user`, cifrado en tránsito TLS y consultas JPA parametrizadas inmunes a SQL Injection."*
+## 🛡️ 4. Banco Maestro de Preguntas y Respuestas para el Jurado
 
----
+Cuando el **Ing. Yony Zamata Condori** inicie la ronda de preguntas, formulará preguntas específicas orientadas al rol de cada estudiante:
 
-#### 4. Reportes Normativos SFT y Fórmulas SLA (05:45 - 06:45)
-> *(Diapositiva 17: Módulo de Reportes e Indisponibilidad)*  
-> *"El sistema automatiza el cálculo de métricas según la Circular BCRP N° 0011-2023:  
-> - **Disponibilidad Mensual (%):** basada en 43,200 minutos mensuales (30 días 24/7), alertando si cae del umbral legal del **99.90%**.  
-> - **MTTD (Mean Time to Detect):** tiempo medio de detección en segundos (<30s).  
-> - **MTTR (Mean Time to Repair):** tiempo medio de recuperación desde la apertura hasta el cierre del incidente.  
-> 
-> Además, construimos el **Compilador SFT BCRP**, que exporta el archivo plano oficial estructurado en:  
-> 1. Registro 01: Cabecera institucional con RUC y periodo.  
-> 2. Registro 02: Detalle de contingencias y duración.  
-> 3. Registro 03: Pie criptográfico con **firma digital SHA-256 de 64 caracteres**. Si alguien altera un solo carácter del texto, el hash no coincidirá y el BCRP rechazará el reporte por manipulación."*
+### 👤 Preguntas para Fernando Romero (Negocio, Requisitos y Normativa)
 
----
+#### ❓ Pregunta 1: *"Fernando, ¿con qué derecho legal el BCRP puede intervenir o monitorear a bancos comerciales privados como el BCP o Interbank?"*
+> **Respuesta serena de Fernando:**  
+> *"Excelente pregunta, profesor Zamata. La facultad legal reside en la **Ley N° 29440**, la Ley de los Sistemas de Pagos y Liquidación de Valores.  
+> El Banco Central no interviene en la relación comercial entre el banco y su cliente (eso le corresponde a Indecopi y a la SBS); el BCRP custodia la **estabilidad macroeconómica y el flujo ininterrumpido del dinero en el país**. Si las plataformas de pago interoperable colapsan un viernes en la noche, se paraliza el comercio nacional. Por ello, la Circular BCRP 0011-2023 faculta explícitamente al Banco Central a exigir telemetría continua y reportes de indisponibilidad con carácter obligatorio y vinculante."*
 
-#### 5. El Pase de Gol a Joel Olaya (06:45 - 07:00)
-> *"Para demostrar que este diseño de ingeniería está 100% construido, operativo y validado con pruebas unitarias de software, **le doy el pase a Joel Olaya para la demostración en vivo de la Consola NOC y la suite de pruebas**."*
-
----
-
-# 🧪 BLOQUE 3: LIVE DEMO, QA Y COMPILACIÓN SFT (07:00 - 10:00)
-**Expositor:** Joel Leonardo Olaya Vivas  
-**Tiempo Límite:** 3 Minutos exactos  
-**Diapositivas:** 9, 10, 15, 16, 18, 19, 20 + Consola Web y Terminal  
-
----
-
-### 🎙️ Guion Palabra por Palabra para Joel Olaya
-
-#### 1. Casos de Uso y Acceso a la Consola NOC (07:00 - 07:30)
-> *(Diapositiva 10: Casos de Uso UML | Cambiar a la ventana del Navegador Web: `index.html`)*  
-> *"Muchas gracias, Frank. Buenos días, profesor Zamata.  
-> 
-> En nuestro Diagrama de Casos de Uso estructuramos la interacción de 4 actores: el Operador NOC, el Worker de Telemetría, el Supervisor BCRP y el Administrador de TI.  
-> 
-> Como pueden apreciar en pantalla, tenemos la **Consola Web NOC de SIGIR-BCRP**.  
-> En la esquina superior observamos la sesión corporativa autenticada contra Directorio Activo (`AD\frank.vargas`, rol `NOC_LEAD`).  
-> En la parte superior vemos la **Barra de Telemetría en Vivo** sondeando los 5 switches del país: BCP (Yape), Interbank (Plim), Tunki, Caja de los Andes y la CCE, todos con semáforos verdes y latencias normales entre 12 y 25 milisegundos."*
-
----
-
-#### 2. Demostración en Vivo: Inyección de Contingencia 503 (07:30 - 08:15)
-> *(En la Consola Web, hacer clic en el botón '⚡ Simular Alerta')*  
-> *"Ahora voy a demostrar la capacidad de auto-detección del sistema. Imaginemos que a las 2 de la mañana el switch de un participante sufre una falla de infraestructura.  
-> Doy clic en **'Simular Alerta'**.  
-> 
-> Observen lo que ocurre en pantalla:  
-> 1. El semáforo de la entidad cambia instantáneamente a **ROJO (Interrupción)** con latencia de 9999 ms.  
-> 2. Se dispara una alerta regulatoria y se genera automáticamente el ticket en la matriz: `INC-20261003-XXXXX` con severidad **CRÍTICA** y categoría **Disponibilidad de Servicios**.  
-> 3. En la barra de métricas, el contador de incidentes activos sube y **la Disponibilidad global se recalcula dinámicamente**, bajando del SLA del 99.90%.  
-> 4. Los operadores pueden realizar la transición asistida: dar clic en **'Evaluar'**, luego **'Mitigar'** y finalmente **'Resolver'**, regresando el semáforo a verde de forma reactiva."*
-
----
-
-#### 3. Pruebas Automatizadas JUnit 5 y Mockito (08:15 - 08:55)
-> *(Diapositiva 16: Suite de Pruebas | Cambiar a la Terminal y ejecutar `mvn test`)*  
-> *"El rigor de nuestro software no se limita a la interfaz. En la terminal ejecutamos nuestra suite de pruebas unitarias: `mvn test`.  
-> 
-> *(Mostrar la salida en verde)*  
-> Como ven en la consola:  
-> `Tests run: 8, Failures: 0, Errors: 0, Skipped: 0` -> **BUILD SUCCESS en tan solo 4.8 segundos**.  
-> 
-> Estas 8 pruebas automatizadas con **JUnit 5 y Mockito** certifican:  
-> - La creación atómica de incidentes y prevención de duplicados (RN-01).  
-> - La máquina de transiciones de estado y auditoría append-only.  
-> - El daemon multihilo de telemetría y detección de errores HTTP 503.  
-> - La compilación criptográfica del archivo SFT con hash SHA-256."*
-
----
-
-#### 4. Módulo de Reportes y Compilación SFT BCRP (08:55 - 09:35)
-> *(En el navegador, abrir `reportes.html` y dar clic en 'Generar SFT con filtros')*  
-> *"En el módulo de Reportes Clave, el supervisor visualiza la gráfica analítica de Uptime con la línea de umbral normativo del 99.90% y la tabla de indisponibilidad con MTTR y MTTD.  
-> Al dar clic en **'Generar SFT con filtros'**, el sistema compila al instante el archivo de texto plano:  
-> - Segmento 01 de Cabecera con RUC y periodo.  
-> - Segmento 02 con los incidentes y minutos caídos.  
-> - Y el Segmento 03 con el **hash SHA-256 de 64 caracteres**.  
-> 
-> Al pulsar 'Descargar .TXT', obtenemos el archivo oficial listo para ser remitido por canal seguro a la mesa del BCRP."*
-
----
-
-#### 5. Conclusiones y Cierre Oficial del Equipo (09:35 - 10:00)
-> *(Diapositiva 19: Conclusiones | Diapositiva 20: Cierre y Agradecimientos)*  
-> *"Para concluir nuestra defensa:  
-> 1. **Erradicamos la asimetría informativa**, reduciendo la detección de caídas de 180 minutos a menos de 30 segundos.  
-> 2. **Cumplimos al 100% los criterios de la rúbrica APF2**, con más del 50% de desarrollo en Java, 15 mockups diseñados, persistencia inmutable en PostgreSQL y arquitectura limpia.  
-> 3. **Dejamos una base sólida** para el hito final de la Semana 14.  
-> 
-> Profesor Ing. Yony Zamata Condori, agradecemos su cátedra y quedamos a su completa disposición para responder las preguntas del jurado. **¡Muchas gracias!**"*
-
----
-
-# 🛡️ BANCO DE PREGUNTAS DEL JURADO (DISTRIBUIDO POR INTEGRANTE)
-
-### 👤 Preguntas para Fernando Romero (Requisitos, Procesos y Negocio)
-1. **P: "¿Cuál es la base legal que faculta al BCRP a exigir esta información telemétrica a entidades privadas como BCP o Interbank?"**  
-   *R de Fernando:* *"Profesor, la Ley N° 29440 faculta al BCRP para regular, supervisar y vigilar todos los sistemas de pagos del país para asegurar su continuidad y eficiencia. Además, la Circular BCRP N° 0011-2023 establece explícitamente el reglamento de interoperabilidad y la obligación de reportar interrupciones de servicio."*
-2. **P: "¿Cómo modelaron la transición de procesos en BPMN?"**  
-   *R de Fernando:* *"Comparamos el flujo AS-IS (llamadas manuales, demoras de hasta 180 min y quejas en redes sociales) contra el flujo TO-BE de SIGIR-BCRP, donde el sondeo continuo cada 30 segundos genera eventos automáticos y tickets correlativos, eliminando la dependencia humana en la detección."*
+#### ❓ Pregunta 2: *"En los requisitos no funcionales mencionan que la telemetría sondea cada 30 segundos. ¿Por qué no lo hicieron cada 1 segundo para tener información aún más rápida?"*
+> **Respuesta serena de Fernando:**  
+> *"Por un principio de prudencia técnica y no invasión, profesor. Si nuestro sistema enviara peticiones de sondeo a los conmutadores bancarios cada 1 segundo, podríamos generar de forma involuntaria un ataque de denegación de servicio (DDoS) sobre los firewalls de las entidades financieras, compitiendo con el tráfico real de los usuarios.  
+> Un intervalo de 30 segundos es el estándar internacional recomendado para salas NOC bancarias: nos permite alertar al supervisor en menos de medio minuto sin restar ni un solo milisegundo de rendimiento a las transacciones de los peruanos."*
 
 ---
 
 ### 👤 Preguntas para Frank Vargas (Arquitectura, Datos y Java)
-1. **P: "¿Por qué optaron por Arquitectura Hexagonal en vez del patrón MVC tradicional?"**  
-   *R de Frank:* *"En MVC tradicional, la lógica de negocio suele acoplarse fuertemente a frameworks como Spring Data o JPA. Con Arquitectura Hexagonal, el Dominio es Java 17 puro, sin anotaciones externas. Si el BCRP decidiera migrar de PostgreSQL a Oracle, o de REST a gRPC, la lógica bancaria de cálculo de incidentes permanece 100% intacta e inmune a cambios tecnológicos."*
-2. **P: "¿Cómo garantizan a nivel de base de datos que nadie modifique los incidentes históricos?"**  
-   *R de Frank:* *"Implementamos un Trigger PL/pgSQL estricto (`fn_prohibir_mutacion_historial`) sobre la tabla de historial. Funciona bajo el patrón Append-Only: cualquier intento de ejecutar una sentencia `UPDATE` o `DELETE` dispara una excepción `23505` a nivel de motor y revierte la transacción."*
-3. **P: "¿Por qué no utilizaron Microservicios con Apache Kafka (Alternativa 3)?"**  
-   *R de Frank:* *"Por criterio de dimensionamiento técnico y coste operacional. Monitoreamos 5 entidades clave del sistema financiero. Levantar un clúster de Kafka con Zookeeper y cuatro microservicios consumiría más de 4 GB de memoria en reposo. Nuestra Alternativa 2 (Clean API) ofrece tiempos de respuesta menores a 50 ms y consume menos de 400 MB de RAM."*
+
+#### ❓ Pregunta 1: *"Frank, ¿por qué decidiste implementar Arquitectura Hexagonal en lugar del clásico MVC que se enseña tradicionalmente y toma menos tiempo?"*
+> **Respuesta segura de Frank:**  
+> *"Profesor Zamata, el patrón MVC es una excelente herramienta para sistemas sencillos o prototipos rápidos, pero tiene una debilidad estructural: acopla fuertemente las reglas de negocio al framework web y al motor de base de datos. Si en un MVC se decide migrar de Hibernate a otro mecanismo de persistencia, se tienen que reescribir las clases del negocio.  
+> En cambio, con la Arquitectura Hexagonal que formulé, nuestro Dominio en Java 17 es 100% puro: no contiene anotaciones de base de datos ni librerías externas. Si el BCRP decide en el futuro cambiar PostgreSQL por Oracle o reemplazar los endpoints REST por eventos en gRPC, la lógica financiera de cálculo de incidentes y penalidades permanece completamente intacta. Eso garantiza una mantenibilidad sostenible y un ahorro masivo de costos para el Estado."*
+
+#### ❓ Pregunta 2: *"¿Qué me garantiza que un administrador de TI deshonesto con acceso `root` a PostgreSQL no pueda borrar una caída para librar de una sanción millonaria a un banco amigo?"*
+> **Respuesta segura de Frank:**  
+> *"Se lo garantizamos en dos anillos de seguridad infranqueables, profesor:  
+> Primero, a nivel de base de datos, construí el Trigger `fn_prohibir_mutacion_historial`. Esa tabla opera bajo el paradigma matemático **Append-Only**: si alguien ingresa por terminal con privilegios de superusuario y ejecuta una sentencia `UPDATE` o `DELETE`, el motor PostgreSQL aborta la operación arrojando de inmediato la excepción SQL 23505 y revirtiendo la transacción.  
+> Y segundo, en la capa de aplicación, cada lote de incidentes se sella con un **hash criptográfico SHA-256 de 64 caracteres**. Si alguien intentara burlar los archivos planos modificando un solo minuto de indisponibilidad, el hash del reporte no coincidiría con el hash registrado en el BCRP y el intento de fraude quedaría registrado y expuesto de inmediato."*
+
+#### ❓ Pregunta 3: *"Mencionaste que descartaste la Alternativa 3 de microservicios con Kafka. Si la industria promueve tanto los microservicios, ¿por qué no usarlos?"*
+> **Respuesta segura de Frank:**  
+> *"Por madurez de criterio en ingeniería de software, profesor. La arquitectura debe estar dictada por la naturaleza del problema y no por modas tecnológicas.  
+> Los microservicios y Apache Kafka son indispensables en plataformas con cientos de equipos de desarrollo y millones de transacciones por segundo. En nuestro caso, el BCRP supervisa 5 conmutadores financieros nacionales mediante sondeos programados cada 30 segundos. Levantar clústeres de Kafka, Zookeeper y múltiples servicios independientes demandaba más de 4 GB de memoria RAM en reposo y multiplicaba los puntos de falla.  
+> Nuestra Clean API en Spring Boot atiende con sobrada holgura esa demanda con menos de 400 MB de RAM y tiempos de respuesta inferiores a 50 milisegundos. Es una decisión fundada en la eficiencia operativa, la sencillez y el costo computacional."*
 
 ---
 
 ### 👤 Preguntas para Joel Olaya (QA, Pruebas y Live Demo)
-1. **P: "¿Cómo aseguran que las pruebas unitarias sean confiables si no conectan a una base de datos real?"**  
-   *R de Joel:* *"Aplicamos el patrón de dobles de prueba con Mockito. Al tener una Arquitectura Hexagonal, simulamos el comportamiento de los puertos de persistencia con contratos bien definidos (`when/then`). Esto permite validar reglas complejas de negocio en memoria en menos de 5 segundos, garantizando aislamiento total del entorno."*
-2. **P: "¿Para qué sirve el hash SHA-256 en el pie del archivo SFT?"**  
-   *R de Joel:* *"Garantiza la integridad y el principio legal de no repudio. El hash se calcula sobre el contenido concatenado de la cabecera y el detalle de fallas. Si algún usuario o entidad intenta modificar un solo minuto de caída en el archivo plano, el hash resultante será completamente diferente y el BCRP rechazará el reporte por adulteración."*
+
+#### ❓ Pregunta 1: *"Joel, tu suite ejecutó 8 pruebas unitarias en apenas 4.8 segundos. ¿Cómo lograron semejante velocidad si en teoría las pruebas interactúan con la base de datos?"*
+> **Respuesta dinámica de Joel:**  
+> *"Esa velocidad se debe directamente a la Arquitectura Hexagonal que diseñó Frank, profesor.  
+> Al mantener los puertos completamente desacoplados, en la suite de pruebas unitarias empleamos **Mockito** para simular los repositorios de persistencia en la memoria RAM. No levantamos un motor de base de datos pesado para cada prueba; aislamos y verificamos la lógica matemática pura del dominio. Eso nos permite ejecutar decenas de pruebas exhaustivas en pocos segundos, facilitando la integración continua y la detección temprana de defectos."*
+
+#### ❓ Pregunta 2: *"En la demostración de la consola web, ¿qué sucedería si el backend en Spring Boot sufriera una caída durante la exposición o si fallara la conexión de red?"*
+> **Respuesta dinámica de Joel:**  
+> *"Anticipamos esa contingencia diseñando un **Modo Híbrido Autónomo** en el frontend.  
+> La consola NOC verifica en cada ciclo si el servidor de Spring Boot responde en el puerto 8080. Si detecta que el servicio está fuera de línea, conmuta automáticamente a un motor de simulación local en JavaScript con Web Crypto API. Esto nos permite continuar la auditoría visual, demostrar el ciclo de vida del incidente y generar el archivo SFT con su hash SHA-256 real sin detener en ningún momento la sustentación ante el jurado."*
 
 ---
 
-## 🎯 PROTOCOLO DE APOYO MUTUO EN CASO DE IMPREVISTO
-- **Si Fernando se traba en el marco legal:** Frank puede intervenir fluidamente: *"Complementando lo indicado por Fernando, el objetivo de la Ley 29440 es evitar el riesgo sistémico en el país..."*
-- **Si a Joel le falla la red en la Live Demo:** La Consola Web cuenta con **Modo Híbrido Autónomo**, por lo que seguirá funcionando al 100% de forma local en el navegador sin depender de internet.
-- **Control del Reloj:** Frank llevará el cronómetro visible para marcar los cambios de bloque en el minuto 03:00 y en el minuto 07:00.
+## 🤝 5. Protocolo de Respaldo Mutuo y Química de Equipo
+
+1. **Si un compañero tiene un momento de duda o se le corta una frase:**  
+   Cualquiera de los otros dos integrantes interviene con total naturalidad para apoyarlo, usando frases como:  
+   - *"Complementando exactamente lo que explica Fernando respecto a la Circular del BCRP..."*  
+   - *"Y justamente como señalaba Frank en la capa de arquitectura, en la parte de pruebas automatizadas lo garantizamos así..."*
+2. **Control Invisible del Tiempo:**  
+   Frank mantiene su reloj o teléfono con el cronómetro visible en la mesa. A los 2 minutos y medio le hace un contacto visual asintiendo a Fernando para que redondee su pase; y a los 6 minutos y medio le da una señal discreta a Joel para iniciar la demostración en vivo.
+3. **Preparación de Pestañas y Pantallas:**  
+   Joel tiene abiertas y listas desde antes de entrar:  
+   - La diapositiva en pantalla completa.  
+   - El navegador con la pestaña de `index.html` y la pestaña de `reportes.html`.  
+   - La terminal de comandos ya ubicada en la carpeta `03_BACKEND_SPRINGBOOT` con el comando `mvn test` pre-escrito, para que la transición sea instantánea y fluida.
+
+---
+
+> [!TIP]
+> **Recomendación Final:** Practiquen este guion dos veces juntos antes de la clase. Recuerden que el **Ing. Yony Zamata Condori** valora inmensamente la sincronización, la seguridad al hablar y ver que los tres integrantes dominan la totalidad del proyecto. ¡A romperla en la sustentación! 🔥
