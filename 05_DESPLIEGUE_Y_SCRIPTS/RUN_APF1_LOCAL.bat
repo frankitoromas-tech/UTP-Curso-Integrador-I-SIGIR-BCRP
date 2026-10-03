@@ -44,9 +44,10 @@ echo   [3] Iniciar Backend Spring Boot Localmente (mvn spring-boot:run)
 echo   [4] Despliegue Empresarial con Docker Compose (PostgreSQL 15 + API + Nginx)
 echo   [5] Ver Informe Academico Oficial en PDF (Entregable Canvas UTP)
 echo   [6] Abrir Diapositivas de Presentacion PowerPoint (.pptx)
-echo   [7] Salir
+echo   [7] Abrir Guia Maestra de Ponencia y Sustentacion Oral (.md)
+echo   [8] Salir
 echo ------------------------------------------------------------------------------
-set /p OPCION="Ingrese su opcion [1-7]: "
+set /p OPCION="Ingrese su opcion [1-8]: "
 
 if "%OPCION%"=="1" goto MODO_FRONTEND
 if "%OPCION%"=="2" goto MODO_TESTS
@@ -54,7 +55,14 @@ if "%OPCION%"=="3" goto MODO_SPRING
 if "%OPCION%"=="4" goto MODO_DOCKER
 if "%OPCION%"=="5" goto MODO_INFORME
 if "%OPCION%"=="6" goto MODO_PPTX
-if "%OPCION%"=="7" goto SALIR
+if "%OPCION%"=="7" goto MODO_GUIA
+if "%OPCION%"=="8" goto SALIR
+
+:MODO_GUIA
+echo.
+echo Abriendo Guia Maestra de Ponencia y Sustentacion Oral APF2...
+start "" "%BASE_DIR%\01_DOCUMENTACION_TECNICA\GUIA_DE_EXPOSICION_Y_PONENCIA_APF2.md"
+goto FIN
 
 :MODO_PPTX
 echo.
