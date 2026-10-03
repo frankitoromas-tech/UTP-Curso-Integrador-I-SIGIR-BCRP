@@ -125,6 +125,9 @@ flowchart LR
 > - De un Product Backlog total de 70 Story Points, **los Sprints 1, 2, 3 y 4 se encuentran completados al 100% en este hito de Semana 8**, como certifica nuestro Cronograma Gantt.  
 > - Y bajo el estándar internacional **IEEE 830**, formulamos **12 Requisitos Funcionales y 8 Requisitos No Funcionales** fundamentados en la norma **ISO/IEC 25010**, garantizando que el sistema sea seguro, altamente disponible y capaz de procesar telemetría concurrente."*
 
+![Cronograma Gantt de Avance APF2](imagenes/figura13_gantt_avance_apf2.png)
+> *Cronograma de Avance de Ingeniería hacia la Semana 8: Sprints 1 al 4 completados al 100%.*
+
 ##### 5. El "Pase de Gol" Didáctico a Frank Vargas (03:15 - 03:30)
 > *[Acción escénica: Fernando sonríe, gira su postura hacia Frank, abre la mano en señal de bienvenida técnica]*  
 > 
@@ -161,60 +164,102 @@ flowchart LR
 >    Obtuvo el puntaje más alto en nuestra Matriz Multicriterio de Decisión: **4.97 sobre 5.00 puntos**.  
 >    Todo el procesamiento pesado, las reglas de negocio, la auditoría y los cálculos matemáticos de SLA residen en **Java 17 con Spring Boot 3**, dejando en la capa visual una interfaz ágil que no consume recursos del servidor central."*
 
+---
+
+#### 🖼️ Galería Visual de Referencia: Las 3 Alternativas TIC y sus 15 Mockups
+*Usa estas imágenes de referencia para no confundir las pantallas durante tu alocución:*
+
+##### 🔴 Alternativa 1: Monolito Modular Spring Boot + Thymeleaf (75% Java — Descartada por parpadeo NOC)
+![Mockups Alternativa 1 - Monolito Thymeleaf](imagenes/figura8_mockups_alt1_monolito.png)
+> *Las 5 pantallas de la Alternativa 1:*  
+> 1. Login Corporativo tradicional | 2. Bandeja de Incidentes clásica | 3. Formulario de Registro | 4. Reporte Estático | 5. Panel de Auditoría.  
+> *(Descarte: Requiere recargar la página entera por cada evento de telemetría).*
+
+##### 🟢 Alternativa 2: Clean API REST Java 17 + Consola Reactiva NOC (90% Java — ¡GANADORA 4.97/5.00!)
+![Mockups Alternativa 2 - Clean API Ganadora](imagenes/figura9_mockups_alt2_clean_api.png)
+> *Las 5 pantallas ganadoras que diseñamos:*  
+> 1. **Consola NOC en Vivo:** Barra superior de telemetría de 5 entidades con semáforos verde/rojo y latencias en ms.  
+> 2. **Gestor Reactivo de Incidentes:** Tabla atómica con botones de ciclo de vida ('Evaluar', 'Mitigar', 'Resolver').  
+> 3. **Modal de Inyección 503:** Disparador de contingencias telemétricas para pruebas en caliente.  
+> 4. **Panel Gerencial de Disponibilidad:** Gráfica de barras con línea de referencia al 99.90% SLA.  
+##### 🔵 Alternativa 3: Microservicios con Spring Cloud & Apache Kafka (80% Java — Descartada por complejidad)
+![Mockups Alternativa 3 - Microservicios Kafka](imagenes/figura10_mockups_alt3_microservicios.png)
+> *Las 5 pantallas de la Alternativa 3:*  
+> 1. Monitor de Clústeres Kafka | 2. Panel de Tópicos y Particiones | 3. Topology Stream Viewer | 4. Visor de Logs Distribuidos | 5. Panel de Métricas Prometheus/Grafana.  
+> *(Descarte: Sobredimensionada, consumía > 4 GB de RAM en reposo para 5 switches).*
+
+---
+
 ##### 2. El Proceso BPMN 2.0 y la Analogía del Smartphone para la Arquitectura Hexagonal (04:35 - 05:45)
 > *(Apoyo visual: Diapositiva 11 — BPMN AS-IS vs TO-BE | Diapositiva 12 — Arquitectura Hexagonal)*  
-> *[Acción escénica: Usa las manos para dibujar un círculo en el centro y conexiones hacia afuera]*  
+> *[Acción escénica: Usa las manos de forma abierta y relajada para explicar la analogía]*  
 > 
-> *"En el modelado de procesos **BPMN 2.0**, eliminamos los cuellos de botella del flujo manual anterior (AS-IS), logrando un flujo optimizado (TO-BE) que evalúa y notifica cualquier caída en menos de 30 segundos.  
+> *"En los diagramas de procesos **BPMN 2.0**, mostramos cómo resolvimos el problema de fondo:  
+> Antes (flujo AS-IS), el BCRP se enteraba por llamadas o correos cuando los usuarios ya estaban protestando en Twitter.  
+> Con nuestro sistema (flujo TO-BE), un proceso automático en segundo plano vigila los switches cada 30 segundos y levanta las alertas antes de que el país entre en caos.*
+
+![Flujo de Procesos BPMN 2.0 TO-BE](imagenes/figura1_bpmn_flujo_proceso.png)
+> *El flujo optimizado: Sondeo cada 30s -> Detección automática -> Registro del incidente -> Notificación al supervisor BCRP.*
+
+> *Ahora, ¿cómo organizamos el código por dentro para que no se vuelva un laberinto con el tiempo?  
+> Usamos **Arquitectura Hexagonal (Puertos y Adaptadores)**.*
+
+![Arquitectura Hexagonal Puertos y Adaptadores](imagenes/figura6_arquitectura_hexagonal.png)
+> *El núcleo de negocio puro en Java 17, completamente protegido y desacoplado de la web y de la base de datos.*
+
+> *Permítanme explicárselo con un ejemplo de la vida diaria:*  
+> Piensen en un teléfono smartphone. El celular tiene sus fotos, sus contactos y su propio sistema.  
+> El teléfono funciona exactamente igual si le enchufas un cable Tipo C blanco, un cable de otra marca o si lo pones sobre una base de carga inalámbrica. Los cargadores de afuera pueden cambiar todos los días, pero el celular por dentro no se altera.  
 > 
-> Ahora bien, ¿cómo organizamos el código fuente para que sea inmune a la obsolescencia tecnológica?  
-> Aplicamos **Arquitectura Hexagonal (Puertos y Adaptadores)** bajo principios SOLID.  
+> Eso hicimos en nuestro código Java 17:  
+> - En el centro está el **corazón del banco**: las reglas de negocio de cómo clasificar los incidentes y calcular penalidades, escrito en Java puro sin depender de ninguna librería externa.  
+> - Y alrededor colocamos **adaptadores**: un adaptador para la pantalla web del operador, un adaptador para comunicarse con los bancos y un adaptador para la base de datos.  
 > 
-> *Permítame explicárselo con una analogía muy didáctica:*  
-> Piensen en el núcleo del negocio bancario como si fuera un smartphone. El teléfono tiene su procesador y su sistema operativo propio; y funciona con total normalidad ya sea que le conectemos un cargador con cable Tipo C, un audífono inalámbrico Bluetooth o una base de carga por inducción magnética. Los puertos del teléfono son independientes de los accesorios que le enchufemos.  
-> 
-> En nuestro backend en Java 17 hicimos exactamente eso:  
-> - En el centro está el **Dominio puro** (`Incidente`, `EntidadFinanciera`, `HistorialEstado`): clases Java estándar sin una sola anotación de bases de datos ni librerías de terceros.  
-> - En los **Puertos de Entrada**, definimos interfaces limpias como `IIncidenteService` y `ITelemetriaPort`.  
-> - En los **Adaptadores Primarios**, conectamos los controladores REST y nuestro **Worker de Telemetría**, un proceso en segundo plano que sondea concurrentemente los switches cada 30 segundos.  
-> - Y en los **Puertos de Salida**, ubicamos los repositorios Spring Data JPA para comunicarnos con la base de datos.  
-> 
-> ¿Qué beneficio concreto le brinda esto al BCRP? Que si el día de mañana deciden cambiar de base de datos o migrar a gRPC, la lógica regulatoria del negocio financiero permanece **100% intacta, sin tocar una sola línea de código central**."*
+> ¿Qué logramos con esto? Que si mañana el Banco Central decide cambiar la marca de su base de datos o conectarse por otro protocolo, el corazón del sistema no se toca ni en una sola coma. Es un software construido para durar años sin romperse."*
 
 ##### 3. Persistencia Inmutable en PostgreSQL 15: La Metáfora de la Caja Negra (05:45 - 06:55)
 > *(Apoyo visual: Diapositiva 13 — DER Físico/Lógico PostgreSQL 15 | Diapositiva 14 — Diagrama de Clases Spring Boot)*  
-> *[Acción escénica: Tono de firmeza y énfasis al pronunciar la palabra 'Inmutabilidad']*  
+> *[Acción escénica: Modula la voz a un tono más firme al hablar de la seguridad y el libro notarial]*  
 > 
-> *"En la capa de persistencia, implementamos una base de datos relacional en **PostgreSQL 15** normalizada rigurosamente en **Tercera Forma Normal (3FN)** con 6 tablas bien acopladas.  
+> *"Para guardar los datos, diseñamos una base de datos en **PostgreSQL 15** con 6 tablas bien estructuradas.*
+
+![DER Físico y Lógico en PostgreSQL 15](imagenes/figura11_der_fisico_logico_postgresql.png)
+> *6 tablas normalizadas en 3FN que protegen la integridad referencial de los bancos, switches, incidentes y auditoría.*
+
+> *Pero en un sistema del Estado que fiscaliza multas millonarias, nos hicimos una pregunta clave:  
+> **¿Qué pasa si alguien intenta borrar una evidencia para salvar a un banco amigo?**  
 > 
-> Sin embargo, un sistema que gestiona penalidades financieras para el Estado enfrenta un riesgo mayúsculo: **la manipulación o borrado de pruebas.**  
-> Si una entidad financiera sufre una caída de 40 minutos a medianoche y se expone a una multa millonaria, un operador deshonesto podría verse tentado a acceder a la base de datos y ejecutar un `UPDATE` o un `DELETE` para borrar el incidente y fingir que nunca ocurrió nada.  
+> Imaginemos que a las dos de la mañana se cae el sistema de un banco durante una hora completa. Por ley, esa caída amerita una sanción muy fuerte. Un administrador deshonesto que tenga acceso a la base de datos podría tener la tentación de entrar a escondidas y borrar la fila de la caída para fingir que nunca ocurrió nada.  
 > 
-> En SIGIR-BCRP cerramos esa vulnerabilidad desde los fundamentos de la ingeniería:  
-> 1. Programamos un **Trigger SQL estricto (`fn_prohibir_mutacion_historial`)** que convierte la tabla de auditoría en una estructura **Append-Only** (estrictamente de solo inserción y lectura). Si alguien intenta alterar un registro histórico, el motor PostgreSQL aborta la transacción al instante.  
->    *Es exactamente igual a la caja negra de un avión o un libro notarial foliado:* los eventos se escriben para siempre; está prohibido usar borrador o corrector líquido.  
-> 2. Creamos un **índice parcial único (`idx_incidente_abierto_unico`)** que resuelve condiciones de carrera a nivel del motor de base de datos, garantizando que un banco jamás pueda tener dos tickets abiertos simultáneamente por la misma falla técnica (Regla de Negocio RN-01).  
-> 3. Aplicamos el principio de mínimo privilegio con el rol `app_sigir_user`, conexiones cifradas mediante TLS y consultas 100% parametrizadas con Hibernate para erradicar cualquier posibilidad de inyección SQL."*
+> Nosotros blindamos el sistema desde la raíz mediante ingeniería:*
+
+![Diagrama de Clases de Diseño en Spring Boot 3](imagenes/figura12_clases_diseno_hexagonal.png)
+> *Estructura de clases de diseño: Repositorios, Servicios, DTOs y Mappers orientados a inmutabilidad.*
+
+> *1. Programamos un cerrojo automático dentro de la base de datos (un Trigger llamado `fn_prohibir_mutacion_historial`).  
+> Este cerrojo convierte la tabla de incidentes en una **caja negra de avión** o en un **libro notarial foliado**: los hechos se escriben para siempre. Si alguien intenta usar las sentencias de modificar (`UPDATE`) o borrar (`DELETE`), el motor de la base de datos aborta la operación de inmediato, rechaza el comando y protege la verdad histórica. Está prohibido usar borrador.  
+> 2. Diseñamos una regla de hardware (`idx_incidente_abierto_unico`) que impide que un banco tenga dos tickets abiertos al mismo tiempo por la misma falla, evitando duplicados o confusiones en la mesa de control.  
+> 3. Y aplicamos consultas 100% blindadas para que nadie pueda hackear la base de datos mediante inyecciones SQL."*
 
 ##### 4. Fórmulas Normativas de SLA y el Compilador Criptográfico SFT (06:55 - 07:45)
 > *(Apoyo visual: Diapositiva 17 — Módulo de Reportes e Indisponibilidad)*  
-> *[Acción escénica: Señala la fórmula de disponibilidad mensual y el hash de 64 caracteres]*  
+> *[Acción escénica: Señala la fórmula de disponibilidad mensual y el hash de 64 caracteres en la lámina]*  
 > 
-> *"Toda esa telemetría capturada se procesa bajo las fórmulas matemáticas de la **Circular BCRP N° 0011-2023**:  
-> - Calculamos la **Disponibilidad Mensual (%)** sobre una base fija de 43,200 minutos al mes (30 días de operación 24 horas continuas). Si el indicador cae por debajo del umbral regulatorio del **99.90%**, el sistema enciende alarmas automáticas de no conformidad.  
-> - Medimos el **MTTD** (tiempo medio de detección en segundos) y el **MTTR** (tiempo medio de recuperación).  
+> *"Toda esa telemetría se traduce en los indicadores oficiales que exige la **Circular BCRP N° 0011-2023**:  
+> - Medimos el **Porcentaje de Disponibilidad Mensual** sobre una base fija de 43,200 minutos (que son 30 días operando 24 horas continuas). Si un banco baja del umbral legal del **99.90%**, el sistema enciende alarmas rojas de incumplimiento.  
+> - Y para cumplir con el envío formal de información al BCRP, programamos el **Compilador SFT BCRP**, que arma el archivo de texto oficial con los datos del supervisor y el detalle de las caídas.  
 > 
-> Y para cumplir con el protocolo de remisión de información al Banco Central, desarrollamos el **Compilador SFT BCRP**, que ensambla el archivo plano oficial:  
-> - Registro Tipo 01 de Cabecera con datos del supervisor y periodo.  
-> - Registro Tipo 02 con el detalle minuto a minuto de las interrupciones.  
-> - Y un **Registro Tipo 03 de Cierre Criptográfico**, sellado con un **hash SHA-256 de 64 caracteres hexadecimales**. Si alguien abre el archivo en su computadora y altera un solo minuto de penalidad, la firma digital se rompe y el servidor del BCRP rechaza el reporte automáticamente."*
+> Pero tiene un detalle de ingeniería clave: al final del archivo va un **Registro con Firma Digital SHA-256 de 64 caracteres**.  
+> 
+> *Esto funciona exactamente igual que el sello de cera lacrado que usaban en las cartas confidenciales antiguas:*  
+> Si alguien descarga el archivo plano a su computadora, lo abre en el Bloc de Notas y le borra 15 minutos de caída para perdonarle la multa al banco, en ese mismo segundo el sello digital se rompe. Cuando el Banco Central recibe el archivo, comprueba el sello, detecta la adulteración y rechaza el reporte de inmediato."*
 
 ##### 5. El "Pase de Gol" Didáctico a Joel Olaya (07:45 - 08:00)
-> *[Acción escénica: Frank mira a Joel, le sonríe con confianza y señala la laptop con la consola NOC y la terminal de pruebas]*  
+> *[Acción escénica: Frank mira a Joel, le sonríe con seguridad y le cede la palabra señalando la pantalla]*  
 > 
-> *"Como bien sabemos los ingenieros de software, la mejor arquitectura y el mejor diseño en papel cobran verdadero valor cuando se demuestran en la práctica, ejecutando código y enfrentando fallas en vivo.  
+> *"La arquitectura y los diseños en papel son indispensables, pero los ingenieros de sistemas demostramos el valor de nuestro trabajo con el software funcionando en vivo.  
 > 
-> Para apreciar nuestra Consola de Operaciones en tiempo real, presenciar la inyección de una caída simulada, verificar nuestras pruebas unitarias automatizadas y generar el archivo normativo oficial, **le cedo el control de la sustentación a nuestro Ingeniero de Software y QA, Joel Olaya**."*
+> Para ver cómo opera la pantalla del operador NOC, cómo inyectamos una caída simulada en tiempo real, cómo se ejecutan nuestras pruebas automáticas en 4 segundos y cómo se genera este archivo sellado, **le cedo el control a nuestro Ingeniero de Software y QA, Joel Olaya**."*
 
 ---
 
@@ -235,13 +280,22 @@ flowchart LR
 > 
 > *"Muchas gracias, Frank. Buenos días, profesor Ing. Yony Zamata.  
 > 
-> En nuestro Diagrama de Casos de Uso estructuramos a cuatro actores esenciales: el Operador NOC, el Supervisor Regulatorio del BCRP, el Administrador del Sistema y el Daemon Automático de Telemetría.  
-> 
-> Ahora los invito a presenciar la ingeniería en acción. En pantalla tenemos la **Consola Web NOC de SIGIR-BCRP**.  
-> En el extremo superior derecho apreciamos la sesión corporativa autenticada bajo Directorio Activo con el usuario institucional `AD\frank.vargas` en rol de Líder NOC.  
-> 
-> En la parte superior visualizamos nuestra **Barra de Telemetría en Vivo**, que sondea de forma continua a los 5 participantes del ecosistema nacional: BCP con Yape, Interbank con Plim, Tunki de Caja Cusco, Caja Rural de los Andes y la Cámara de Compensación Electrónica (CCE).  
-> En este instante, como pueden verificar, todos los indicadores se encuentran en **VERDE (Operativo)**, con latencias de red sumamente saludables que oscilan entre 14 y 28 milisegundos."*
+> En nuestro Diagrama de Casos de Uso estructuramos a cuatro actores esenciales: el Operador NOC, el Supervisor Regulatorio del BCRP, el Administrador del Sistema y el Daemon Automático de Telemetría.*
+
+![Diagrama de Casos de Uso UML](imagenes/figura2_casos_de_uso.png)
+> *Los 4 actores del ecosistema: Operador NOC, Supervisor BCRP, Administrador TI y Daemon Automático de Telemetría.*
+
+> *Ahora los invito a presenciar la ingeniería en acción. En pantalla tenemos la **Consola Web NOC de SIGIR-BCRP**.*
+
+![Consola Web NOC de Monitoreo en Vivo](imagenes/figura7_dashboard_noc_web.png)
+> *Guía visual para la demo en vivo:*  
+> - **Extremo superior derecho:** Sesión corporativa autenticada bajo Directorio Activo con el usuario `AD\frank.vargas` (Líder NOC).  
+> - **Barra superior de telemetría:** 5 conmutadores bancarios (BCP/Yape, Interbank/Plim, Tunki, Andes, CCE) en **VERDE** (14-28 ms).  
+> - **Botón ámbar central:** `'⚡ Simular Alerta'` (inyecta la contingencia 503 para la prueba en vivo).  
+> - **Tabla de incidentes:** Botones de ciclo de vida rápido `'Evaluar'`, `'Mitigar'` y `'Resolver'`.  
+> - **Acceso a reportes:** Botón azul superior `'📊 Reportes Clave'` (abre `reportes.html` con gráfico Canvas y generador SFT).
+
+> *En este instante, como pueden verificar, todos los indicadores se encuentran en **VERDE (Operativo)**, con latencias de red sumamente saludables que oscilan entre 14 y 28 milisegundos."*
 
 ##### 2. La Demostración en Vivo: Inyección de Contingencia HTTP 503 (08:45 - 09:45)
 > *(Acción en pantalla: Ubicar el botón ámbar '⚡ Simular Alerta')*  
