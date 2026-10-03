@@ -341,28 +341,45 @@ function actualizarKpis() {
     const elTotal = document.getElementById('kpiTotal');
     const elCriticos = document.getElementById('kpiCriticos');
     const elResueltos = document.getElementById('kpiResueltos');
+    const elUptime = document.getElementById('kpiUptime');
 
     if (elTotal) elTotal.innerText = total;
     if (elCriticos) elCriticos.innerText = criticos;
     if (elResueltos) elResueltos.innerText = resueltos;
+
+    if (elUptime) {
+        // Cálculo dinámico de disponibilidad basado en incidentes críticos activos
+        const penalidad = criticos * 0.12;
+        const uptimeVal = Math.max(98.50, (99.98 - penalidad)).toFixed(2);
+        elUptime.innerText = `${uptimeVal}%`;
+        elUptime.style.color = uptimeVal >= 99.90 ? '#38BDF8' : '#F59E0B';
+    }
 }
 
 /**
  * Simulación de caída de servicio automática por telemetría
  */
 function simularCaidaAutomatica() {
-    const entidadAfectada = AppState.entidades[0]; // BCP (Yape)
+    // Seleccionar la primera entidad saludable para no violar regla RN-01 de un ticket abierto por entidad
+    let entidadAfectada = AppState.entidades.find(e => e.estado !== 'CAIDO');
+    if (!entidadAfectada) {
+        // Si todas están caídas, resetear la primera para demostrar el ciclo
+        entidadAfectada = AppState.entidades[0];
+    }
+    
     entidadAfectada.estado = 'CAIDO';
     entidadAfectada.latencia = 9999;
     entidadAfectada.incidentes++;
 
     const nuevoId = AppState.incidentes.length + 1;
     const randomSuffix = Math.floor(10000 + Math.random() * 90000);
-    const ahora = new Date().toISOString().replace('T', ' ').substring(0, 19);
+    const ahoraObj = new Date();
+    const ahora = ahoraObj.toISOString().replace('T', ' ').substring(0, 19);
+    const fechaPrefix = ahoraObj.toISOString().slice(0, 10).replace(/-/g, '');
 
     const nuevoIncidente = {
         id: nuevoId,
-        ticket: `INC-20260903-${randomSuffix}`,
+        ticket: `INC-${fechaPrefix}-${randomSuffix}`,
         idEntidad: entidadAfectada.id,
         entidadNombre: entidadAfectada.nombre,
         categoriaCodigo: 'DISP_SERV',
@@ -370,8 +387,8 @@ function simularCaidaAutomatica() {
         severidad: 'CRITICA',
         origen: 'AUTOMATICO',
         fechaDeteccion: ahora,
-        servicio: 'SWITCH_INTEROPERABLE_BCP',
-        descripcion: 'ALERTA AUTOMÁTICA: Timeout >3000ms capturado por el worker concurrente de telemetría.',
+        servicio: `SWITCH_${entidadAfectada.nombre.replace(/[^A-Za-z0-9]/g, '_').toUpperCase()}`,
+        descripcion: 'ALERTA AUTOMÁTICA BCRP: Falla HTTP 503 detectada en sondeo asíncrono cada 30 segundos.',
         estado: 'REGISTRADO'
     };
 
@@ -543,8 +560,10 @@ function configurarEventosUI() {
 
         // Modo offline / fallback
         const nuevoId = AppState.incidentes.length + 1;
-        const ticket = `INC-20260903-${Math.floor(10000 + Math.random() * 90000)}`;
-        const ahora = new Date().toISOString().replace('T', ' ').substring(0, 19);
+        const ahoraObj = new Date();
+        const ahora = ahoraObj.toISOString().replace('T', ' ').substring(0, 19);
+        const fechaPrefix = ahoraObj.toISOString().slice(0, 10).replace(/-/g, '');
+        const ticket = `INC-${fechaPrefix}-${Math.floor(10000 + Math.random() * 90000)}`;
 
         AppState.incidentes.unshift({
             id: nuevoId,
