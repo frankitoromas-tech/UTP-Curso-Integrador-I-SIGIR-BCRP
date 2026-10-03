@@ -24,16 +24,33 @@
 ## ⏱️ 2. Reparto de Roles y Tiempos de Oro (12 Minutos Máximo)
 
 ```mermaid
-gantt
-    title Distribución de los 12 Minutos Máximos de Sustentación (Rúbrica APF2)
-    dateFormat  X
-    axisFormat %s min
-    section 1. Fernando Romero (3.5 min)
-    Gancho Real, Asimetría Informativa, BMC, Scrum y Requisitos IEEE 830 :active, 0, 3.5
-    section 2. Frank Vargas (4.5 min)
-    3 Alternativas >=50% Java, Hexagonal, DER Inmutable y Clases Spring Boot :crit, 3.5, 8
-    section 3. Joel Olaya (4.0 min)
-    Casos de Uso, Live Demo 503, Tests JUnit 8/8, Compilador SFT y Cierre :done, 8, 12
+flowchart LR
+    classDef b1 fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#ffffff;
+    classDef b2 fill:#0f172a,stroke:#f87171,stroke-width:2px,color:#ffffff;
+    classDef b3 fill:#0f172a,stroke:#34d399,stroke-width:2px,color:#ffffff;
+
+    B1["<b>Bloque 1: Fernando Romero</b><br>⏱️ <b>00:00 - 03:30</b> (3.5 min)<br>• Gancho Real Yape/Plim<br>• Asimetría Informativa<br>• Scrum, EDT & IEEE 830"]:::b1
+    
+    B2["<b>Bloque 2: Frank Vargas</b><br>⏱️ <b>03:30 - 08:00</b> (4.5 min)<br>• 3 Alternativas (>=50% Java)<br>• Arquitectura Hexagonal<br>• DER Inmutable & SFT"]:::b2
+    
+    B3["<b>Bloque 3: Joel Olaya</b><br>⏱️ <b>08:00 - 12:00</b> (4.0 min)<br>• Live Demo Alerta 503<br>• Tests JUnit 5 (8/8 pass)<br>• Compilación SFT & Cierre"]:::b3
+
+    B1 ==>|"Pase de Gol<br>min 03:15"| B2
+    B2 ==>|"Pase de Gol<br>min 07:45"| B3
+```
+
+```text
+⏱️ CRONOLOGÍA DE SUSTENTACIÓN — 12 MINUTOS MÁXIMO
+========================================================================================================
+[00:00 - 03:30] 🟡 BLOQUE 1: Fernando Romero (3.5 min) — Requisitos, Ley 29440 & Scrum
+[████████░░░░░░░░░░░░░░░░░░░░░] 29% • Pase de Gol en min 03:15
+--------------------------------------------------------------------------------------------------------
+[03:30 - 08:00] 🔴 BLOQUE 2: Frank Vargas (4.5 min)    — Alternativas Java, Hexagonal & BD Inmutable
+[░░░░░░░░███████████░░░░░░░░░░] 38% • Pase de Gol en min 07:45
+--------------------------------------------------------------------------------------------------------
+[08:00 - 12:00] 🟢 BLOQUE 3: Joel Olaya (4.0 min)      — Live Demo 503, Tests JUnit 8/8 & Cierre SFT
+[░░░░░░░░░░░░░░░░░░░██████████] 33% • Cierre Oficial en min 11:30 - 11:50
+========================================================================================================
 ```
 
 | Bloque / Minutos | Integrante | Rol Oficial en el Proyecto | Diapositivas Clave | Misión Pedagógica en la Exposición |
